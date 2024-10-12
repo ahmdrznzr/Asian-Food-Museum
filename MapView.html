@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Map</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="./js/header.js"></script>
+  <style>
+    /* Main container styling */
+    .museum-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* Sub-navigation bar styling */
+    .sub-navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #d32f2f;
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .sub-navbar button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+      background: transparent;
+      color: white;
+      border: none;
+      font-size: 16px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .sub-navbar button:hover,
+    .sub-navbar button.active {
+      background: white;
+      color: #d32f2f;
+      border-radius: 5px;
+    }
+
+    /* Map display area styling */
+    .map-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      width: 80%;
+    }
+
+    .map-image {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+    }
+
+    /* Square tag area styling, using grid layout */
+    .tag-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .tag-box {
+      height: 80px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      font-size: 18px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    .tag-box:hover {
+      background-color: #d32f2f;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* Text link area styling, set to two-column layout and center alignment */
+    .text-links.two-column-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(140px, 1fr)); /* Two columns per row, set min column width */
+      grid-auto-flow: row;
+      justify-items: center;
+      align-items: start;
+      gap: 10px;
+      width: 80%; /* Ensure the width fits the container */
+      margin: 20px auto;
+    }
+
+    .text-link {
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      display: block;
+      text-align: left;
+    }
+
+    .text-link:hover {
+      color: #d32f2f;
+      text-decoration: underline;
+    }
+
+    /* Number styling for food list */
+    .food-number {
+      font-weight: bold;
+      margin-right: 5px;
+      color: #d32f2f; /* Use the same red from the theme */
+      font-size: 18px; /* Slightly larger font for the number */
+    }
+
+    /* Adjust food links styling to look more organized */
+    .text-link {
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+      display: flex;
+      align-items: center; /* Vertically align number and text */
+      padding: 5px 0;
+      transition: color 0.3s ease;
+    }
+
+    .text-link:hover {
+      color: #d32f2f;
+      text-decoration: underline;
+    }
+
+    /* router-link styling to ensure visibility */
+    .text-link.router-link-active {
+      color: #d32f2f; /* Active link color */
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .map-section {
+        width: 100%;
+      }
+
+      .text-links.two-column-links {
+        width: 90%; /* Adjust width for mobile screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .sub-navbar button {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      .tag-box {
+        width: 100px;
+        height: 80px;
+      }
+
+      .text-links.two-column-links {
+        grid-template-columns: repeat(2, 1fr); /* Maintain two columns on mobile screens */
+        width: 100%;
+        gap: 5px; /* Reduce column gap */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <div class="navbar">
+    <!-- Logo and Project Name -->
+    <div class="logo-container">
+      <a href="#" class="logo">Lg</a>
+      <span class="project-name">Food Museum</span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="FoodsView.html">Foods</a></li>
+      <li><a href="MapView.html">Map</a></li>
+      <li><a href="TeamView.html">Team</a></li>
+    </ul>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="menu-toggle">☰</button>
+  </div>
+
+  <div class="museum-container">
+    <!-- Sub-navigation bar -->
+    <div class="sub-navbar">
+      <button class="active" onclick="setActiveTab(0)">Country</button>
+      <button onclick="setActiveTab(1)">Food Type</button>
+      <button onclick="setActiveTab(2)">Cultural Significance</button>
+    </div>
+
+    <!-- Map display and category tags -->
+    <div class="map-section">
+      <img id="mapImage" src="img/map.jpg" alt="Museum Map" class="map-image" />
+    </div>
+
+    <!-- Country category tag area, update food list below when tag is clicked -->
+    <div class="tag-section" id="tagSection"></div>
+
+    <!-- Dynamic food list display, maintaining two-column layout -->
+    <div class="text-links two-column-links" id="foodList"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">The purpose of this website is to explore various types of typographic and layout styles
+        for museum pages, as an end-of-course project for the "Information Modeling and Web Technologies" course of the
+        Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio
+        Vitali. The documents contained in this website have been selected...</p>
+      <p class="footer-text">All copyrights and related rights on the content remain with their original owners.</p>
+      <p class="footer-text">All copyright on the typographic and layout choices are 2024 © Zahra Farajhormozi, Nazanin
+        Fakhrian, Ahmadreza Nazari, Yifan Wu.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Array containing food data, each with attributes like id, name, country, type, and description
+    const foodData = [
+    {
+    "id": 1,
+    "name": "Dango",
+    "country": "Japan",
+    "type": "Dessert",
+    "period": "Traditional Food",
+    "technique": "Steamed",
+    "description": "Dango is a traditional Japanese dessert made from glutinous rice flour, giving it a soft and chewy texture.",
+    "image": "img/Dango.png"
+  },
+  {
+    "id": 2,
+    "name": "Sushi",
+    "country": "Japan",
+    "type": "Main Course",
+    "period": "Modern Food",
+    "technique": "Raw",
+    "description": "Sushi is a Japanese dish consisting of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients such as seafood, often raw, and vegetables.",
+    "image": "img/Sushi.png"
+  },
+  {
+    "id": 3,
+    "name": "Tempura",
+    "country": "Japan",
+    "type": "Appetizer",
+    "period": "Traditional Food",
+    "technique": "Fried",
+    "description": "Tempura is a Japanese dish of seafood or vegetables that have been battered and deep fried.",
+    "image": "img/Tempura.png"
+  },
+  {
+    "id": 4,
+    "name": "Ramen",
+    "country": "Japan",
+    "type": "Main Course",
+    "period": "Modern Food",
+    "technique": "Simmered",
+    "description": "Ramen is a Japanese noodle soup dish with a meat or fish-based broth, flavored with soy sauce or miso.",
+    "image": "img/Ramen.png"
+  },
+  {
+    "id": 5,
+    "name": "Sashimi",
+    "country": "Japan",
+    "type": "Appetizer",
+    "period": "Traditional Food",
+    "technique": "Raw",
+    "description": "Sashimi is a Japanese delicacy consisting of fresh raw fish or meat sliced into thin pieces.",
+    "image": "img/Sashimi.png"
+  },
+  {
+    "id": 6,
+    "name": "Burger",
+    "country": "USA",
+    "type": "Fast Food",
+    "period": "Modern Food",
+    "technique": "Grilled",
+    "description": "A burger consists of a patty of ground meat that is usually beef, placed between two slices of a bun or a roll. It's a staple in American fast food.",
+    "image": "img/Burger.png"
+  },
+  {
+    "id": 7,
+    "name": "Apple Pie",
+    "country": "USA",
+    "type": "Dessert",
+    "period": "Traditional Food",
+    "technique": "Baked",
+    "description": "Apple pie is a traditional American dessert made with apples, sugar, and cinnamon, baked in a flaky crust.",
+    "image": "img/ApplePie.png"
+  },
+  {
+    "id": 8,
+    "name": "Hot Dog",
+    "country": "USA",
+    "type": "Fast Food",
+    "period": "Modern Food",
+    "technique": "Grilled",
+    "description": "A hot dog is a grilled or steamed sausage served in the slit of a partially sliced bun, typically garnished with mustard, ketchup, onions, and pickles.",
+    "image": "img/HotDog.png"
+  },
+  {
+    "id": 9,
+    "name": "BBQ Ribs",
+    "country": "USA",
+    "type": "Main Course",
+    "period": "Traditional Food",
+    "technique": "Grilled",
+    "description": "BBQ Ribs are slow-cooked pork ribs with a barbecue sauce, popular in American cuisine.",
+    "image": "img/BBQRibs.png"
+  },
+  {
+    "id": 10,
+    "name": "Pancakes",
+    "country": "USA",
+    "type": "Dessert",
+    "period": "Modern Food",
+    "technique": "Fried",
+    "description": "Pancakes are a flat cake made from batter and cooked on a griddle or frying pan, often served with syrup.",
+    "image": "img/Pancakes.png"
+  },
+  {
+    "id": 11,
+    "name": "Pizza",
+    "country": "Italy",
+    "type": "Fast Food",
+    "period": "Modern Food",
+    "technique": "Baked",
+    "description": "Pizza is a popular Italian dish made with a yeasted flatbread typically topped with tomato sauce and cheese and baked in an oven.",
+    "image": "img/Pizza.png"
+  },
+  {
+    "id": 12,
+    "name": "Pasta",
+    "country": "Italy",
+    "type": "Main Course",
+    "period": "Traditional Food",
+    "technique": "Boiled",
+    "description": "Pasta is an Italian dish made from unleavened dough of wheat flour mixed with water or eggs, formed into sheets or other shapes, and cooked by boiling or baking.",
+    "image": "img/Pasta.png"
+  },
+  {
+    "id": 13,
+    "name": "Tiramisu",
+    "country": "Italy",
+    "type": "Dessert",
+    "period": "Modern Food",
+    "technique": "Refrigerated",
+    "description": "Tiramisu is a coffee-flavored Italian dessert made with layers of sponge cake soaked in coffee, mascarpone cheese, and cocoa.",
+    "image": "img/Tiramisu.png"
+  },
+  {
+    "id": 14,
+    "name": "Risotto",
+    "country": "Italy",
+    "type": "Main Course",
+    "period": "Traditional Food",
+    "technique": "Simmered",
+    "description": "Risotto is an Italian rice dish cooked in a broth until it reaches a creamy consistency.",
+    "image": "img/Risotto.png"
+  },
+  {
+    "id": 15,
+    "name": "Lasagna",
+    "country": "Italy",
+    "type": "Main Course",
+    "period": "Traditional Food",
+    "technique": "Baked",
+    "description": "Lasagna is an Italian baked dish consisting of layers of pasta, cheese, meat, and tomato sauce.",
+    "image": "img/Lasagna.png"
+  },
+  {
+    "id": 16,
+    "name": "Tacos",
+    "country": "Mexico",
+    "type": "Main Course",
+    "period": "Traditional Food",
+    "technique": "Grilled",
+    "description": "A taco is a traditional Mexican dish composed of a corn or wheat tortilla folded or rolled around a filling. Tacos can be made with a variety of fillings including beef, pork, chicken, and seafood.",
+    "image": "img/Tacos.png"
+  },
+  {
+    "id": 17,
+    "name": "Quesadilla",
+    "country": "Mexico",
+    "type": "Snack",
+    "period": "Modern Food",
+    "technique": "Grilled",
+    "description": "A quesadilla is a Mexican dish consisting of a tortilla filled with cheese, meat, and vegetables, then grilled.",
+    "image": "img/Quesadilla.png"
+  },
+  {
+    "id": 18,
+    "name": "Guacamole",
+    "country": "Mexico",
+    "type": "Appetizer",
+    "period": "Traditional Food",
+    "technique": "Raw",
+    "description": "Guacamole is a traditional Mexican dip made from mashed avocados, onions, tomatoes, lime juice, and cilantro.",
+    "image": "img/Guacamole.png"
+  },
+  {
+    "id": 19,
+    "name": "Enchilada",
+    "country": "Mexico",
+    "type": "Main Course",
+    "period": "Traditional Food",
+    "technique": "Baked",
+    "description": "An enchilada is a corn tortilla rolled around a filling and covered with chili sauce.",
+    "image": "img/Enchilada.png"
+  },
+  {
+    "id": 20,
+    "name": "Churros",
+    "country": "Mexico",
+    "type": "Dessert",
+    "period": "Traditional Food",
+    "technique": "Fried",
+    "description": "Churros are a traditional Mexican dessert made from dough that is fried and coated with cinnamon and sugar.",
+    "image": "img/Churros.png"
+  }
+    ];
+
+    // Maps array to handle map image updates for each category
+    const maps = [
+      { url: 'img/map.jpg', textLinks: ['Japanese Food 1', 'Japanese Food 2', 'American Food'] },
+      { url: 'img/foodtype_map.jpg', textLinks: ['Dessert', 'Main Course', 'Appetizer'] },
+      { url: 'img/cultural_map.jpg', textLinks: ['Festival Food', 'Traditional Food'] }
+    ];
+
+    // Tags object containing different filter options (e.g., countries, types, cultural significance)
+    const tags = {
+      0: ['Japan', 'USA', 'France', 'Italy', 'Mexico'], // Country tags
+      1: ['Dessert', 'Fast Food', 'Main Course', 'Appetizer'], // Food type tags
+      2: ['Traditional Food', 'Festival Food', 'Modern Food'] // Cultural significance tags
+    };
+
+    let activeTab = 0; // Track the current active tab (country, food type, or cultural significance)
+
+    // Switch between tabs (Country, Food Type, Cultural Significance)
+    function setActiveTab(index) {
+        activeTab = index; // Update active tab index
+
+        // Update the map image based on the active tab
+        document.getElementById('mapImage').src = maps[activeTab].url;
+
+        // Toggle the active state for the buttons in the sub-navbar
+        document.querySelectorAll('.sub-navbar button').forEach((button, idx) => {
+            button.classList.toggle('active', idx === activeTab);
+        });
+
+        // Update the tag section content based on the selected tab
+        updateTags();
+    }
+
+    // Update the tags to display countries, food types, or cultural categories
+    function updateTags() {
+        const tagSection = document.getElementById('tagSection');
+        tagSection.innerHTML = ''; // Clear existing tags
+        tags[activeTab].forEach(tag => {
+            const tagBox = document.createElement('div');
+            tagBox.className = 'tag-box'; // Create tag boxes for each category
+            tagBox.innerText = tag;
+            tagBox.onclick = () => setSelectedTag(tag); // Filter food list when a tag is clicked
+            tagSection.appendChild(tagBox);
+        });
+        updateFoodList(); // Reset the food list when switching tabs
+    }
+
+    // Filter and display food based on the selected tag
+    function setSelectedTag(tag) {
+        const selectedFoods = foodData.filter(food => {
+            // Filter foods based on the active tab (country, type, or period)
+            if (activeTab === 0) return food.country === tag;
+            if (activeTab === 1) return food.type === tag;
+            if (activeTab === 2) return food.period === tag;
+        });
+        updateFoodList(selectedFoods); // Update the food list with filtered results
+    }
+
+    // Update the food list, displaying each item with its number
+    function updateFoodList(foods = []) {
+        const foodList = document.getElementById('foodList');
+        foodList.innerHTML = ''; // Clear the existing food list
+
+        // Iterate through the filtered foods and create numbered links
+        foods.forEach((food) => {
+    const foodLink = document.createElement('a');
+    foodLink.className = 'text-link';
+    // Display the food's id and name (use the id from the JSON data)
+    foodLink.innerHTML = `<span class="food-number">${food.id}. </span>${food.name}`;
+    foodLink.href = '#';
+    foodLink.onclick = () => {
+        // Save the selected food in localStorage and navigate to the details page
+        localStorage.setItem('selectedFood', JSON.stringify(food));
+        window.location.href = 'DetailsView.html';
+    };
+    foodList.appendChild(foodLink); // Add the food item to the list
+});
+    }
+
+    // Initialize by selecting the first tab and displaying content
+    document.addEventListener('DOMContentLoaded', function () {
+        setActiveTab(0); // Default to the first tab (Country)
+    });
+  </script>
+</body>
+</html>

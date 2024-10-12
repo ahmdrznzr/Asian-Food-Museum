@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Team</title>
+  <!-- Importing Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <script src="./js/header.js"></script>
+  <style>
+    /* Overall styling for the Team section */
+    .team-section {
+      padding: 50px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      height: auto;
+    }
+
+    /* Title styling */
+    .section-title {
+      font-size: 36px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    /* Team container styling */
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      overflow: visible;
+    }
+
+    /* Each team member card styling */
+    .team-member {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    /* Hover effect on team member card to slightly lift it */
+    .team-member:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Member image styling */
+    .member-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /* Member name styling */
+    .member-name {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    /* Social icon container styling */
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+
+    /* Social icon styling */
+    .social-icons a {
+      color: #fff;
+      font-size: 28px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    /* Hover effect on social icons to change color and slightly enlarge */
+    .social-icons a:hover {
+      color: #ddd;
+      transform: scale(1.1);
+    }
+
+    /* Responsive design for tablets */
+    @media (max-width: 768px) {
+      .team-member {
+        width: 45%;
+      }
+    }
+
+    /* Responsive design for mobile devices */
+    @media (max-width: 480px) {
+      .team-member {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Top Navigation Bar -->
+   <div class="navbar">
+    <!-- Logo and Project Name -->
+    <div class="logo-container">
+      <a href="#" class="logo">Lg</a>
+      <span class="project-name">Food Museum</span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="FoodsView.html">Foods</a></li>
+      <li><a href="MapView.html">Map</a></li>
+      <li><a href="TeamView.html">Team</a></li>
+    </ul>
+
+    <!-- Menu Toggle Button for mobile view -->
+    <button class="menu-toggle">☰</button>
+  </div>
+
+  <!-- Team section -->
+  <div class="team-section">
+    <h2 class="section-title">The Team</h2>
+    <div class="team-container">
+      <!-- First team member -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Yifan Wu.jpg" alt="Yifan Wu">
+        </div>
+        <div class="member-name">Yifan Wu</div>
+        <!-- Social media icons for email and LinkedIn -->
+        <div class="social-icons">
+          <a href="mailto:yifan@example.com" target="_blank">
+            <i class="fas fa-envelope"></i> <!-- Email icon -->
+          </a>
+          <a href="https://linkedin.com/in/yifan" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Second team member -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Yifan Wu.jpg" alt="Ahmadreza Nazari">
+        </div>
+        <div class="member-name">Ahmadreza Nazari</div>
+        <!-- Social media icons for email and LinkedIn -->
+        <div class="social-icons">
+          <a href="mailto:ahmadreza@example.com" target="_blank">
+            <i class="fas fa-envelope"></i> <!-- Email icon -->
+          </a>
+          <a href="https://linkedin.com/in/ahmadreza" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Third team member -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Zahra Faraji.jpg" alt="Zahra Faraji">
+        </div>
+        <div class="member-name">Zahra Faraji</div>
+        <!-- Social media icons for email and LinkedIn -->
+        <div class="social-icons">
+          <a href="mailto:zahra@example.com" target="_blank">
+            <i class="fas fa-envelope"></i> <!-- Email icon -->
+          </a>
+          <a href="https://linkedin.com/in/zahra" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+          </a>
+        </div>
+      </div>
+
+      <!-- Fourth team member -->
+      <div class="team-member">
+        <div class="member-image">
+          <img src="img/Zahra Faraji.jpg" alt="Nazanin Fakharian">
+        </div>
+        <div class="member-name">Nazanin Fakharian</div>
+        <!-- Social media icons for email and LinkedIn -->
+        <div class="social-icons">
+          <a href="mailto:nazanin@example.com" target="_blank">
+            <i class="fas fa-envelope"></i> <!-- Email icon -->
+          </a>
+          <a href="https://linkedin.com/in/nazanin" target="_blank">
+            <i class="fab fa-linkedin"></i> <!-- LinkedIn icon -->
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer section with project information -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">The purpose of this website is to explore various types of typographic and layout styles
+        for museum pages, as an end-of-course project for the "Information Modeling and Web Technologies" course of the
+        Master Degree in Digital Humanities and Digital Knowledge of the University of Bologna, under prof. Fabio
+        Vitali. The documents contained in this website have been selected...</p>
+      <p class="footer-text">All copyrights and related rights on the content remain with their original owners.</p>
+      <p class="footer-text">All copyright on the typographic and layout choices are 2024 © Zahra Farajhormozi, Nazanin
+        Fakhrian, Ahmadreza Nazari, Yifan Wu.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

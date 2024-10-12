@@ -1,0 +1,115 @@
+/* Section-two container styles */
+.section-two {
+  display: flex; /* Use Flexbox for layout */
+  justify-content: space-between; /* Space out content evenly */
+  align-items: center; /* Center items vertically */
+  height: auto; /* Set height to auto to adapt to content */
+  background-color: #A71721; /* Set background color */
+  padding: 20px; /* Add padding inside the section */
+  gap: 20px; /* Add spacing between items inside the section */
+}
+
+/* Text content in Section-two */
+.section-two .text-content {
+  flex: 1; /* Take up available space */
+}
+
+/* Heading styles in Section-two */
+.section-two .text-content h1 {
+  color: #EFEFEF; /* Set text color to light gray */
+  font-size: 48px; /* Set font size for the heading */
+  margin-bottom: 10px; /* Add margin below the heading */
+}
+
+/* Paragraph text styles in Section-two */
+.section-two .text-content p {
+  color: #EFEFEF; /* Set text color to light gray */
+  font-size: 18px; /* Set font size for paragraph text */
+  margin-bottom: 20px; /* Add margin below the paragraph */
+}
+
+/* Button styles in Section-two */
+.section-two .btn {
+  display: flex; /* Flexbox to center button text */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Remove underline from the button */
+  padding: 10px 20px; /* Add padding around the button text */
+  background-color: #E0A75E; /* Set button background color */
+  color: #1B1A17; /* Set button text color */
+  border: none; /* Remove button border */
+  border-radius: 25px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  width: 150px; /* Set fixed button width */
+  height: 50px; /* Set fixed button height */
+  font-size: 18px; /* Set button font size */
+  position: relative;
+  top: 25px; /* Adjust button's vertical position */
+}
+
+/* Button hover effect */
+.section-two .btn:hover {
+  background-color: #a87f4a; /* Darken the button background color on hover */
+}
+
+/* Image container in Section-two */
+.section-two .image-content {
+  flex: 1; /* Take up available space */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+/* Image styles */
+.section-two .food-image {
+  width: 70%; /* Set image width to 70% of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure the image doesn’t exceed the container's width */
+  border-radius: 15px; /* Rounded corners for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow below the image */
+  object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+}
+
+/* Responsive styles for Section-two (screens smaller than 768px) */
+@media (max-width: 768px) {
+  .section-two {
+      flex-direction: column; /* Stack content vertically */
+      justify-content: center; /* Center content vertically */
+      height: auto; /* Allow height to adjust automatically */
+      padding: 20px; /* Maintain padding */
+  }
+
+  .section-two .text-content {
+      padding-left: 0; /* Remove left padding on smaller screens */
+      text-align: center; /* Center the text */
+      margin-bottom: 20px; /* Add margin below the text */
+      margin-top: 20px; /* Add margin above the text */
+  }
+
+  .section-two .text-content h1 {
+      font-size: 32px; /* Reduce heading size on smaller screens */
+  }
+
+  .section-two .text-content p {
+      font-size: 16px; /* Reduce paragraph font size on smaller screens */
+  }
+
+  .section-two .btn {
+      margin: 0 auto; /* Center the button */
+      display: block; /* Ensure the button is displayed as a block element */
+      padding: 8px 16px; /* Reduce padding for the button */
+      width: 120px; /* Reduce button width */
+      height: 40px; /* Reduce button height */
+      font-size: 16px; /* Reduce button font size */
+  }
+
+  .section-two .food-image {
+      width: auto; /* Allow the image width to adjust */
+      height: auto; /* Allow the image height to adjust */
+      max-width: 400px; /* Set a maximum width for the image */
+      max-height: 300px; /* Set a maximum height for the image */
+      border-radius: 15px; /* Keep rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep shadow effect */
+      object-fit: cover; /* Maintain aspect ratio */
+  }
+}
