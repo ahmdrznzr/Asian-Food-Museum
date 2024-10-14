@@ -1,107 +1,176 @@
 /* Section-one container styles */
+
 .section-one {
-  display: flex; /* Flexbox layout */
-  justify-content: space-between; /* Space out content evenly */
-  align-items: center; /* Center items vertically */
-  height: 700px; /* Set fixed height for the section */
-  background-color: #EFEFEF; /* Light gray background color */
-  padding: 20px; /* Add padding around the content */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: space-between;
+    /* Space out content evenly */
+    align-items: center;
+    /* Center items vertically */
+    height: 100%;
+    /* Set fixed height for the section */
+    background-color: #EFEFEF;
+    /* Light gray background color */
+    padding: 20px;
+    /* Add padding around the content */
+    gap: 20px;
 }
 
-/* Text content inside Section-one */
-.section-one .text-content {
-  flex: 1; /* Let the text content take up available space */
-  padding-left: 200px; /* Add padding to the left for spacing */
-}
 
 /* Section-one heading styles */
+
 .section-one .text-content h1 {
-  color: black; /* Set text color to black */
-  font-size: 48px; /* Large font size for the heading */
-  margin-bottom: 10px; /* Add space below the heading */
+    color: #1B1A17;
+    /* Set text color to black */
+    font-size: 64px;
+    /* Large font size for the heading */
+    margin-bottom: 10px;
+    /* Add space below the heading */
 }
+
 
 /* Section-one paragraph styles */
-.section-one .text-content p {
-  color: gray; /* Set text color to gray */
-  font-size: 18px; /* Set font size */
-  margin-bottom: 20px; /* Add space below the paragraph */
+
+.text-content .body-large {
+    color: #696969;
+    /* Set text color to gray */
+    font-size: 16px;
+    /* Set font size */
+    margin-bottom: 20px;
+    /* Add space below the paragraph */
 }
+
 
 /* Button styles inside Section-one */
+
 .section-one .btn {
-  display: flex; /* Flexbox to center the text inside the button */
-  align-items: center;
-  justify-content: center;
-  text-decoration: none; /* Remove underline from button text */
-  padding: 10px 20px; /* Add padding around the button text */
-  background-color: #a30000; /* Dark red background color */
-  color: white; /* White text color */
-  border: none; /* No border */
-  border-radius: 25px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  width: 150px; /* Set button width */
-  height: 50px; /* Set button height */
-  font-size: 18px; /* Set font size */
-  transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
 }
+
+.section-one .main-btn {
+    display: flex;
+    /* Flexbox to center the text inside the button */
+    align-items: center;
+    justify-content: center;
+    /* Remove underline from button text */
+    padding: 10px 20px;
+    margin-top: 64px;
+    margin-left: 24px;
+    /* Add padding around the button text */
+    background-color: #a30000;
+    /* Dark red background color */
+    color: white;
+    box-shadow: 0 0 40px 40px #a30000 inset, 0 0 0 0 #a30000;
+    /* White text color */
+    border-radius: 15px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    width: 35%;
+    /* Set button width */
+    height: 60px;
+    /* Set button height */
+    font-size: 1.2rem;
+    /* Set font size */
+    transition: all 500ms;
+    /* Smooth background color transition on hover */
+}
+
 
 /* Button hover effect */
-.section-one .btn:hover {
-  background-color: #7a0000; /* Change background color to darker red on hover */
+
+.section-one .main-btn:hover {
+    color: #a30000;
+    box-shadow: 0 0 10px 0 #a30000, 0 0 10px 4px #a30000;
+    background-color: #EFEFEF;
+    /* Change background color to darker red on hover */
 }
+
 
 /* Image container styles inside Section-one */
+
 .section-one .image-content {
-  flex: 1; /* Let the image content take up available space */
-  display: flex; /* Flexbox layout */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+    flex: 1;
+    /* Let the image content take up available space */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
 }
+
 
 /* Image styles */
+
 .section-one .food-image {
-  width: 80%; /* Image takes 80% of the container width */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 15px; /* Rounded corners for the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+    width: 80%;
+    /* Image takes 80% of the container width */
+    height: 100%;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+    /* Rounded corners for the image */
+    transition: transform 1s ease-in-out;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 
+.section-one .food-image:hover {
+    transform: rotate(360deg);
+}
+
+
 /* Responsive styles for Section-one (screens less than 768px wide) */
+
 @media (max-width: 768px) {
-  .section-one {
-    flex-direction: column-reverse; /* Stack text and image vertically with text first */
-    justify-content: center; /* Center content vertically */
-    height: auto; /* Let height adjust based on content */
-    padding: 20px; /* Maintain padding */
-  }
-
-  .section-one .text-content {
-    padding-left: 0; /* Remove left padding on smaller screens */
-    text-align: center; /* Center the text */
-    margin-bottom: 20px; /* Add margin below the text */
-  }
-
-  .section-one .text-content h1 {
-    font-size: 32px; /* Reduce heading size on smaller screens */
-  }
-
-  .section-one .text-content p {
-    font-size: 16px; /* Reduce paragraph font size on smaller screens */
-  }
-
-  .section-one .btn {
-    margin: 0 auto; /* Center the button */
-    display: block; /* Ensure the button is displayed as a block element */
-    padding: 8px 16px; /* Reduce padding for the button */
-    width: 120px; /* Reduce button width */
-    height: 40px; /* Reduce button height */
-    font-size: 16px; /* Reduce button font size */
-  }
-
-  .section-one .food-image {
-    width: 100%; /* Image takes full width of the container */
-    max-width: 400px; /* Limit the maximum width of the image */
-    margin-bottom: 20px; /* Add margin below the image */
-  }
+    .section-one {
+        flex-direction: column-reverse;
+        /* Stack text and image vertically with text first */
+        justify-content: center;
+        /* Center content vertically */
+        height: auto;
+        /* Let height adjust based on content */
+        padding: 20px;
+        /* Maintain padding */
+    }
+    .section-one .text-content {
+        padding-left: 0;
+        /* Remove left padding on smaller screens */
+        text-align: center;
+        /* Center the text */
+        margin-bottom: 20px;
+        /* Add margin below the text */
+    }
+    .section-one .text-content h1 {
+        font-size: 32px;
+        /* Reduce heading size on smaller screens */
+    }
+    .section-one .text-content p {
+        font-size: 16px;
+        /* Reduce paragraph font size on smaller screens */
+    }
+    .section-one .btn {
+        margin: 0 auto;
+        /* Center the button */
+        display: block;
+        /* Ensure the button is displayed as a block element */
+        padding: 8px 16px;
+        /* Reduce padding for the button */
+        width: 120px;
+        /* Reduce button width */
+        height: 40px;
+        /* Reduce button height */
+        font-size: 16px;
+        /* Reduce button font size */
+    }
+    .section-one .food-image {
+        width: 100%;
+        /* Image takes full width of the container */
+        max-width: 400px;
+        /* Limit the maximum width of the image */
+        margin-bottom: 20px;
+        /* Add margin below the image */
+    }
 }
