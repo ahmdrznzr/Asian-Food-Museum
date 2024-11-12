@@ -4,156 +4,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Food Museum</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <script src="./js/header.js"></script>
-    <link rel="stylesheet" href="./css/sectionOne.css">
-    <link rel="stylesheet" href="./css/sectionTwo.css">
-    <link rel="stylesheet" href="./css/sectionThree.css">
-    <link rel="stylesheet" href="./css/sectionFour.css">
 </head>
 
 <body>
-    <!-- Top navigation bar -->
-    <div class="navbar">
-        <!-- Logo and project name -->
-        <div class="logo-container">
-            <a href="#" class="logo">Lg</a>
-            <!-- <span class="project-name">Food Museum</span> -->
-        </div>
 
-        <!-- Navigation menu -->
-        <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="FoodsView.html">Foods</a></li>
-            <li><a href="MapView.html">Map</a></li>
-            <li><a href="TeamView.html">Team</a></li>
-        </ul>
-
-        <!-- Menu toggle button for mobile view -->
-        <button class="menu-toggle">☰</button>
-    </div>
-
-    <!-- Main container, class name is section-one -->
-    <div class="section-one">
-        <!-- Left side text content area -->
-        <div class="text-content">
-            <h1>A Taste of World</h1>
-            <p class="body-large">Delicious food for every mood</p>
-            <!-- Button navigates to the Foods view page -->
-            <a href="FoodsView.html" class="btn main-btn">Explore</a>
-
-        </div>
-        <!-- Right side image content area -->
-        <div class="image-content">
-            <img src="img/main-page.JPG" alt="Delicious food" class="food-image" />
-        </div>
-    </div>
-
-    <!-- Section two: About the project -->
-    <div class="section-two">
-        <!-- Image content -->
-        <div class="image-content">
-            <img src="img/Dango.png" alt="Project Image" class="food-image" />
-        </div>
-
-        <!-- Text content -->
-        <div class="text-content">
-            <h1>All About Project</h1>
-            <p>
-                They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind.
-            </p>
-            <!-- Button navigates to the Foods view page -->
-            <a href="FoodsView.html" class="btn">Learn More</a>
-        </div>
-    </div>
-
-    <!-- Section three: Categories with collapsible cards -->
-    <div class="section-three">
-        <!-- Card 1: Country category -->
-        <div class="card-item">
-            <img src="img/Dango.png" alt="Country" class="category-image" />
-            <h3>Country</h3>
-            <!-- Toggle button to expand or collapse the content -->
-            <button class="toggle-btn" onclick="toggleCategory(0)">
-        <span id="toggle-icon-0">↓</span>
-      </button>
-            <!-- Content that is collapsible -->
-            <div class="more-content" id="more-content-0">
-                <p>Description of Country</p>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand">Brand</a>
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-2">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" tabindex="-1" aria-disabled="true">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Team</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+    </header>
+    <div class="main-page">
+        <div class="main-content">
+            <section id="home">
+                <div class="section-one">
+                    <!-- Left side text content area -->
+                    <div class="text-content">
+                        <h1>A Taste of World</h1>
+                        <p class="body-large">Delicious food for every mood</p>
+                        <!-- Button navigates to the Foods view page -->
+                        <a href="FoodsView.html" class="btn main-btn">Explore</a>
 
-        <!-- Card 2: Type category -->
-        <div class="card-item">
-            <img src="img/Dango.png" alt="Type" class="category-image" />
-            <h3>Type</h3>
-            <button class="toggle-btn" onclick="toggleCategory(1)">
-        <span id="toggle-icon-1">↓</span>
-      </button>
-            <div class="more-content" id="more-content-1">
-                <p>Description of Type</p>
-            </div>
-        </div>
+                    </div>
+                    <!-- Right side image content area -->
+                    <div class="image-content">
+                        <img src="images/main-page.JPG" alt="Delicious food" class="food-image" />
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <!-- Section two: About the project -->
+                <div class="section-two">
+                    <!-- Image content -->
+                    <div class="image-content">
+                        <img src="images/about-2.jpg" alt="Project Image" class="food-image" />
+                    </div>
 
-        <!-- Card 3: Ingredient category -->
-        <div class="card-item">
-            <img src="img/Dango.png" alt="Ingredient" class="category-image" />
-            <h3>Ingredient</h3>
-            <button class="toggle-btn" onclick="toggleCategory(2)">
-        <span id="toggle-icon-2">↓</span>
-      </button>
-            <div class="more-content" id="more-content-2">
-                <p>Description of Ingredient</p>
-            </div>
-        </div>
+                    <!-- Text content -->
+                    <div class="text-content">
+                        <h1>All About The Project</h1>
+                        <p>
+                            They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. They rushed out the door, grabbing anything and everything
+                            they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind.They rushed out the door, grabbing anything and everything they could think of they might need.
+                            There was no time to double-check to make sure they weren't leaving something important behind.They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check
+                            to make sure they weren't leaving something important behind. They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving
+                            something important behind. They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind.They
+                            rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind.
 
-        <!-- Card 4: Cultural Significance category -->
-        <div class="card-item">
-            <img src="img/Dango.png" alt="Cultural Significance" class="category-image" />
-            <h3>Cultural Significance</h3>
-            <button class="toggle-btn" onclick="toggleCategory(3)">
-        <span id="toggle-icon-3">↓</span>
-      </button>
-            <div class="more-content" id="more-content-3">
-                <p>Description of Cultural Significance</p>
-            </div>
+                        </p>
+                        <!-- Button navigates to the Foods view page -->
+                        <a href="FoodsView.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            <section id="project" class="project">
+                <div class="section-three">
+                    <h1>Narritives</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione laborum maiores quasi ipsum maxime vel error, est vitae eaque, eveniet voluptates. Harum libero repellat rem reprehenderit fuga possimus asperiores magni.</p>
+                    <div class="cards">
+                        <!-- first item -->
+                        <div class="card-item">
+                            <div class="card">
+                                <img src="" alt="Country" class="category-image" />
+                                <h4>Region</h4>
+                                <!-- Toggle button to expand or collapse the content -->
+                                <button class="toggle-btn" onclick="toggleCategory(0)">
+                            <span id="toggle-icon-0">↓</span>
+                          </button>
+                                <!-- Content that is collapsible -->
+                                <div class="more-content" id="more-content-0">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- second item -->
+                        <div class="card-item">
+                            <div class="card">
+                                <img src="" alt="Country" class="category-image" />
+                                <h4>Type</h4>
+                                <!-- Toggle button to expand or collapse the content -->
+                                <button class="toggle-btn" onclick="toggleCategory(0)">
+                            <span id="toggle-icon-0">↓</span>
+                          </button>
+                                <!-- Content that is collapsible -->
+                                <div class="more-content" id="more-content-0">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- third item -->
+                        <div class="card-item">
+                            <div class="card">
+                                <img src="" alt="Country" class="category-image" />
+                                <h4>Ingredient</h4>
+                                <!-- Toggle button to expand or collapse the content -->
+                                <button class="toggle-btn" onclick="toggleCategory(0)">
+                            <span id="toggle-icon-0">↓</span>
+                          </button>
+                                <!-- Content that is collapsible -->
+                                <div class="more-content" id="more-content-0">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fourth item -->
+                        <div class="card-item">
+                            <div class="card">
+                                <img src="" alt="Country" class="category-image" />
+                                <h4>Preparation Method</h4>
+                                <!-- Toggle button to expand or collapse the content -->
+                                <button class="toggle-btn" onclick="toggleCategory(0)">
+                            <span id="toggle-icon-0">↓</span>
+                          </button>
+                                <!-- Content that is collapsible -->
+                                <div class="more-content" id="more-content-0">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fifth item -->
+                        <div class="card-item">
+                            <div class="card">
+                                <img src="" alt="Country" class="category-image" />
+                                <h4>Time</h4>
+                                <!-- Toggle button to expand or collapse the content -->
+                                <button class="toggle-btn" onclick="toggleCategory(0)">
+                            <span id="toggle-icon-0">↓</span>
+                          </button>
+                                <!-- Content that is collapsible -->
+                                <div class="more-content" id="more-content-0">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Button navigates to the Narritives page -->
+                    <a href="" class="btn narritive-btn">Explore Narritives</a>
+                </div>
+            </section>
         </div>
     </div>
 
-    <!-- Section four: Museum map -->
-    <div class="section-four">
-        <!-- Text content -->
-        <div class="text-content">
-            <h1>Map of Museum</h1>
-            <p>
-                They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind.
-            </p>
-        </div>
-
-        <!-- Image content -->
-        <div class="image-content">
-            <img src="img/Dango.png" alt="Delicious food" class="food-image" />
-        </div>
-
-        <!-- Button container -->
-        <div class="button-container">
-            <!-- Button navigates to the Map view page -->
-            <a href="MapView.html" class="btn">Map of Museum</a>
-        </div>
-    </div>
-
-    <!-- Footer section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">The purpose of this website is to explore various types of typographic and layout styles for museum pages, as an end-of-course project for the "Information Modeling and Web Technologies" course of the Master Degree in Digital Humanities and
-                Digital Knowledge of the University of Bologna, under prof. Fabio Vitali. The documents contained in this website have been selected...</p>
-            <p class="footer-text">All copyrights and related rights on the content remain with their original owners.</p>
-            <p class="footer-text">All copyright on the typographic and layout choices are 2024 © Zahra Farajhormozi, Nazanin Fakhrian, Ahmadreza Nazari, Yifan Wu.</p>
-        </div>
-    </footer>
 
     <script>
         // JavaScript function to toggle content display (expand/collapse)
@@ -173,6 +188,9 @@
             }
         }
     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

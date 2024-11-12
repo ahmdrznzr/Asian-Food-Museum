@@ -1,0 +1,613 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+header {
+    padding-bottom: 0;
+}
+
+.section-one,
+.section-two,
+.section-three {
+    width: 100%;
+    height: 100%;
+}
+
+.section-one {
+    align-items: center;
+    /* Center items vertically */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: space-between;
+    /* Space out content evenly */
+}
+
+.navbar {
+    background-color: #1B1A17;
+    /* Set the background color of the navbar */
+    display: flex;
+    justify-content: space-between;
+    /* Space out the logo and menu items */
+    align-items: center;
+    /* Vertically center the items */
+    /* Ensure the navbar spans the full width of the page */
+    box-sizing: border-box;
+    /* Include padding and border in the element's width and height */
+}
+
+.navbar-brand {
+    padding-left: 24px;
+}
+
+.navbar-nav {
+    padding-right: 24px;
+    gap: 16px;
+}
+
+.navbar-nav li a {
+    color: #f0f0f0;
+    font-size: 18px;
+    transition: color 0.9s, border-left 0.5s, border-right 0.5s;
+}
+
+.navbar-nav .nav-item .nav-link a.active {
+    color: #e0a75e;
+}
+
+.nav-item a:hover {
+    color: #e0a75e;
+    border-left: 1px solid #e0a75e;
+    border-right: 1px solid #e0a75e;
+}
+
+
+/* Section-one container styles */
+
+.section-one {
+    margin-top: 50px;
+    /* Set fixed height for the section */
+    background-color: #EFEFEF;
+    /* Light gray background color */
+    padding: 36px;
+    /* Add padding around the content */
+    gap: 20px;
+}
+
+
+/* Section-one heading styles */
+
+.section-one .text-content h1 {
+    color: #1B1A17;
+    /* Set text color to black */
+    font-size: 64px;
+    font-weight: bold;
+    /* Large font size for the heading */
+    margin-bottom: 10px;
+    /* Add space below the heading */
+}
+
+
+/* Section-one paragraph styles */
+
+.text-content .body-large {
+    color: #696969;
+    /* Set text color to gray */
+    font-size: 24px;
+    /* Set font size */
+    margin-bottom: 20px;
+    /* Add space below the paragraph */
+}
+
+
+/* Button styles inside Section-one */
+
+.section-one .btn {
+    cursor: pointer;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+}
+
+.section-one .main-btn {
+    display: flex;
+    /* Flexbox to center the text inside the button */
+    align-items: center;
+    justify-content: center;
+    /* Remove underline from button text */
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 80px;
+    margin-left: 0;
+    /* Add padding around the button text */
+    background-color: #a32128;
+    /* Dark red background color */
+    color: white;
+    /* White text color */
+    border-radius: 15px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    width: 30%;
+    /* Set button width */
+    height: 40px;
+    /* Set button height */
+    font-size: 18px;
+    /* Set font size */
+    transition: all 500ms;
+    /* Smooth background color transition on hover */
+}
+
+
+/* Button hover effect */
+
+.section-one .main-btn:hover {
+    color: #a32128;
+    border: 3px solid #a32128;
+    background-color: #EFEFEF;
+    /* Change background color to darker red on hover */
+}
+
+
+/* Image container styles inside Section-one */
+
+.section-one .image-content {
+    flex: 1;
+    /* Let the image content take up available space */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+}
+
+
+/* Image styles */
+
+.section-one .food-image {
+    width: 65%;
+    /* Image takes 65% of the container width */
+    border-radius: 50%;
+    /* Rounded corners for the image */
+    transition: transform 1s ease-in-out;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.section-one .food-image:hover {
+    transform: rotate(360deg);
+}
+
+.section-two {
+    background-color: #A71721;
+    /* Set background color */
+    gap: 20px;
+    /* Add spacing between items inside the section */
+    min-height: 100%;
+    display: flex;
+    /* Flexbox layout */
+    justify-content: space-between;
+    /* Space out content evenly */
+    padding: 36px;
+}
+
+
+/* Text content in Section-two */
+
+.section-two .text-content {
+    flex: 1;
+    /* Take up available space */
+}
+
+
+/* Heading styles in Section-two */
+
+.section-two .text-content h1 {
+    color: #EFEFEF;
+    /* Set text color to light gray */
+    font-size: 45px;
+    /* Set font size for the heading */
+    margin-top: 8px;
+    margin-bottom: 10px;
+    /* Add margin below the heading */
+}
+
+
+/* Paragraph text styles in Section-two */
+
+.section-two .text-content p {
+    color: #EFEFEF;
+    /* Set text color to light gray */
+    font-size: 16px;
+    /* Set font size for paragraph text */
+    margin-top: 24px;
+    margin-bottom: 20px;
+    /* Add margin below the paragraph */
+}
+
+
+/* Button styles in Section-two */
+
+.section-two .btn {
+    display: flex;
+    /* Flexbox to center button text */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* Remove underline from the button */
+    padding-right: 24px;
+    padding-left: 24px;
+    /* Add padding around the button text */
+    background-color: #E0A75E;
+    /* Set button background color */
+    color: #1B1A17;
+    /* Set button text color */
+    border: none;
+    /* Remove button border */
+    border-radius: 15px;
+    /* Rounded corners for the button */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+    width: 150px;
+    /* Set fixed button width */
+    height: 50px;
+    /* Set fixed button height */
+    font-size: 18px;
+    /* Set button font size */
+    position: relative;
+    top: 36px;
+    margin-bottom: 24px;
+    /* Adjust button's vertical position */
+    transition: all 500ms;
+    /* Smooth background color transition on hover */
+}
+
+
+/* Button hover effect */
+
+.section-two .btn:hover {
+    background-color: #f0f0f0;
+    border: 3px solid #f0f0f0;
+    color: #a30000;
+    /* Darken the button background color on hover */
+}
+
+
+/* Image container in Section-two */
+
+.section-two .image-content {
+    flex: 1;
+    /* Take up available space */
+    display: flex;
+    /* Flexbox layout */
+    justify-content: center;
+    /* Center the image horizontally */
+    align-items: center;
+    /* Center the image vertically */
+}
+
+
+/* Image styles */
+
+.section-two .food-image {
+    width: 70%;
+    /* Set image width to 70% of the container */
+    height: 90%;
+    /* Maintain aspect ratio */
+    max-width: 100%;
+    /* Ensure the image doesn’t exceed the container's width */
+    border-radius: 15px;
+    /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow below the image */
+    object-fit: cover;
+    /* Ensure the image fills the container while maintaining aspect ratio */
+}
+
+
+/* Section-three container styles */
+
+.project {
+    background-color: #f5f5f5;
+    /* Set light gray background color */
+    display: flex;
+    /* Use Flexbox for layout */
+}
+
+.section-three {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    align-items: center;
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if needed */
+    padding: 36px;
+    /* Add padding around the section */
+}
+
+.cards {
+    width: 100%;
+    padding-top: 24px;
+    justify-content: center;
+}
+
+.card-item {
+    float: left;
+    width: 20%;
+    padding: 0 10px;
+}
+
+
+/* Individual card styles */
+
+.card-item .card {
+    border: 1px solid #ccc;
+    /* Add a light gray border */
+    border-radius: 15px;
+    /* Add rounded corners */
+    padding: 16px;
+    /* Add padding inside the card */
+    margin: 10px;
+    /* Add margin around each card */
+    background-color: #fff;
+    /* Set white background for the card */
+    text-align: center;
+    /* Center the text inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow below the card */
+    transition: transform 2s;
+    /* Smooth transition effect when hovering */
+}
+
+
+/* Hover effect for card items */
+
+.card-item:hover {
+    transform: translateY(-5px);
+    /* Move the card up slightly when hovered */
+}
+
+
+/* Category image inside the card */
+
+.category-image {
+    width: 100px;
+    /* Fixed width for the image */
+    height: 100px;
+    /* Fixed height for the image */
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Ensure the image covers the area proportionally */
+}
+
+
+/* Toggle button for revealing additional content */
+
+.toggle-btn {
+    background: none;
+    /* No background for the button */
+    border: none;
+    /* No border */
+    font-size: 24px;
+    /* Large font size for the toggle button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin: 10px 0;
+    /* Add margin around the button */
+}
+
+
+/* Additional content that is hidden by default */
+
+.more-content {
+    margin-top: 15px;
+    /* Add margin above the additional content */
+    padding: 10px;
+    /* Add padding inside the extra content */
+    background-color: #f9f9f9;
+    /* Light gray background for the extra content */
+    border-top: 1px solid #ddd;
+    /* Add a light border at the top */
+    text-align: left;
+    /* Align text to the left */
+    display: none;
+    /* Hidden by default */
+}
+
+
+/* Fade-in and fade-out transition effects */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s ease;
+    /* Smooth transition for opacity changes */
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+    /* The element is initially invisible */
+}
+
+.section-three a {
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    /* Remove underline from button text */
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-top: 80px;
+    /* Add padding around the button text */
+    background-color: #a32128;
+    /* Dark red background color */
+    color: white;
+    /* White text color */
+    border-radius: 15px;
+    /* Rounded corners */
+    transition: all 0.8s;
+}
+
+.section-three a:hover {
+    /* change the button, when the user hover in 0.8s */
+    border: 2px solid #a32128;
+    box-shadow: #a32128;
+    color: #a32128;
+}
+
+
+/* Responsive cards */
+
+@media screen and (max-width: 970px) {
+    .section-three {
+        display: flex;
+        justify-content: center;
+    }
+    .cards {
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+    }
+    .card-item {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section-three {
+        display: flex;
+        justify-content: center;
+    }
+    .cards {
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+    }
+    .card-item {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Responsive styles for Section-one (screens less than 768px wide) */
+
+@media (max-width: 768px) {
+    .section-one {
+        flex-direction: column-reverse;
+        /* Stack text and image vertically with text first */
+        justify-content: center;
+        /* Center content vertically */
+        height: auto;
+        /* Let height adjust based on content */
+        padding: 20px;
+        /* Maintain padding */
+    }
+    .section-one .text-content {
+        padding-left: 0;
+        /* Remove left padding on smaller screens */
+        text-align: center;
+        /* Center the text */
+        margin-bottom: 20px;
+        /* Add margin below the text */
+    }
+    .section-one .text-content h1 {
+        font-size: 32px;
+        /* Reduce heading size on smaller screens */
+    }
+    .section-one .text-content p {
+        font-size: 16px;
+        /* Reduce paragraph font size on smaller screens */
+    }
+    .section-one .btn {
+        margin: 0 auto;
+        /* Center the button */
+        display: block;
+        /* Ensure the button is displayed as a block element */
+        padding: 8px 16px;
+        /* Reduce padding for the button */
+        width: 120px;
+        /* Reduce button width */
+        height: 40px;
+        /* Reduce button height */
+        font-size: 16px;
+        /* Reduce button font size */
+    }
+    .section-one .food-image {
+        width: 100%;
+        /* Image takes full width of the container */
+        max-width: 400px;
+        /* Limit the maximum width of the image */
+        margin-bottom: 20px;
+        /* Add margin below the image */
+    }
+}
+
+
+/* Responsive styles for Section-two (screens smaller than 768px) */
+
+@media (max-width: 768px) {
+    .section-two {
+        flex-direction: column;
+        /* Stack content vertically */
+        justify-content: center;
+        /* Center content vertically */
+        height: auto;
+        /* Allow height to adjust automatically */
+        padding: 20px;
+        /* Maintain padding */
+    }
+    .section-two .text-content {
+        padding-left: 0;
+        /* Remove left padding on smaller screens */
+        text-align: center;
+        /* Center the text */
+        margin-bottom: 20px;
+        /* Add margin below the text */
+        margin-top: 20px;
+        /* Add margin above the text */
+    }
+    .section-two .text-content h1 {
+        font-size: 32px;
+        /* Reduce heading size on smaller screens */
+    }
+    .section-two .text-content p {
+        font-size: 16px;
+        /* Reduce paragraph font size on smaller screens */
+    }
+    .section-two .btn {
+        margin: 0 auto;
+        /* Center the button */
+        display: block;
+        /* Ensure the button is displayed as a block element */
+        padding: 8px 16px;
+        /* Reduce padding for the button */
+        width: 120px;
+        /* Reduce button width */
+        height: 40px;
+        /* Reduce button height */
+        font-size: 16px;
+        /* Reduce button font size */
+    }
+    .section-two .food-image {
+        width: auto;
+        /* Allow the image width to adjust */
+        height: auto;
+        /* Allow the image height to adjust */
+        max-width: 400px;
+        /* Set a maximum width for the image */
+        max-height: 300px;
+        /* Set a maximum height for the image */
+        border-radius: 15px;
+        /* Keep rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* Keep shadow effect */
+        object-fit: cover;
+        /* Maintain aspect ratio */
+    }
+}
