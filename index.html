@@ -91,6 +91,7 @@
                         <!-- first item -->
                         <div class="card-item">
                             <div class="card">
+                                <img src="" alt="Ingredient" class="category-image" />
                                 <h4>Region</h4>
                                 <!-- Toggle button to expand or collapse the content -->
                                 <button class="toggle-btn" onclick="toggleCategory(0)">
@@ -105,6 +106,7 @@
                         <!-- second item -->
                         <div class="card-item">
                             <div class="card">
+                                <img src="" alt="Ingredient" class="category-image" />
                                 <h4>Type</h4>
                                 <!-- Toggle button to expand or collapse the content -->
                                 <button class="toggle-btn" onclick="toggleCategory(1)">
@@ -119,6 +121,7 @@
                         <!-- third item -->
                         <div class="card-item">
                             <div class="card">
+                                <img src="" alt="Ingredient" class="category-image" />
                                 <h4>Ingredients</h4>
                                 <!-- Toggle button to expand or collapse the content -->
                                 <button class="toggle-btn" onclick="toggleCategory(2)">
@@ -133,6 +136,7 @@
                         <!-- fourth item -->
                         <div class="card-item">
                             <div class="card">
+                                <img src="" alt="Ingredient" class="category-image" />
                                 <h4>Preparation Method</h4>
                                 <!-- Toggle button to expand or collapse the content -->
                                 <button class="toggle-btn" onclick="toggleCategory(3)">
@@ -148,6 +152,7 @@
                         <div class="card-item">
                             <div class="card">
                                 <h4>Time</h4>
+                                <img src="" alt="Ingredient" class="category-image" />
                                 <!-- Toggle button to expand or collapse the content -->
                                 <button class="toggle-btn" onclick="toggleCategory(4)">
                             <span id="toggle-icon-0">↓</span>
@@ -290,21 +295,21 @@
                 icon.textContent = '↓'; // Change icon to down arrow
             }
         }
-        
+
         const images = [
-        'images/country.jpg',
-        'images/type.jpg',
-        'images/ingredients.webp',
-        'images/preparationmethod.webp',
-        'images/time.webp'
+            'images/country.jpg',
+            'images/type.jpg',
+            'images/ingredients.webp',
+            'images/preparationmethod.webp',
+            'images/time.webp'
         ];
 
         const cards = document.querySelectorAll('.card');
         cards.forEach((card, index) => {
-        console.log(card); // 检查卡片元素是否被正确获取
-        if (images[index]) {
-            card.style.backgroundImage = `url(${images[index]})`;
-        }
+            console.log(card); // 检查卡片元素是否被正确获取
+            if (images[index]) {
+                card.style.backgroundImage = `url(${images[index]})`;
+            }
         });
     </script>
 

@@ -43,7 +43,7 @@ header {
 }
 
 .navbar {
-    background-color: var(--darkest);
+    background-color: var(--dark);
     /* Set the background color of the navbar */
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ header {
 }
 
 .navbar-nav li a {
-    color: #f0f0f0;
+    color: var(--lightest);
     font-size: 18px;
     transition: color 0.9s, border-left 0.5s, border-right 0.5s;
 }
@@ -84,9 +84,10 @@ header {
 
 .nav-item a:hover {
     color: var(--yellow);
-    outline: 1px solid var(--yellow);
-    outline-offset: -1px;
+    border-left: 1px solid var(--yellow);
+    border-right: 1px solid var(--yellow);
 }
+
 
 /* Section-one container styles */
 
@@ -365,6 +366,7 @@ header {
     padding: 0 10px;
 }
 
+
 /* Individual card styles */
 
 .card-item .card {
@@ -388,14 +390,15 @@ header {
 
 
 /* Hover effect for card items */
+
 .card {
-    width: 300px;
+    /* width: 300px;
     height: 350px;
-    padding: 20px;
+    padding: 20px; */
     border-radius: 10px;
-    background-size: cover;
+    /* background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     color: #fff;
     text-align: center;
     display: flex;
@@ -412,16 +415,7 @@ header {
 
 /* Category image inside the card */
 
-.category-image {
-    width: 100px;
-    /* Fixed width for the image */
-    height: 100px;
-    /* Fixed height for the image */
-    border-radius: 50%;
-    /* Make the image circular */
-    object-fit: cover;
-    /* Ensure the image covers the area proportionally */
-}
+.category-image {}
 
 
 /* Toggle button for revealing additional content */
