@@ -28,9 +28,15 @@ header {
 .section-one,
 .section-two,
 .section-three,
-.section-four {
-    width: 100%;
-    height: 100%;
+.section-four
+ {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* 确保文字居中 */
+    gap: 20px;
+    padding: 20px;
 }
 
 .section-one {
@@ -937,5 +943,65 @@ footer {
         /* Set maximum width */
         padding: 10px 20px;
         /* Adjust padding */
+    }
+}
+
+/* ==================== info-section: Tablet Layout (width <= 768px and width <= 480px) ==================== */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px; /* Reduce overall padding */
+        gap: 30px; /* Decrease spacing between elements */
+    }
+
+    .info-img, .contact-info {
+        flex: none; /* Remove automatic stretching */
+        width: 100%; /* Take up full width */
+        text-align: center; /* Center text content */
+    }
+
+    .info-img .info-picture {
+        max-width: 100%; /* Limit image width to container */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add spacing between image and text */
+    }
+
+    .contact-info h3 {
+        font-size: 20px; /* Adjust heading font size */
+        margin-bottom: 10px; /* Adjust heading spacing */
+    }
+
+    .contact-info p {
+        font-size: 14px; /* Reduce paragraph font size */
+        line-height: 1.5; /* Increase paragraph line height */
+    }
+}
+
+@media (max-width: 480px) {
+    .info-section {
+        flex-direction: column; /* Keep vertical stacking layout */
+        padding: 15px; /* Further reduce padding */
+        gap: 20px; /* Decrease spacing between elements */
+    }
+
+    .info-img, .contact-info {
+        width: 100%; /* Take up full width */
+        text-align: center; /* Center text content */
+    }
+
+    .info-img .info-picture {
+        max-width: 100%; /* Ensure image fits the screen */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 15px; /* Add spacing between image and text */
+    }
+
+    .contact-info h3 {
+        font-size: 18px; /* Further reduce heading font size */
+        margin-bottom: 8px; /* Decrease heading spacing */
+    }
+
+    .contact-info p {
+        font-size: 12px; /* Reduce paragraph font size */
+        line-height: 1.4; /* Adjust paragraph line height */
     }
 }
