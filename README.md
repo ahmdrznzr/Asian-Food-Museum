@@ -10,3 +10,6 @@
 4. Logo added, favicon added
 
 5. Images for narrative added
+
+## 11.18
+1. info responsive fixed
