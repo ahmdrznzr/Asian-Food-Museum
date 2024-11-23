@@ -13,3 +13,8 @@
 
 ## 11.18
 1. info responsive fixed
+
+## 11.23
+1. Fixed multiple h1 alignment issues
+2. Fixed text formatting issues
+3. Fixed button size and text issues after implementing responsiveness
