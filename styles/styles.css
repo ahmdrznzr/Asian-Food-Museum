@@ -8,7 +8,6 @@
 }
 
 #home {
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +33,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    text-align: center; /* 确保文字居中 */
     gap: 20px;
     padding: 20px;
 }
@@ -542,7 +540,7 @@ header {
     /* Margin below the description */
     line-height: 1.5;
     /* Set line height for readability */
-    text-align: justify;
+    
     /* Justify text alignment */
     word-break: break-word;
     /* Force line breaks on long words */
@@ -564,7 +562,7 @@ header {
     /* Rounded corners */
     cursor: pointer;
     /* Pointer cursor on hover */
-    font-size: 20px;
+    font-size: 18px;
     /* Button font size */
     text-decoration: none;
     /* Remove underline for link */
@@ -861,18 +859,19 @@ footer {
     .section-two .text-content {
         padding-left: 0;
         /* Remove left padding on smaller screens */
-        text-align: center;
-        /* Center the text */
         margin-bottom: 20px;
         /* Add margin below the text */
         margin-top: 20px;
         /* Add margin above the text */
+
     }
     .section-two .text-content h1 {
+        text-align: center;
         font-size: 32px;
         /* Reduce heading size on smaller screens */
     }
     .section-two .text-content p {
+        text-align: justify;
         font-size: 16px;
         /* Reduce paragraph font size on smaller screens */
     }
@@ -922,13 +921,13 @@ footer {
         height: auto;
         /* Auto height for small screens */
     }
+ 
     .text-content h1 {
-        text-align: center;
         font-size: 36px;
         /* Reduce title font size */
     }
     .text-content p {
-        text-align: center;
+        text-align: justify;
         font-size: 16px;
         /* Reduce description font size */
     }
@@ -937,7 +936,7 @@ footer {
         /* Maximum image width for small screens */
     }
     .btn {
-        width: 50%;
+        width: 65%;
         /* Full width button on small screens */
         max-width: 300px;
         /* Set maximum width */
