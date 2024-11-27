@@ -1,0 +1,147 @@
+:root {
+    --darkest: #1B1A17;
+    --dark: #2C2B2C;
+    --yellow: #e0a75e;
+    --red: #a32128;
+    --light: #696969;
+    --lightest: #EFEFEF;
+}
+
+header {
+    background-image: url("../images/nar-landing.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nar-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Create the parallax scrolling effect */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 36px;
+    width: 100%;
+}
+
+.nar-head {
+    margin-bottom: 48px;
+}
+
+
+/* Remove extra left and right margins, due to padding */
+
+.nar-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 90%;
+    /* Space between the options */
+    justify-content: center;
+}
+
+
+/* Float four columns side by side */
+
+.nar-option {
+    flex: 1;
+    /* Ensure responsiveness with flex-grow, flex-shrink, and flex-basis */
+    max-width: 20%;
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
+}
+
+
+/* Style the narrative button */
+
+.nar-btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #3C3C3C;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nar-btn span {
+    transition: all 0.3s;
+    color: var(--lightest);
+}
+
+.nar-btn::before {
+    transition: all 0.3s;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(27, 26, 23, 0.5);
+    border-bottom-color: rgba(27, 26, 23, 0.5);
+    transform: scale(0.1, 1);
+}
+
+.nar-btn:hover span {
+    letter-spacing: 2px;
+}
+
+.nar-btn:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.nar-btn::after {
+    transition: all 0.3s;
+    background-color: var(--darkest);
+}
+
+.nar-btn:hover::after {
+    opacity: 0;
+    transform: scale(0.1, 1);
+}
+
+
+/* style narrative headings and text */
+
+.nar-h1 {
+    font-size: 64px;
+    font-weight: 600;
+    color: var(--lightest);
+}
+
+.nar-h2 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 36px;
+    color: var(--lightest);
+}
+
+.nar-h3 {
+    font-size: 20px;
+}
+
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 768px) {
+    .nar-option {
+        flex: 1 1 calc(45% - 16px);
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nar-option {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
