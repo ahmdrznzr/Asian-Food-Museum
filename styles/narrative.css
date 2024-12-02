@@ -49,6 +49,8 @@ header {
     width: 90%;
     /* Space between the options */
     justify-content: center;
+    /* make the items in a line according to the text that they have */
+    align-items: baseline;
 }
 
 
@@ -150,6 +152,7 @@ header {
 
 .nar-h3 {
     font-size: 20px;
+    font-weight: 550;
 }
 
 
