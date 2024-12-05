@@ -67,7 +67,7 @@ header {
 
 .navbar-nav {
     padding-right: 24px;
-    gap: 16px;
+    gap: 24px;
 }
 
 .navbar-nav li a {
@@ -394,6 +394,7 @@ header {
     /* Add a subtle shadow below the card */
     transition: transform 2s;
     /* Smooth transition effect when hovering */
+    text-decoration: none;
 }
 
 

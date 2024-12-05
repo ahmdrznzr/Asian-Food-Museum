@@ -156,6 +156,87 @@ header {
 }
 
 
+/* region section style */
+
+.region,
+.prepration,
+.time {
+    background-color: var(--lightest);
+    height: 100vh;
+}
+
+.meal,
+.ingredient {
+    background-color: var(--yellow);
+    height: 100vh;
+}
+
+.reg-section,
+.meal-section,
+.ingredient-section,
+.prepration-section,
+.time-section {
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line if needed */
+}
+
+.general-header {
+    font-size: 45px;
+    /* Set font size for the heading */
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    /* Add margin below the heading */
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nar-cards {
+    width: 100%;
+    display: flex;
+    padding-top: 24px;
+    justify-content: center;
+}
+
+.nar-card {
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.pre-card {
+    width: 25%;
+    padding: 0 10px;
+}
+
+.nar-card .card {
+    border: 1px solid #ccc;
+    /* Add a light gray border */
+    border-radius: 15px;
+    /* Add rounded corners */
+    padding: 16px;
+    /* Add padding inside the card */
+    margin: 10px;
+    /* Add margin around each card */
+    background-color: var(--lightest);
+    /* Set white background for the card */
+    text-align: center;
+    /* Center the text inside the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow below the card */
+    transition: transform 2s;
+    /* Smooth transition effect when hovering */
+}
+
+
 /* Responsive adjustments */
 
 @media (max-width: 992px) {
