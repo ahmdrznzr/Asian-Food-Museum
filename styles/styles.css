@@ -1,3 +1,5 @@
+/* define colors as variable to use them easily */
+
 :root {
     --darkest: #1B1A17;
     --dark: #2C2B2C;
@@ -7,14 +9,8 @@
     --lightest: #EFEFEF;
 }
 
-.home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
 body {
+    /* the total size of the element will not exceed the specified dimensions */
     box-sizing: border-box;
     margin: 0;
     width: 100%;
@@ -24,6 +20,16 @@ body {
 header {
     padding-bottom: 0;
 }
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* each section align in center and has a display of flex so we can fit them in the content box  */
 
 .section-one,
 .section-two,
@@ -73,6 +79,7 @@ header {
 .navbar-nav li a {
     color: var(--lightest);
     font-size: 18px;
+    /* show the border when it is hovered */
     transition: color 0.9s, border-left 0.5s, border-right 0.5s;
 }
 
@@ -85,6 +92,9 @@ header {
     padding-right: 1rem;
     transition: color 0.3s, outline 0.3s;
 }
+
+
+/* style of the border */
 
 .nav-item a:hover {
     color: var(--yellow);
@@ -362,14 +372,21 @@ header {
     /* Add margin below the heading */
 }
 
+
+/* style of the cards together */
+
 .cards {
     width: 100%;
     padding-top: 24px;
     justify-content: center;
 }
 
+
+/* style of each card individualy */
+
 .card-item {
     float: left;
+    /* put all 4 cards in a row */
     width: 20%;
     padding: 0 10px;
 }
@@ -766,6 +783,7 @@ footer {
         justify-items: center;
         align-items: center;
     }
+    /* put two cards in a row */
     .card-item {
         width: 50%;
     }
@@ -781,6 +799,7 @@ footer {
         justify-items: center;
         align-items: center;
     }
+    /* put each card completely in a row */
     .card-item {
         width: 100%;
         display: block;

@@ -1,3 +1,5 @@
+/* define colors as variable to use them easily */
+
 :root {
     --darkest: #1B1A17;
     --dark: #2C2B2C;
@@ -17,9 +19,10 @@ header {
 
 .nar-content {
     background-color: rgba(0, 0, 0, 0.6);
-    /* Create the parallax scrolling effect */
+    /* cover full page on the screen */
     min-height: 100vh;
     width: 100%;
+    /* display the content in flex way and put them in the center of the page */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,10 +30,12 @@ header {
 }
 
 .landing {
+    /* align each item of a column */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* have a space of 36px in the page. so the content does not stick to the corner */
     padding: 36px;
     width: 100%;
 }
@@ -40,11 +45,12 @@ header {
 }
 
 
-/* Remove extra left and right margins, due to padding */
+/* styling buttons on the landing page */
 
 .nar-options {
     display: flex;
     flex-wrap: wrap;
+    /* space between buttons */
     gap: 16px;
     width: 90%;
     /* Space between the options */
@@ -156,7 +162,7 @@ header {
 }
 
 
-/* region section style */
+/* narrative sections style */
 
 .region,
 .prepration,
@@ -196,6 +202,7 @@ header {
 }
 
 a {
+    /* remove the underline */
     text-decoration: none;
     cursor: pointer;
 }
