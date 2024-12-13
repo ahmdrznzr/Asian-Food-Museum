@@ -40,3 +40,6 @@
 ## 12.05
 1. implemented the responsive design for the narrative landing page
 2. added each section of the narrative to the general page. this is the structure of it and the style will change according to the photos.
+
+## 12.13
+1. make the style code cleaner and map the buttons to the right page.
