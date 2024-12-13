@@ -50,6 +50,13 @@ header {
     /* Flexbox layout */
     justify-content: space-between;
     /* Space out content evenly */
+    margin-top: 50px;
+    /* Set fixed height for the section */
+    background-color: var(--lightest);
+    /* Light gray background color */
+    padding: 36px;
+    /* Add padding around the content */
+    gap: 20px;
 }
 
 .navbar {
@@ -100,19 +107,6 @@ header {
     color: var(--yellow);
     border-left: 1px solid var(--yellow);
     border-right: 1px solid var(--yellow);
-}
-
-
-/* Section-one container styles */
-
-.section-one {
-    margin-top: 50px;
-    /* Set fixed height for the section */
-    background-color: var(--lightest);
-    /* Light gray background color */
-    padding: 36px;
-    /* Add padding around the content */
-    gap: 20px;
 }
 
 
@@ -439,11 +433,6 @@ header {
 }
 
 
-/* Category image inside the card */
-
-.category-image {}
-
-
 /* Toggle button for revealing additional content */
 
 .toggle-btn {
@@ -755,21 +744,6 @@ footer {
 
 /* Responsive design for tablets */
 
-@media (max-width: 768px) {
-    .team-member {
-        width: 45%;
-    }
-}
-
-
-/* Responsive design for mobile devices */
-
-@media (max-width: 480px) {
-    .team-member {
-        width: 100%;
-    }
-}
-
 
 /* Responsive cards */
 
@@ -788,27 +762,6 @@ footer {
         width: 50%;
     }
 }
-
-@media screen and (max-width: 600px) {
-    .section-three {
-        display: flex;
-        justify-content: center;
-    }
-    .cards {
-        width: 80%;
-        justify-items: center;
-        align-items: center;
-    }
-    /* put each card completely in a row */
-    .card-item {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
-}
-
-
-/* Responsive styles for Section-one (screens less than 768px wide) */
 
 @media (max-width: 768px) {
     .section-one {
@@ -859,12 +812,9 @@ footer {
         margin-bottom: 20px;
         /* Add margin below the image */
     }
-}
-
-
-/* Responsive styles for Section-two (screens smaller than 768px) */
-
-@media (max-width: 768px) {
+    .team-member {
+        width: 45%;
+    }
     .section-two {
         flex-direction: column;
         /* Stack content vertically */
@@ -924,12 +874,6 @@ footer {
         object-fit: cover;
         /* Maintain aspect ratio */
     }
-}
-
-
-/* Responsive design */
-
-@media (max-width: 768px) {
     /* Adaptation for small screens */
     .section-four {
         flex-direction: column;
@@ -960,12 +904,6 @@ footer {
         padding: 10px 20px;
         /* Adjust padding */
     }
-}
-
-
-/* ==================== info-section: Tablet Layout (width <= 768px and width <= 480px) ==================== */
-
-@media (max-width: 768px) {
     .info-section {
         flex-direction: column;
         /* Stack content vertically */
@@ -1005,7 +943,31 @@ footer {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .section-three {
+        display: flex;
+        justify-content: center;
+    }
+    .cards {
+        width: 80%;
+        justify-items: center;
+        align-items: center;
+    }
+    /* put each card completely in a row */
+    .card-item {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Responsive design for mobile devices */
+
 @media (max-width: 480px) {
+    .team-member {
+        width: 100%;
+    }
     .info-section {
         flex-direction: column;
         /* Keep vertical stacking layout */
