@@ -344,6 +344,7 @@ header {
     /* Set light gray background color */
     display: flex;
     /* Use Flexbox for layout */
+    justify-content: center;
 }
 
 .section-three {
@@ -748,6 +749,9 @@ footer {
 /* Responsive cards */
 
 @media screen and (max-width: 970px) {
+    .section-one{
+        min-height: 100%;
+    }
     .section-three {
         display: flex;
         justify-content: center;
