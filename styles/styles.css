@@ -25,7 +25,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    
 }
 
 
@@ -40,7 +40,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+ 
 }
 
 .section-one {
@@ -57,30 +57,43 @@ header {
     padding: 36px;
     /* Add padding around the content */
     gap: 20px;
+    width:100% ;
 }
 
 .navbar {
-    background-color: var(--dark);
-    /* Set the background color of the navbar */
+    background-color: var(--darkest);
     display: flex;
     justify-content: space-between;
-    /* Space out the logo and menu items */
     align-items: center;
-    /* Vertically center the items */
-    /* Ensure the navbar spans the full width of the page */
     box-sizing: border-box;
-    /* Include padding and border in the element's width and height */
     padding: 0.5rem 1rem;
-    height: 45px;
+    height: 50px;
+
 }
 
+header .navbar .navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.85) !important; 
+    border: none !important; 
+    box-shadow: none !important; 
+    padding: 0.30rem 0.5rem; 
+    margin-top: -10px; 
+    margin-right: 5px;
+    border-radius: 50%; 
+    transition: background-color 0.3s ease; 
+}
+
+
+
+
 .navbar-brand {
+    margin-top: -5px; 
     padding-left: 24px;
 }
 
 .navbar-nav {
-    padding-right: 24px;
     gap: 24px;
+    background-color: var(--darkest);
+    align-items: center;
 }
 
 .navbar-nav li a {
@@ -322,7 +335,7 @@ header {
 /* Image styles */
 
 .section-two .food-image {
-    width: 90%;
+    width: 80%;
     /* Set image width to 70% of the container */
     height: 100%;
     /* Maintain aspect ratio */
@@ -342,8 +355,8 @@ header {
 .project {
     background-color: #f5f5f5;
     /* Set light gray background color */
-    display: flex;
-    /* Use Flexbox for layout */
+
+  
 }
 
 .section-three {
@@ -359,11 +372,11 @@ header {
 }
 
 .section-three h1 {
+    text-align: center;
     font-size: 45px;
     /* Set font size for the heading */
     margin-top: 8px;
-    margin-bottom: 16px;
-    /* Add margin below the heading */
+
 }
 
 
@@ -536,6 +549,7 @@ header {
     /* Title font size */
     margin-bottom: 24px;
     /* Margin below the title */
+    text-align: center;
 }
 
 .text-content p {
@@ -770,6 +784,7 @@ footer {
         justify-content: center;
         /* Center content vertically */
         height: auto;
+
         /* Let height adjust based on content */
         padding: 20px;
         /* Maintain padding */
@@ -1003,7 +1018,4 @@ footer {
         line-height: 1.4;
         /* Adjust paragraph line height */
     }
-}
-.navbar-collapse {
-    background-color: #000; /* 设置背景颜色为黑色 */
 }
