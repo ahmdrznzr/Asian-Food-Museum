@@ -43,3 +43,9 @@
 
 ## 12.13
 1. make the style code cleaner and map the buttons to the right page.
+
+## 12.16
+1. fix navbar
+2. fix home page and make it responsive
+3. fix narrative page and make it responsive
+4. fix about section and make it responsive

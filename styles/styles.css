@@ -37,8 +37,6 @@ header {
 .section-four {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
     padding: 20px;
 }
@@ -70,8 +68,8 @@ header {
     /* Ensure the navbar spans the full width of the page */
     box-sizing: border-box;
     /* Include padding and border in the element's width and height */
-    padding: 0.5rem 1rem;
-    height: 45px;
+    padding: 1.5rem 1rem;
+    height: 48px;
 }
 
 .navbar-brand {
@@ -97,7 +95,11 @@ header {
 .nav-item a {
     padding-left: 1rem;
     padding-right: 1rem;
-    transition: color 0.3s, outline 0.3s;
+    transition: color 0.7s, outline 0.7s;
+}
+
+.nav-item .active-btn {
+    color: var(--yellow);
 }
 
 
@@ -150,8 +152,6 @@ header {
     align-items: center;
     justify-content: center;
     /* Remove underline from button text */
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 80px;
     margin-left: 0;
     /* Add padding around the button text */
@@ -165,9 +165,9 @@ header {
     /* Pointer cursor on hover */
     width: 30%;
     /* Set button width */
-    height: 40px;
+    height: 48px;
     /* Set button height */
-    font-size: 18px;
+    font-size: 20px;
     /* Set font size */
     transition: all 500ms;
     /* Smooth background color transition on hover */
@@ -213,12 +213,12 @@ header {
     transform: rotate(360deg);
 }
 
-.section-two {
+.about {
     background-color: var(--red);
     /* Set background color */
     gap: 20px;
     /* Add spacing between items inside the section */
-    min-height: 100%;
+    height: 100vh;
     display: flex;
     /* Flexbox layout */
     justify-content: space-between;
@@ -232,7 +232,6 @@ header {
 .section-two .text-content {
     flex: 1;
     /* Take up available space */
-    margin-top: 24px;
 }
 
 
@@ -302,9 +301,8 @@ header {
 /* Button hover effect */
 
 .section-two .btn:hover {
-    background-color: #f0f0f0;
-    border: 3px solid #f0f0f0;
-    color: var(--red);
+    border: 3px solid var(--yellow);
+    color: var(--lightest);
     /* Darken the button background color on hover */
 }
 
@@ -324,7 +322,7 @@ header {
 .section-two .food-image {
     width: 90%;
     /* Set image width to 70% of the container */
-    height: 100%;
+    height: 85vh;
     /* Maintain aspect ratio */
     max-width: 100%;
     /* Ensure the image doesn’t exceed the container's width */
@@ -390,19 +388,16 @@ header {
 /* Individual card styles */
 
 .card-item .card {
-    border: 1px solid #ccc;
-    /* Add a light gray border */
+    background-color: var(--lightest);
     border-radius: 15px;
     /* Add rounded corners */
     padding: 16px;
     /* Add padding inside the card */
     margin: 10px;
     /* Add margin around each card */
-    background-color: #fff;
-    /* Set white background for the card */
     text-align: center;
     /* Center the text inside the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     /* Add a subtle shadow below the card */
     transition: transform 2s;
     /* Smooth transition effect when hovering */
@@ -412,6 +407,10 @@ header {
 
 /* Hover effect for card items */
 
+.card h4 {
+    color: var(--darkest);
+}
+
 .card {
     /* width: 300px;
     height: 350px;
@@ -420,17 +419,21 @@ header {
     /* background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-    color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: all 0.8s ease-in;
 }
 
 .card-item:hover {
     transform: translateY(-5px);
     /* Move the card up slightly when hovered */
+}
+
+.card-item .card:hover {
+    box-shadow: rgba(163, 33, 40, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 
@@ -524,11 +527,6 @@ header {
 
 
 /* Text content styling */
-
-.text-content {
-    margin-bottom: 0;
-    /* Remove default margin */
-}
 
 .text-content h1 {
     color: var(--lightest);
@@ -749,7 +747,7 @@ footer {
 /* Responsive cards */
 
 @media screen and (max-width: 970px) {
-    .section-one{
+    .section-one {
         min-height: 100%;
     }
     .section-three {
@@ -769,43 +767,43 @@ footer {
 
 @media (max-width: 768px) {
     .section-one {
+        width: 100%;
         flex-direction: column-reverse;
         /* Stack text and image vertically with text first */
         justify-content: center;
         /* Center content vertically */
-        height: auto;
-        /* Let height adjust based on content */
-        padding: 20px;
-        /* Maintain padding */
     }
     .section-one .text-content {
         padding-left: 0;
         /* Remove left padding on smaller screens */
         text-align: center;
         /* Center the text */
-        margin-bottom: 20px;
-        /* Add margin below the text */
+    }
+    .section-one .image-content {
+        display: none;
+        /* Maximum image width for small screens */
     }
     .section-one .text-content h1 {
-        font-size: 32px;
+        font-size: 45px;
         /* Reduce heading size on smaller screens */
     }
     .section-one .text-content p {
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
         /* Reduce paragraph font size on smaller screens */
     }
     .section-one .btn {
-        margin: 0 auto;
+        margin: 72px auto 0 auto;
         /* Center the button */
         display: block;
         /* Ensure the button is displayed as a block element */
         padding: 8px 16px;
         /* Reduce padding for the button */
-        width: 120px;
+        width: 50%;
         /* Reduce button width */
-        height: 40px;
+        height: 48px;
         /* Reduce button height */
-        font-size: 16px;
+        font-size: 20px;
         /* Reduce button font size */
     }
     .section-one .food-image {
@@ -819,7 +817,7 @@ footer {
     .team-member {
         width: 45%;
     }
-    .section-two {
+    .about {
         flex-direction: column;
         /* Stack content vertically */
         justify-content: center;
@@ -829,6 +827,9 @@ footer {
         padding: 20px;
         /* Maintain padding */
     }
+    .section-two .image-content {
+        display: none;
+    }
     .section-two .text-content {
         padding-left: 0;
         /* Remove left padding on smaller screens */
@@ -836,6 +837,7 @@ footer {
         /* Add margin below the text */
         margin-top: 20px;
         /* Add margin above the text */
+        width: 100%;
     }
     .section-two .text-content h1 {
         text-align: center;
@@ -895,10 +897,6 @@ footer {
         text-align: justify;
         font-size: 16px;
         /* Reduce description font size */
-    }
-    .food-image {
-        max-width: 400px;
-        /* Maximum image width for small screens */
     }
     .btn {
         width: 65%;
@@ -970,7 +968,7 @@ footer {
 
 @media (max-width: 480px) {
     .team-member {
-        width: 100%;
+        width: 75%;
     }
     .info-section {
         flex-direction: column;
