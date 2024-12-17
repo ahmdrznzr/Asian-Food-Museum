@@ -85,7 +85,7 @@ header {
     color: var(--lightest);
     font-size: 18px;
     /* show the border when it is hovered */
-    transition: color 0.9s, border-left 0.5s, border-right 0.5s;
+    transition: color 0.9s, border-left 0.1s;
 }
 
 .navbar-nav .nav-item .nav-link a.active {
@@ -107,8 +107,7 @@ header {
 
 .nav-item a:hover {
     color: var(--yellow);
-    border-left: 1px solid var(--yellow);
-    border-right: 1px solid var(--yellow);
+    border-left: 2px solid var(--yellow);
 }
 
 
@@ -218,7 +217,7 @@ header {
     /* Set background color */
     gap: 20px;
     /* Add spacing between items inside the section */
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     /* Flexbox layout */
     justify-content: space-between;
@@ -620,8 +619,8 @@ header {
 .team-member {
     background-color: var(--dark);
     color: var(--lightest);
-    padding: 20px;
-    width: 200px;
+    padding: 24px;
+    width: 20%;
     border-radius: 10px;
     transition: transform 0.3s ease;
     text-align: center;
@@ -763,9 +762,12 @@ footer {
     .card-item {
         width: 50%;
     }
+    .team-member {
+        width: 40%;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .section-one {
         width: 100%;
         flex-direction: column-reverse;
@@ -815,7 +817,7 @@ footer {
         /* Add margin below the image */
     }
     .team-member {
-        width: 45%;
+        width: 40%;
     }
     .about {
         flex-direction: column;
@@ -966,9 +968,9 @@ footer {
 
 /* Responsive design for mobile devices */
 
-@media (max-width: 480px) {
+@media (max-width: 481px) {
     .team-member {
-        width: 75%;
+        width: 70%;
     }
     .info-section {
         flex-direction: column;
