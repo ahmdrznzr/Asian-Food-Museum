@@ -2,11 +2,14 @@
 
 :root {
     --darkest: #1B1A17;
-    --dark: #2C2B2C;
-    --yellow: #e0a75e;
-    --red: #a32128;
+    --dark: #0e1511;
+    --yellow: #eee5c8;
+    --red: #772017;
+    --dark-red: #281102;
     --light: #696969;
     --lightest: #EFEFEF;
+    --green: #9c9b84;
+    --brown: #a6997c;
 }
 
 header {

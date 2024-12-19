@@ -1,20 +1,31 @@
 /* define colors as variable to use them easily */
 
+@font-face {
+    font-family: myFont;
+    src: url();
+}
+
 :root {
     --darkest: #1B1A17;
-    --dark: #2C2B2C;
-    --yellow: #e0a75e;
-    --red: #a32128;
+    --dark: #0e1511;
+    --yellow: #eee5c8;
+    --red: #772017;
+    --dark-red: #281102;
     --light: #696969;
     --lightest: #EFEFEF;
+    --green: #9c9b84;
+    --brown: #a6997c;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Papyrus;
 }
 
 body {
     /* the total size of the element will not exceed the specified dimensions */
-    box-sizing: border-box;
     margin: 0;
     width: 100%;
-    font-family: sans-serif;
 }
 
 header {
@@ -26,6 +37,7 @@ header {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: var(--yellow);
 }
 
 
@@ -50,15 +62,13 @@ header {
     /* Space out content evenly */
     margin-top: 50px;
     /* Set fixed height for the section */
-    background-color: var(--lightest);
-    /* Light gray background color */
     padding: 36px;
     /* Add padding around the content */
     gap: 20px;
 }
 
 .navbar {
-    background-color: var(--dark);
+    background-color: var(--darkest);
     /* Set the background color of the navbar */
     display: flex;
     justify-content: space-between;
@@ -154,9 +164,9 @@ header {
     margin-top: 80px;
     margin-left: 0;
     /* Add padding around the button text */
-    background-color: #a32128;
+    background-color: var(--red);
     /* Dark red background color */
-    color: white;
+    color: var(--lightest);
     /* White text color */
     border-radius: 15px;
     /* Rounded corners */
@@ -176,9 +186,9 @@ header {
 /* Button hover effect */
 
 .section-one .main-btn:hover {
-    color: var(--red);
-    border: 3px solid var(--red);
-    background-color: var(--lightest);
+    color: var(--yellow);
+    border: 3px solid var(--dark-red);
+    background-color: var(--red);
     /* Change background color to darker red on hover */
 }
 
@@ -240,6 +250,7 @@ header {
     color: var(--lightest);
     /* Set text color to light gray */
     font-size: 45px;
+    font-weight: 600;
     /* Set font size for the heading */
     margin-top: 8px;
     margin-bottom: 16px;
@@ -252,7 +263,7 @@ header {
 .section-two .text-content p {
     color: var(--lightest);
     /* Set text color to light gray */
-    font-size: 16px;
+    font-size: 18px;
     /* Set font size for paragraph text */
     margin-top: 24px;
     margin-bottom: 20px;
@@ -274,7 +285,7 @@ header {
     /* Add padding around the button text */
     background-color: var(--yellow);
     /* Set button background color */
-    color: var(--darkest);
+    color: var(--dark-red);
     /* Set button text color */
     border: none;
     /* Remove button border */
@@ -301,7 +312,8 @@ header {
 
 .section-two .btn:hover {
     border: 3px solid var(--yellow);
-    color: var(--lightest);
+    color: var(--yellow);
+    background-color: var(--dark-red);
     /* Darken the button background color on hover */
 }
 
@@ -337,7 +349,7 @@ header {
 /* Section-three container styles */
 
 .project {
-    background-color: #f5f5f5;
+    background-color: var(--yellow);
     /* Set light gray background color */
     display: flex;
     /* Use Flexbox for layout */
@@ -358,10 +370,15 @@ header {
 
 .section-three h1 {
     font-size: 45px;
+    font-weight: 600;
     /* Set font size for the heading */
     margin-top: 8px;
     margin-bottom: 16px;
     /* Add margin below the heading */
+}
+
+.section-three p {
+    font-size: 18px;
 }
 
 
@@ -387,7 +404,7 @@ header {
 /* Individual card styles */
 
 .card-item .card {
-    background-color: var(--lightest);
+    background-color: rgb(156, 155, 132, 0.4);
     border-radius: 15px;
     /* Add rounded corners */
     padding: 16px;
@@ -408,31 +425,49 @@ header {
 
 .card h4 {
     color: var(--darkest);
+    font-weight: 600;
 }
 
 .card {
-    /* width: 300px;
-    height: 350px;
-    padding: 20px; */
     border-radius: 10px;
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.8s ease-in;
+    transition: all 1s ease-in;
 }
 
 .card-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     /* Move the card up slightly when hovered */
 }
 
 .card-item .card:hover {
-    box-shadow: rgba(163, 33, 40, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    box-shadow: rgba(119, 32, 23, 0.3) 6px 2px 16px 0px, rgba(119, 32, 23, 0.3) -6px -2px 16px 0px;
+}
+
+.narrative-btn {
+    background-color: var(--red);
+    color: var(--lightest);
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.8s ease-in;
+    align-items: center;
+    justify-content: center;
+    /* Remove underline from button text */
+    padding: 12px 24px;
+    margin-top: 80px;
+    /* Add padding around the button text */
+    border-radius: 15px;
+    /* Rounded corners */
+}
+
+.narrative-btn:hover {
+    background-color: var(--yellow);
+    font-weight: 600;
+    border: 3px solid var(--red);
+    color: var(--red);
 }
 
 
@@ -449,6 +484,13 @@ header {
     /* Pointer cursor on hover */
     margin: 10px 0;
     /* Add margin around the button */
+}
+
+.category-image {
+    width: 100%;
+    height: auto;
+    border-radius: 36px;
+    margin-bottom: 8px;
 }
 
 
@@ -484,30 +526,6 @@ header {
     /* The element is initially invisible */
 }
 
-.section-three a {
-    font-size: 18px;
-    align-items: center;
-    justify-content: center;
-    /* Remove underline from button text */
-    padding: 10px 24px;
-    margin-top: 80px;
-    /* Add padding around the button text */
-    background-color: var(--red);
-    /* Dark red background color */
-    color: var(--lightest);
-    /* White text color */
-    border-radius: 15px;
-    /* Rounded corners */
-    transition: all 0.8s;
-}
-
-.section-three a:hover {
-    /* change the button, when the user hover in 0.8s */
-    border: 2px solid var(--red);
-    box-shadow: var(--red);
-    color: var(--red);
-}
-
 
 /* section four: map */
 
@@ -530,7 +548,8 @@ header {
 .text-content h1 {
     color: var(--lightest);
     /* Title text color */
-    font-size: 48px;
+    font-size: 45px;
+    font-weight: 600;
     /* Title font size */
     margin-bottom: 24px;
     /* Margin below the title */
@@ -558,11 +577,11 @@ header {
     padding: 12px 20px;
     background-color: var(--yellow);
     /* Button background color */
-    color: var(--darkest);
+    color: var(--dark-red);
     /* Button text color */
     border: none;
     /* Remove border */
-    border-radius: 20px;
+    border-radius: 15px;
     /* Rounded corners */
     cursor: pointer;
     /* Pointer cursor on hover */
@@ -572,15 +591,14 @@ header {
     /* Remove underline for link */
     text-align: center;
     /* Center text */
-    transition: all 0.3s ease;
+    transition: all 0.8s ease;
     margin-bottom: 20px;
     /* Margin below the button */
 }
 
 .section-four a:hover {
-    border: 3px solid var(--yellow);
-    color: var(--lightest);
-    background-color: var(--red);
+    background-color: var(--green);
+    color: var(--darkest);
 }
 
 
@@ -588,7 +606,7 @@ header {
 
 .team-section {
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: var(--yellow);
     text-align: center;
     height: auto;
 }
@@ -597,7 +615,8 @@ header {
 /* Title styling */
 
 .section-title {
-    font-size: 36px;
+    color: var(--darkest);
+    font-size: 45px;
     margin-bottom: 36px;
     font-weight: bold;
 }
@@ -609,7 +628,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 32px;
     overflow: visible;
 }
 
@@ -617,9 +636,9 @@ header {
 /* Each team member card styling */
 
 .team-member {
-    background-color: var(--dark);
+    background-color: var(--darkest);
     color: var(--lightest);
-    padding: 24px;
+    padding: 32px;
     width: 20%;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -630,7 +649,9 @@ header {
 /* Hover effect on team member card to slightly lift it */
 
 .team-member:hover {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
+    font-weight: 600;
+    cursor: pointer;
 }
 
 
@@ -647,7 +668,6 @@ header {
 
 .member-name {
     font-size: 18px;
-    font-weight: bold;
     margin: 15px 0;
 }
 
@@ -674,7 +694,7 @@ header {
 /* Hover effect on social icons to change color and slightly enlarge */
 
 .social-icons a:hover {
-    color: #ddd;
+    color: var(--yellow);
     transform: scale(1.1);
 }
 
@@ -708,7 +728,7 @@ header {
 .info-img .info-picture {
     width: 100%;
     /* Set image width to 70% of the container */
-    height: 700px;
+    height: 70vh;
     /* Maintain aspect ratio */
     max-width: 100%;
     /* Ensure the image doesn’t exceed the container's width */
@@ -733,9 +753,9 @@ header {
 }
 
 footer {
-    background-color: black;
+    background-color: var(--dark);
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     padding: 36px;
 }
 
