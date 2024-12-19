@@ -426,6 +426,7 @@ header {
 .card h4 {
     color: var(--darkest);
     font-weight: 600;
+    margin-top: 24px;
 }
 
 .card {
