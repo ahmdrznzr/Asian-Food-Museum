@@ -171,13 +171,13 @@ header {
 .prepration,
 .time {
     background-color: var(--lightest);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .meal,
 .ingredient {
     background-color: var(--yellow);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .reg-section,
@@ -211,7 +211,7 @@ a {
 }
 
 .nar-cards {
-    width: 100%;
+    width: 85%;
     display: flex;
     padding-top: 24px;
     justify-content: center;
@@ -219,12 +219,12 @@ a {
 
 .nar-card {
     width: 33.3%;
-    padding: 0 10px;
+    padding: 0 16px;
 }
 
 .pre-card {
     width: 25%;
-    padding: 0 10px;
+    padding: 0 16px;
 }
 
 .nar-card .card {
@@ -242,8 +242,13 @@ a {
     /* Center the text inside the card */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Add a subtle shadow below the card */
-    transition: transform 2s;
-    /* Smooth transition effect when hovering */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-16px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -261,7 +266,7 @@ a {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .nar-h1 {
         font-size: 36px;
     }
@@ -275,11 +280,30 @@ a {
         flex: 1 1 calc(50% - 16px);
         max-width: 40%;
     }
+    .nar-card {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .nar-cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+    .general-header {
+        font-size: 36px;
+    }
     .nar-option {
         flex: 1 1 45%;
         max-width: 45%;
+    }
+    .nar-cards {
+        width: 85%;
+        flex-direction: column;
+    }
+    .nar-card {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
