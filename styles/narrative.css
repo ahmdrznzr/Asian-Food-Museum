@@ -210,6 +210,12 @@ a {
     cursor: pointer;
 }
 
+.up-icon {
+    color: var(--red);
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
 .nar-cards {
     width: 85%;
     display: flex;
