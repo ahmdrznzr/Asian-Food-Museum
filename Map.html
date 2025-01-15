@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Museum Map Page</title>
+  <link rel="stylesheet" href="styles/Map.css">
+</head>
+<body>
+  <header>
+    <h1>Food Museum Map Page</h1>
+  </header>
+
+  <main>
+    <section class="controls">
+      <!-- Narrative Buttons -->
+      <div class="narrative-buttons">
+        <button class="narrative-btn active" data-narrative="time">Time</button>
+        <button class="narrative-btn" data-narrative="region">Region</button>
+        <button class="narrative-btn" data-narrative="ingredients">Ingredients</button>
+        <button class="narrative-btn" data-narrative="meal">Meal</button>
+        <button class="narrative-btn" data-narrative="preparation">Preparation</button>
+      </div>
+
+      <!-- Subcategory Buttons -->
+      <div class="subcategory-buttons" id="subcategory-container">
+        <button class="subcategory-btn active" data-subcategory="ancient">Ancient</button>
+        <button class="subcategory-btn" data-subcategory="medieval">Medieval</button>
+        <button class="subcategory-btn" data-subcategory="modern">Modern</button>
+      <!-- Subcategories will be dynamically injected here -->
+      </div>
+
+      <!-- Item List -->
+      <div class="sub-category">
+        <h2>Medieval</h2>
+        <ul class="item-list">
+          <li><a href="#" class="active">Chinese Hot Pot (火锅)</a></li>
+          <li><a href="#" class="inactive">Lebanese Kibbeh (كبة)</a></li>
+          <li><a href="#" class="inactive">Lebanese Filo Pastry (كنافة)</a></li>
+          <li><a href="#" class="inactive">Persian Noodle Soup (آش رشته)</a></li>
+          <li><a href="#" class="inactive">Persian Herb Stew (قرمه سبزی)</a></li>
+          <li><a href="#" class="inactive">Chinese Sour Soup with Beef Slices (酸汤肥牛)</a></li>
+          <li><a href="#" class="inactive">Lebanese Hummus (حمص)</a></li>
+          <li><a href="#" class="inactive">Chinese Peking Duck (北京烤鸭)</a></li>
+          <li><a href="#" class="inactive">Persian Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)</a></li>
+          <li><a href="#" class="inactive">Persian Saffron Ice cream (بستنی سنتی)</a></li>
+          <li><a href="#" class="inactive">Pakistani Deep-fried Lentil Fritters (دہی بھلے چاٹ)</a></li>
+          <li><a href="#" class="inactive">Pakistani Chicken Pilaf (چکن بریانی)</a></li>
+          <li><a href="#" class="inactive">Pakistani Mutton in Clay Pot (مٹن کُنا)</a></li>
+          <li><a href="#" class="inactive">Pakistani Semolina Halwa (سوجی کا حلوہ)</a></li>
+          <li><a href="#" class="inactive">Japanese Tempura (天婦羅)</a></li>
+          <li><a href="#" class="inactive">Japanese Sukiyaki (すき焼き)</a></li>
+          <li><a href="#" class="inactive">Japanese Pork Bone Ramen (豚骨ラーメン)</a></li>
+          <li><a href="#" class="inactive">Japanese Rotation Sushi (回転寿司)</a></li>
+          <li><a href="#" class="inactive">Lebanese Meat wrap (شاورما)</a></li>
+          <li><a href="#" class="inactive">Chinese Coca-Cola Chicken Wings (可乐鸡翅)</a></li>
+          <!-- 20 items added -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="maps">
+      <div class="map" id="floor-plan">
+        <h3>Exhibition Layout</h3>
+        <img src="images/Maps/Slide13.PNG" alt="Exhibition Floor Plan">
+      </div>
+      <div class="map" id="geographical-map">
+        <h3>Geographical Map</h3>
+        <img src="images/Maps/Slide12.PNG" alt="Geographical Map">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Food Museum</p>
+  </footer>
+
+  <script src="js/Map.js"></script>
+</body>
+</html>

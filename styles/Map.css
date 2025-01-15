@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #EFEFEF;
+  }
+  
+  header {
+    background-color: #A71721;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .controls {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .narrative-buttons, .subcategory-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .narrative-btn, .subcategory-btn {
+    background-color: #A71721;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .narrative-btn.active, .subcategory-btn.active {
+    background-color: #E0A75E;
+    color: #1B1A17;
+  }
+  
+  .sub-category h2 {
+    color: #1B1A17;
+  }
+  
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item-list li {
+    margin: 5px 0;
+  }
+  
+  .item-list a {
+    text-decoration: none;
+    color: #A71721;
+  }
+  
+  .item-list a.inactive {
+    color: grey;
+    pointer-events: none;
+  }
+  
+  .maps {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .map {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .map img {
+    width: 100%;
+    border: 1px solid #E0A75E;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background-color: #1B1A17;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
