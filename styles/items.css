@@ -1,0 +1,204 @@
+:root {
+    --darkest: #1B1A17;
+    --dark: #0e1511;
+    --yellow: #eee5c8;
+    --red: #772017;
+    --dark-red: #281102;
+    --light: rgb(105, 105, 105);
+    --lightest: #EFEFEF;
+    --green: #9c9b84;
+    --brown: rgb(166, 153, 124);
+}
+
+
+/* General page styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--yellow);
+}
+
+
+/* Main page container */
+
+.main-page {
+    padding: 96px 36px;
+    /* Add padding to prevent overlap with fixed navbar */
+}
+
+
+/* Navigation for previous and next buttons */
+
+.next-pre {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.previous-btn,
+.next-btn {
+    text-decoration: none;
+    color: var(--dark);
+    padding: 10px 24px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: var(--brown);
+    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+}
+
+.previous-btn:hover,
+.next-btn:hover {
+    background-color: var(--green);
+    box-shadow: 0 8px 8px rgba(166, 153, 124, 0.1);
+}
+
+
+/* Item content container */
+
+.item-content {
+    text-align: center;
+}
+
+.item-content h2 {
+    font-size: 48px;
+    margin-bottom: 36px;
+    font-weight: bold;
+}
+
+
+/* Item information container */
+
+.item-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 36px;
+}
+
+
+/* Image section */
+
+.item-img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+
+/* Description section */
+
+.item-des {
+    text-align: left;
+    margin-top: 36px;
+}
+
+.item-des h4 {
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+
+/* Fixed titles */
+
+.fixed-list,
+.desc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 28px;
+}
+
+.fixed-title {
+    padding: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--darkest);
+}
+
+
+/* Short descriptions */
+
+.short-desc {
+    padding: 16px;
+    margin-bottom: 10px;
+    color: var(--dark);
+    border-left: 2px solid var(--red);
+    transition: color 0.3s ease, text-decoration 0.8s ease, transform 0.6s ease;
+}
+
+.short-desc:hover {
+    color: var(--red);
+    text-decoration: underline;
+    transform: translateX(16px);
+    cursor: grab;
+}
+
+.seperator {
+    border-width: 0 0 3px;
+    border-image: linear-gradient( 90deg, rgba(105, 105, 105, 0), rgba(105, 105, 105, 1) 50%, rgba(105, 105, 105, 0) 100%) 0 0 100%;
+    border-style: solid;
+}
+
+.description-section {
+    width: 100%;
+    margin-top: 24px;
+}
+
+.data-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--red);
+    margin-bottom: 24px;
+}
+
+.desc-text {
+    font-size: 18px;
+}
+
+.read-btn {
+    margin-top: 24px;
+    display: flex;
+    gap: 54px;
+    justify-content: center;
+}
+
+.desc-button {
+    background-color: var(--yellow);
+    border-radius: 15px;
+    color: var(--red);
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    transition: color 0.8s ease, background-color 0.8s ease, font-size 0.5s ease;
+}
+
+.desc-button:hover {
+    color: var(--yellow);
+    background-color: var(--red);
+    font-size: 19px;
+}
+
+.hidden {
+    display: none;
+}

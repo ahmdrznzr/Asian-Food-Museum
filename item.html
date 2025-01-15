@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <!-- Linking external stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/items.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand"><img src="images/foodMuseumLogo.jpg" alt="" style="height: 45px;"></a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#about" tabindex="-1" aria-disabled="true">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#project" tabindex="-1" aria-disabled="true">Narrative</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#map" tabindex="-1" aria-disabled="true">Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#team" tabindex="-1" aria-disabled="true">Team</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- main page of whole page -->
+    <div class="main-page">
+        <!-- main content of landing page -->
+        <div class="main-content">
+            <!-- next and previous section -->
+            <div class="next-pre">
+                <a class="previous-btn" href="">
+                    <span class="lr-icon"><</span>&nbsp;&nbsp;Previous</a>
+                <a class="next-btn" href="">Next&nbsp;&nbsp;<span class="lr-icon">></span></a>
+            </div>
+            <!-- first part of item content -->
+            <div class="item-content">
+                <!-- name of object -->
+                <h2>Name of the Object</h2>
+                <!-- image and short description part -->
+                <div class="item-info">
+                    <!-- item image section -->
+                    <div class="item-img">
+                        <img src="" alt="">
+                    </div>
+                    <!-- item short description page -->
+                    <div class="item-des">
+                        <!-- heading -->
+                        <h4>What we need to know</h4>
+                        <!-- the short description -->
+                        <div class="infos">
+                            <!-- fixed titles -->
+
+                            <ul class="fixed-list">
+                                <li class="fixed-title">Name</li>
+                                <li class="fixed-title">Type</li>
+                                <li class="fixed-title">Region</li>
+                                <li class="fixed-title">Date</li>
+                                <li class="fixed-title">Ingredient</li>
+                            </ul>
+
+                            <!-- short information related to fixed titles -->
+
+                            <ul class="desc-list">
+                                <li class="short-desc">The Name</li>
+                                <li class="short-desc">The Type</li>
+                                <li class="short-desc">The Region</li>
+                                <li class="short-desc">The Date</li>
+                                <li class="short-desc">The Ingredient</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="space">
+            <hr class="seperator">
+        </div>
+        <div class="description-section">
+            <h4 class="data-header">Description</h4>
+            <div class="desc-text" id="shortInfo">The short info</div>
+            <div class="hidden desc-text" id="longerInfo">Longer info</div>
+            <div class="hidden desc-text" id="fullInfo">
+                <div id="fullInfoContent">full info</div>
+            </div>
+            <div class="read-btn" id="readButtons">
+                <button class="desc-button" id="lessBtn" onclick="less()">Tell Me Less</button>
+                <button class="desc-button" id="moreBtn" onclick="more()">Tell Me More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <footer>
+            <p>The purpose of this web site is to explore various types of typographic and layout style for musem pages, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in <em>Digital Humanities and Digital Knowledge</em>                of the University of Bologna, under <strong>prof. Fabio Vitali</strong>. The documents contained in this web site have been selected ....</p>
+            <p>All copyrights and related rights on the content remain with their original owners.
+                <br> All copyright on the typographic and layout choices are 2024 &copy; Zahra Farajihormozi, Nazanin Fakharian, Ahmadreza Nazari, Yifan Wu.</p>
+        </footer>
+    </footer>
+
+    <script>
+        // JSON food data array
+        const foodData = [{
+                "id": 1,
+                "name": "Dango",
+                "country": "Japan",
+                "type": "Dessert",
+                "period": "Traditional Food",
+                "technique": "Steamed",
+                "description": "Dango is a traditional Japanese dessert made from glutinous rice flour, giving it a soft and chewy texture.",
+                "image": "img/Dango.png"
+            },
+            // More food data...
+        ];
+
+        // Function to load food details from localStorage and display on the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the selected food from localStorage
+            const food = JSON.parse(localStorage.getItem('selectedFood'));
+
+            if (food) {
+                // Set the details on the page
+                document.getElementById('food-title').innerText = food.name;
+                document.getElementById('food-image').src = food.image;
+                document.getElementById('food-country').innerText = food.country;
+                document.getElementById('food-type').innerText = food.type;
+                document.getElementById('food-period').innerText = food.period;
+                document.getElementById('food-technique').innerText = food.technique;
+                document.getElementById('food-description').innerText = food.description;
+
+                // Set the food ID
+                document.getElementById('food-id').innerText = food.id;
+            } else {
+                console.error('No food data found!');
+            }
+
+            // Logic for "Tell me more" button
+            const toggleButton = document.getElementById('toggle-description');
+            const moreDetailsSection = document.getElementById('more-details-section');
+
+            toggleButton.addEventListener('click', function() {
+                if (moreDetailsSection.style.display === 'none' || moreDetailsSection.style.display === '') {
+                    moreDetailsSection.style.display = 'block'; // Show more content
+                    toggleButton.innerText = 'Show less...'; // Update button text
+                } else {
+                    moreDetailsSection.style.display = 'none'; // Hide more content
+                    toggleButton.innerText = 'Tell me more...'; // Update button text
+                }
+            });
+
+            // Logic for "Tell me even more" button
+            const evenMoreButton = document.getElementById('even-more-link');
+            evenMoreButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+                // Save the current food data to localStorage
+                localStorage.setItem('selectedFood', JSON.stringify(food));
+                // Redirect to the MoreDetailsPage.html page
+                window.location.href = 'MoreDetailsPage.html';
+            });
+        });
+    </script>
+
+</body>
+
+</html>
