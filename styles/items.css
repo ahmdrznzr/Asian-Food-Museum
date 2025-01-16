@@ -40,19 +40,18 @@ body {
 .previous-btn,
 .next-btn {
     text-decoration: none;
-    color: var(--dark);
+    color: var(--red);
     padding: 10px 24px;
-    border: 1px solid #ccc;
     border-radius: 15px;
-    font-size: 18px;
-    background-color: var(--brown);
-    transition: background-color 0.8s ease, box-shadow 0.8s ease;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.8s ease, color 0.8s ease;
 }
 
 .previous-btn:hover,
 .next-btn:hover {
-    background-color: var(--green);
-    box-shadow: 0 8px 8px rgba(166, 153, 124, 0.1);
+    background-color: var(--brown);
+    color: var(--dark-red);
 }
 
 
@@ -196,9 +195,54 @@ body {
 .desc-button:hover {
     color: var(--yellow);
     background-color: var(--red);
-    font-size: 19px;
 }
 
 .hidden {
     display: none;
+}
+
+@media (max-width: 768px) {
+    .previous-btn,
+    .next-btn {
+        font-size: 16px;
+    }
+    .item-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 36px;
+    }
+    .item-img {
+        width: 300px;
+        height: 300px;
+        border: 1px solid #ccc;
+    }
+}
+
+@media (max-width: 600px) {
+    .previous-btn,
+    .next-btn {
+        font-size: 18px;
+        padding: 10px 16px;
+    }
+    .item-content .item-heading {
+        font-size: 36px;
+        margin-top: 36px;
+    }
+    .item-des h4 {
+        display: none;
+    }
+    .fixed-list,
+    .desc-list {
+        font-size: 16px;
+    }
+    .desc-button {
+        font-size: 16px;
+    }
+    .desc-button:hover {
+        font-size: 15px;
+    }
+    .description-section h4 {
+        text-align: center;
+    }
 }

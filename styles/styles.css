@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    padding-bottom: 0;
+    padding: 0;
 }
 
 .home {
@@ -766,6 +766,12 @@ footer {
 /* Responsive cards */
 
 @media screen and (max-width: 970px) {
+    .section-one .text-content h1 {
+        font-size: 36px;
+    }
+    .section-one .text-content p {
+        font-size: 18px;
+    }
     .section-one {
         min-height: 100%;
     }
@@ -788,6 +794,9 @@ footer {
 }
 
 @media (max-width: 769px) {
+    .home {
+        min-height: auto;
+    }
     .section-one {
         width: 100%;
         flex-direction: column-reverse;
@@ -1026,5 +1035,57 @@ footer {
         /* Reduce paragraph font size */
         line-height: 1.4;
         /* Adjust paragraph line height */
+    }
+}
+
+
+/* Responsive styles for navigation bar */
+
+@media (max-width: 768px) {
+    .image-content .food-image {
+        display: none;
+    }
+    .navbar-toggler {
+        display: block;
+        /* Show hamburger button on small screens */
+    }
+    .collapse {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        align-items: center;
+    }
+    .collapse.show {
+        display: flex;
+        /* Show the menu when toggled */
+    }
+    .navbar-collapse {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--darkest);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav-item {
+        font-size: 14px;
+        margin: 0;
+    }
+    .navbar-toggler {
+        display: block;
+        /* Show hamburger button */
+    }
+    .navbar-brand img {
+        margin: 0;
+        /* Remove extra margins */
+        top: 0;
+        left: 0;
     }
 }

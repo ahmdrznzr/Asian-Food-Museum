@@ -9,7 +9,7 @@
     --light: #696969;
     --lightest: #EFEFEF;
     --green: #9c9b84;
-    --brown: #a6997c;
+    --brown: rgb(166, 153, 124);
 }
 
 header {
@@ -23,7 +23,7 @@ header {
 .nar-content {
     background-color: rgba(0, 0, 0, 0.6);
     /* cover full page on the screen */
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
     /* display the content in flex way and put them in the center of the page */
     display: flex;
@@ -170,14 +170,14 @@ header {
 .region,
 .prepration,
 .time {
-    background-color: var(--lightest);
-    min-height: 100vh;
+    background-color: rgb(166, 153, 124, 0.5);
+    height: auto;
 }
 
 .meal,
 .ingredient {
     background-color: var(--yellow);
-    min-height: 100vh;
+    height: auto;
 }
 
 .reg-section,
@@ -185,6 +185,7 @@ header {
 .ingredient-section,
 .prepration-section,
 .time-section {
+    padding-bottom: 24px;
     padding: 36px;
     display: flex;
     flex-direction: column;
@@ -233,6 +234,11 @@ a {
     padding: 0 16px;
 }
 
+.nar-card p {
+    font-size: 18px;
+    margin-top: 16px;
+}
+
 .nar-card .card {
     border: 1px solid #ccc;
     /* Add a light gray border */
@@ -255,6 +261,7 @@ a {
     cursor: pointer;
     transform: translateY(-16px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: var(--red);
 }
 
 
@@ -269,6 +276,14 @@ a {
     }
     .nar-h3 {
         font-size: 16px;
+    }
+    .nar-card {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .nar-cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
 
@@ -285,14 +300,6 @@ a {
     .nar-option {
         flex: 1 1 calc(50% - 16px);
         max-width: 40%;
-    }
-    .nar-card {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-    .nar-cards {
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 }
 
