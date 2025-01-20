@@ -1,0 +1,589 @@
+{
+    "items": [{
+            "meta": {
+                "startWith": 0,
+                "startNarrative": "Region",
+                "startValue": "West Asia",
+                "narratives": ["Region", "Meal", "Ingredients", "Preparation", "Time"]
+            },
+            {
+                "@sort": "1",
+                "itemName": "Herb Stew (قرمه سبزی)",
+                "image": "",
+                "info": {
+                    "Region": "West Asia(Iran)",
+                    "Date of Origin": "Ancient (10th Centurry)",
+                    "Meal": "Main Course",
+                    "Ingredient": "Meat Based",
+                    "preparation": "Stewed"
+                },
+                "shortDesc": "Ghormeh Sabzi is a traditional Persian stew and one of Iran's most beloved national dishes. Made with a combination of aromatic herbs like parsley, cilantro, and fenugreek, slow-cooked with tender lamb or beef, red kidney beans, and dried limes, it offers a deep, tangy, and savory flavor. Known for its unique green appearance and complex taste, Ghormeh Sabzi is a comforting dish enjoyed by Iranians during family meals and festive occasions. Its rich blend of herbs and spices makes it a standout in Persian cuisine, symbolizing warmth and tradition.",
+                "longerDesc": "Ghormeh Sabzi is a staple in Iranian households, representing the essence of Persian culinary mastery. The dish is primarily made of fresh herbs, including parsley, cilantro, and fenugreek, which are finely chopped and sautéed to release their earthy aroma. These herbs form the heart of the dish, imparting its distinctive green color. Slow-cooked with cubes of lamb or beef, the stew develops a rich, tangy flavor, thanks to the addition of dried limes (limoo amani), which add a unique sourness. Red kidney beans provide a hearty texture and additional flavor, making Ghormeh Sabzi a well-rounded, protein-packed meal.
+                Preparation of Ghormeh Sabzi takes patience and care.The meat is browned before being added to the pot,
+                where it simmers
+                for hours along with the herbs,
+                beans,
+                and dried limes to create a deep,
+                complex flavor profile.The slow cooking process allows the flavors to meld together beautifully,
+                resulting in a stew that is savory,
+                sour,
+                and herbaceous.Traditionally served with Persian saffron rice(chelow),
+                Ghormeh Sabzi is a dish that embodies the concept of slow - cooked comfort food.It is often reserved
+                for special family meals,
+                including Norooz(Persian New Year),
+                where it holds cultural significance as a symbol of prosperity and renewal.
+                ",
+                "fullDesc": "descriptions/01-herbStew.html"
+            },
+            {
+                "@sort": "2",
+                "itemName": "Saffron Ice cream (بستنی سنتی)",
+                "image": "",
+                "info": {
+                    "Region": "West Asia(Iran)",
+                    "Date of Origin": "Medieval(16th century)",
+                    "Meal": "Dessert",
+                    "Ingredient": "Dairy",
+                    "preparation": "No-Cook"
+                },
+                "shortDesc": "Bastani Sonnati, or Persian traditional ice cream, is a classic dessert in Iran known for its rich, creamy texture and unique flavors of saffron, rosewater, and pistachios. Often called the ice cream of kings, this dessert has been cherished for centuries, especially during hot summer months. Its distinct golden-yellow color, from the infusion of saffron, and the added crunchy texture of pistachios make Bastani Sonnati a luxurious treat that holds a special place in Persian culture.",
+                "longerDesc": "Bastani Sonnati, meaning \"
+                traditional ice cream,
+                \" is an iconic Iranian dessert that stands out for its distinctive flavors and textures. This ice cream is traditionally made with a base of milk or cream, to which saffron, rosewater, and vanilla are added, creating a uniquely aromatic and rich flavor profile. The inclusion of \"
+                sahlab,
+                \" a thickening agent derived from orchid tubers, gives the ice cream a chewy texture, which is unlike the smoother, more aerated texture of Western-style ice creams. Chunks of pistachios are mixed in, adding a delightful crunch to each bite, and sometimes thin strips of frozen cream (known as
+                kāshek) are swirled into the mixture
+            for extra indulgence.
+
+            Bastani Sonnati is often served between two thin wafers,
+            making it a convenient handheld treat that offers both flavor and nostalgia.The saffron gives the ice cream its vibrant yellow color,
+            while the rosewater lends a delicate floral fragrance that enhances the overall sensory experience.The addition of pistachios,
+            a beloved ingredient in Persian sweets,
+            provides both texture and a nutty contrast to the smoothness of the ice cream.Often enjoyed during celebrations,
+            festivals,
+            or simply on a hot summer day,
+            Bastani Sonnati is more than just a dessert— it is a reminder of Iran’ s rich culinary heritage and its longstanding tradition of crafting luxurious,
+            fragrant sweets.
+            ",
+            "fullDesc": "descriptions/02-SaffronIcecream.html"
+        },
+        {
+            "@sort": "3",
+            "itemName": "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)",
+            "image": "",
+            "info": {
+                "Region": "West Asia(Iran)",
+                "Date of Origin": "Medieval(16th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Tahchin is a beloved Persian dish known for its beautiful golden crust and its layered, flavorful composition. It is a savory saffron rice cake, often made with layers of yogurt-marinated chicken or lamb, rice, saffron, and sometimes barberries or other dried fruits. This dish is visually stunning and aromatic, with the saffron-infused rice forming a crispy outer layer called “tahdig,” which is a prized part of the dish. Tahchin is often served at special occasions and family gatherings, embodying the rich tradition and attention to detail that Persian cuisine is famous for.",
+            "longerDesc": "Tahchin is a dish that combines artistry and flavor, standing out with its striking golden hue and its layers of marinated meat and aromatic rice. The dish starts with rice that is parboiled and mixed with yogurt, saffron, egg yolks, and oil. This mixture is then layered with tender, yogurt-marinated chicken or lamb, creating a rich, creamy texture inside. The dish is pressed into a pot and cooked slowly, allowing the outer layer of rice to become crispy and golden brown, forming the famous tahdig crust. This crunchy tahdig is one of the most cherished parts of the meal and is often what diners look forward to the most.
+
+                What makes Tahchin truly unique is the balance of flavors and textures.The inside is soft and savory,
+            with the yogurt and saffron blending beautifully with the chicken or lamb,
+            while the outside has a delightful crunch from the crispy rice.The use of saffron,
+            a quintessential ingredient in Persian cuisine,
+            adds a deep,
+            floral,
+            and slightly sweet note to the rice,
+            while barberries or dried fruits are sometimes sprinkled between the layers,
+            offering bursts of tartness to complement the richness of the meat.Tahchin is typically served with a side of fresh herbs,
+            yogurt,
+            or pickles,
+            balancing the richness of the dish with light,
+            refreshing accompaniments.
+            ",
+            "fullDesc": "descriptions/03-RiceCakeWithChicken.html"
+        },
+        {
+            "@sort": "4",
+            "itemName": "Noodle Soup (آش رشته)",
+            "image": "",
+            "info": {
+                "Region": "West Asia(Iran)",
+                "Date of Origin": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Plant Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Ash Reshteh is a hearty and flavorful Iranian noodle soup that holds a special place in Persian cuisine, particularly during cold months and festive occasions. This comforting dish is made with a mix of herbs, legumes, and traditional Persian noodles called reshteh, all cooked in a thick, savory broth. It is typically garnished with fried onions, dried mint, kashk (a fermented whey product), and sometimes garlic. Ash Reshteh is deeply connected to Persian cultural traditions and is often served during celebrations or family gatherings, especially during the Persian New Year (Norooz) and religious ceremonies.",
+            "longerDesc": "Ash Reshteh is a quintessential Iranian dish that exemplifies the rich culinary heritage of Persian culture. It is made by simmering a variety of herbs such as parsley, cilantro, spinach, and dill, along with legumes like chickpeas, lentils, and kidney beans. These ingredients form the base of the soup, creating a nutrient-dense and flavorful broth. The addition of reshteh, a traditional type of Persian noodle, gives the soup its characteristic texture and heartiness. The noodles symbolize good fortune and prosperity in Persian culture, making Ash Reshteh a popular dish to serve during the New Year and other significant occasions.
+
+                One of the most distinctive features of Ash Reshteh is its garnish.It is traditionally topped with crispy fried onions,
+            dried mint,
+            and kashk,
+            a fermented dairy product that has a tangy and slightly salty flavor.The kashk adds depth and creaminess to the dish,
+            balancing the earthy flavors of the herbs and legumes.Some variations of Ash Reshteh also include a drizzle of garlic - infused oil
+            for an added layer of richness.The combination of textures— soft noodles,
+            tender beans,
+            and crispy garnishes— makes Ash Reshteh a filling and satisfying meal.Its thick consistency and bold flavors make it a comforting dish that is particularly popular during colder seasons.
+            ",
+            "fullDesc": "descriptions/04-NoodleSoup.html"
+        },
+        {
+            "@sort": "5",
+            "itemName": "Coca-Cola Chicken Wings (可乐鸡翅)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(China)",
+                "Date of Origin": "Modern(20th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Coca-Cola Chicken Wings (可乐鸡翅) is a popular Chinese dish that uniquely combines the sweetness of Coca-Cola with the savory flavors of soy sauce and ginger. This dish is widely loved for its tender chicken wings coated in a glossy, caramelized sauce. The Coca-Cola not only adds sweetness but also enhances the rich color and stickiness of the sauce, making it an irresistible and simple meal often enjoyed as part of family dinners or informal gatherings.",
+            "longerDesc": "Coca-Cola Chicken Wings (可乐鸡翅) is an easy yet flavorful dish, often cooked in Chinese households for its balance of sweet and savory tastes. The core ingredients include chicken wings, Coca-Cola, soy sauce, ginger, and garlic. The dish begins by searing the chicken wings to lock in their juices and achieve a slight golden crisp. Then, Coca-Cola is added along with soy sauce, ginger, and garlic, creating a unique marinade that is simmered until it reduces into a sticky, flavorful glaze. The sweetness from the soda melds with the umami from the soy sauce and the slight heat from ginger, creating a sauce that is both tangy and richly caramelized.
+
+                This dish is a modern example of how Chinese home cooking often embraces accessible ingredients and turns them into something special.Coca - Cola Chicken Wings are easy to prepare,
+            yet they offer complex flavors that appeal to both adults and children.The use of Coca - Cola might seem unconventional at first,
+            but it serves as a simple way to create a deep,
+            rich sweetness without the need
+            for additional sugar.The dish is typically served with steamed rice,
+            as the thick sauce is perfect
+            for drizzling over rice,
+            adding a sweet and savory layer to the meal.
+            ",
+            "fullDesc": "descriptions/05-Coca-ColaChicken.html"
+        },
+        {
+            "@sort": "6",
+            "itemName": "Hot Pot (火锅)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(China)",
+                "Date of Origin": "Ancient (9th Centurry)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Hot pot, known as huǒguō  (火锅) in Chinese, is more than just a meal—it’s a shared experience that brings people together around the table. The heart of the meal is the pot of boiling broth, which can range from spicy Sichuan-style with chili and peppercorns to lighter, clear broths made from chicken or pork bones. Diners choose from an array of raw ingredients such as thinly sliced beef, lamb, shrimp, mushrooms, leafy greens, and tofu, cooking them directly in the simmering broth. The fun lies in the interactive nature of the meal, as everyone dips their ingredients, waits for them to cook, and customizes each bite with different dipping sauces, such as sesame paste, soy sauce, garlic, and chili oil.
+
+                The variety of ingredients and the broth’ s customization make hot pot adaptable to different tastes and dietary preferences,
+            making it a favorite in Chinese homes and restaurants alike.Regional variations of hot pot abound across China: Sichuan hot pot is famed
+            for its numbing heat from Sichuan peppercorns and dried chilies,
+            while northern - style hot pot,
+            commonly found in Beijing,
+            tends to favor a mild broth made from lamb or beef.Other versions,
+            such as seafood hot pot along China’ s coast,
+            emphasize fresh ocean flavors.Hot pot 's ability to bring diverse ingredients together in one pot, while allowing each diner to tailor their own meal, reflects the diversity and communal spirit of Chinese food culture.
+            ",
+            "fullDesc": "descriptions/06-HotPot.html"
+        },
+        {
+            "@sort": "7",
+            "itemName": "Sour Soup with Beef Slices (酸汤肥牛)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(China)",
+                "Date of Origin": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Sour Soup Beef Slices (酸汤肥牛) is a popular Chinese dish known for its tangy, spicy, and savory flavors. Originating from the Guizhou province, this dish features thinly sliced beef cooked in a sour broth made with fermented ingredients, typically tomato or pickled vegetables, and flavored with chili and aromatics. The combination of tender beef, vibrant soup, and the balanced contrast between sour and spicy flavors make this dish a favorite in many Chinese restaurants. Its lively taste and warming qualities are particularly enjoyed during cooler months or when seeking something bold and refreshing.",
+            "longerDesc": "Sour Soup Beef Slices, or 酸汤肥牛, is a dish that perfectly embodies the Guizhou region's love for sour and spicy flavors. The base of this dish is a tangy, fermented broth, which often includes pickled chilies or vegetables, tomatoes, and vinegar. The broth is brought to a boil, and thin slices of beef, known as 
+            肥牛(fei niu),
+            are quickly cooked in it.The beef is typically marbled and tender,
+            thinly sliced to allow
+            for quick cooking,
+            ensuring it absorbs the broth’ s flavors
+            while remaining soft and juicy.Aromatic ingredients like garlic,
+            ginger,
+            and scallions further elevate the taste,
+            making every bite burst with flavor.
+
+            The dish’ s sourness,
+            which is its defining characteristic,
+            comes from a combination of tomatoes,
+            fermented pickles,
+            and sometimes vinegar,
+            creating a refreshing yet bold taste.The broth,
+            besides being sour,
+            is often infused with a layer of heat from chili peppers or chili oil,
+            which is typical of Guizhou cuisine.This dynamic combination of flavors is what sets Sour Soup Beef Slices apart from other hotpot or broth - based dishes.It 's often served with fresh vegetables and mushrooms, added to the soup alongside the beef, making it not only a protein-rich meal but also a nutritious one. Diners can adjust the sourness and spiciness by adding extra vinegar or chili oil based on their preference, offering a customizable dining experience.
+            ",
+            "fullDesc": "descriptions/07-SourSoup.html"
+        },
+        {
+            "@sort": "8",
+            "itemName": "Peking Duck (北京烤鸭)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(China)",
+                "Date of Origin": "Medieval(14th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Peking Duck (北京烤鸭) is one of China's most famous dishes, originating from the imperial kitchens of Beijing during the Yuan Dynasty. Known for its crispy skin and succulent meat, this dish is served with thin pancakes, scallions, cucumber, and a savory hoisin or sweet bean sauce. The meticulous preparation, which involves air-drying and roasting the duck to perfection, makes Peking Duck a culinary masterpiece that is enjoyed both in fine restaurants and on special occasions. Its rich flavors and elegant presentation have earned it a reputation as a symbol of Chinese culinary excellence.",
+            "longerDesc": "Peking Duck is renowned for its intricate preparation and the harmony of flavors it delivers. The duck is first seasoned with a combination of sugar and spices, then air-dried for several hours, which helps achieve its signature crisp skin. After drying, the duck is roasted in a special oven at high heat, which renders the fat and crisps the skin while keeping the meat tender and juicy. The cooking process not only ensures that the skin becomes golden and crisp but also enhances the natural flavors of the duck.
+
+                Once roasted,
+            the duck is traditionally carved in front of diners.The crispy skin,
+            often the highlight of the dish,
+            is served first,
+            sometimes dipped in sugar.The rest of the meat is thinly sliced and served alongside steamed pancakes,
+            julienned scallions,
+            cucumbers,
+            and hoisin or sweet bean sauce.The combination of the crispy skin,
+            tender meat,
+            and fresh accompaniments,
+            wrapped together in a pancake,
+            creates a perfect balance of textures and flavors.This dish is not only a delight
+            for the palate but also a social experience,
+            often enjoyed in communal settings during celebrations or formal dinners.The presentation and the process of building each bite make Peking Duck a feast as much
+            for the eyes as it is
+            for the taste buds.
+            ",
+            "fullDesc": "descriptions/08-PekingDuck.html"
+        },
+        {
+            "@sort": "9",
+            "itemName": "Pork Bone Ramen (豚骨ラーメン)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(Japan)",
+                "Date of Origin": "Modern(20th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Tonkotsu Ramen (豚骨ラーメン) is a rich and flavorful Japanese noodle soup, known for its creamy pork bone broth. Originating from Fukuoka on the island of Kyushu, this ramen variety is characterized by its milky-white broth made by boiling pork bones for hours to extract collagen and fat, giving it a luscious, smooth texture. Served with thin noodles, slices of tender pork (chashu), and a variety of toppings such as soft-boiled eggs, green onions, and seaweed, Tonkotsu Ramen offers a deeply savory and comforting meal, beloved across Japan and increasingly popular worldwide.
+            ",
+            "longerDesc": "Tonkotsu Ramen, or pork bone ramen, stands out among the many regional styles of ramen for its rich, velvety broth, which is the result of boiling pork bones over high heat for an extended period. This slow cooking process extracts marrow, collagen, and fat from the bones, transforming the broth into a creamy, white liquid full of umami and depth of flavor. The long cooking time, often lasting 12 hours or more, is essential to achieving the broth's signature smooth and gelatinous consistency. The flavor of Tonkotsu broth is bold and hearty, with a slightly fatty mouthfeel that contrasts beautifully with the lightness of the noodles and toppings.
+
+                The toppings play a crucial role in balancing the richness of the broth.Slices of chashu(braised or roasted pork belly) are commonly added,
+            their tenderness and flavor complementing the soup.Soft - boiled eggs(ajitsuke tamago) with a slightly runny yolk,
+            green onions,
+            wood ear mushrooms,
+            and nori(dried seaweed) are also typical accompaniments.The thin,
+            straight noodles used in Tonkotsu Ramen are designed to absorb the thick broth,
+            creating a perfect harmony between the chewy noodles and the savory soup.The entire dish comes together as a deeply satisfying meal that provides comfort and warmth,
+            making it a staple of Japanese cuisine,
+            particularly in the colder months.
+            ",
+            "fullDesc": "descriptions/09-PorkBone.html"
+        },
+        {
+            "@sort": "10",
+            "itemName": "Sukiyaki (すき焼き)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(Japan)",
+                "Date of Origin": "Modern(19th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Sukiyaki (すき焼き) is a traditional Japanese hot pot dish that combines thinly sliced beef, vegetables, tofu, and noodles, simmered in a sweet and savory broth made from soy sauce, sugar, and mirin. Often cooked at the table, sukiyaki is a social dish, enjoyed communally by family and friends. Its delicate balance of sweet and salty flavors, along with the variety of textures, makes it a popular choice during special occasions, particularly in the colder months. This dish is deeply rooted in Japanese food culture, symbolizing warmth and togetherness.",
+            "longerDesc": "Sukiyaki is a heartwarming dish that brings together the simplicity of high-quality ingredients and the richness of traditional Japanese flavors. The centerpiece of sukiyaki is thinly sliced, well-marbled beef, which is briefly seared in a pot before being simmered in a sauce made from soy sauce, sugar, and mirin (a type of sweet rice wine). The broth strikes a perfect harmony between salty and sweet, enhancing the natural flavors of the beef and vegetables. Vegetables such as napa cabbage, shiitake mushrooms, and green onions, along with tofu and shirataki noodles, are added to the pot, absorbing the delicious broth as they cook.
+
+                What makes sukiyaki truly unique is the way it is served.Once the ingredients are cooked to perfection,
+            they are typically dipped in raw,
+            beaten eggs before being eaten.This practice adds a creamy texture and richness to the dish,
+            which complements the savory and sweet broth.Sukiyaki is traditionally cooked and eaten at the dining table,
+            with diners adding ingredients to the pot as they go,
+            making it a participatory and social meal.The flavors of sukiyaki deepen as the ingredients simmer,
+            making each bite more flavorful than the last.This communal cooking experience embodies the Japanese concept of\ "wa,\"
+            or harmony,
+            making sukiyaki not just a meal but an experience of togetherness.
+            ",
+            "fullDesc": "descriptions/10-Sukiyaki.html"
+        },
+        {
+            "@sort": "11",
+            "itemName": "Rotation Sushi (回転寿司)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(Japan)",
+                "Date of Origin": "Modern(20th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Kaiten-zushi (回転寿司), or rotation sushi, is a popular style of sushi dining in Japan where plates of sushi move along a conveyor belt, allowing customers to select their preferred dishes as they pass by. This modern, efficient style of serving sushi originated in the 1950s and has since become a casual and accessible way for people to enjoy a variety of sushi at an affordable price. Diners can choose from an assortment of sushi types, from classic nigiri to more creative rolls, making kaiten-zushi an engaging and convenient dining experience.",
+            "longerDesc": "Kaiten-zushi, also known as conveyor belt sushi, revolutionized the way sushi is served and enjoyed in Japan. The concept is simple: plates of sushi rotate around the restaurant on a conveyor belt, and customers pick what they want to eat directly from the belt. Each plate is color-coded to indicate its price, making it easy for diners to keep track of their meal costs. Traditional sushi varieties like maguro (tuna) and ebi (shrimp) are offered alongside more contemporary rolls that may include ingredients like avocado, mayonnaise, or tempura, reflecting the versatility of modern sushi.
+
+                The allure of kaiten - zushi lies in its convenience and variety.Unlike traditional sushi dining,
+            where each piece is made to order,
+            the rotating conveyor belt allows
+            for quick and easy selection of sushi dishes,
+            making it perfect
+            for busy or casual dining.Sushi chefs prepare the sushi in the center of the restaurant and place it on the conveyor belt,
+            ensuring a continuous flow of fresh plates.Kaiten - zushi restaurants often provide a digital menu
+            for custom orders,
+            ensuring that customers can enjoy both freshly prepared items and whatever catches their eye from the belt.The communal,
+            fast - paced nature of the experience,
+            along with the wide range of options,
+            has made kaiten - zushi a favorite among locals and tourists alike.
+            ",
+            "fullDesc": "descriptions/11-RotationSushi.html"
+        },
+        {
+            "@sort": "12",
+            "itemName": "Tempura (天婦羅)",
+            "image": "",
+            "info": {
+                "Region": "East Asia(Japan)",
+                "Date of Origin": "Medieval(16th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Fried"
+            },
+            "shortDesc": "Tempura (天婦羅) is a popular Japanese dish consisting of seafood, vegetables, or sometimes even meats that are lightly battered and deep-fried to achieve a crispy texture. Originating from Japan but with influences from Portuguese cooking methods introduced in the 16th century, tempura has become a staple in Japanese cuisine. The light, airy batter used in tempura creates a delicate coating that enhances the natural flavors of the ingredients without overwhelming them. This dish is served either as part of a larger meal or as a standalone dish with dipping sauces, rice, or noodles.",
+            "longerDesc": "Tempura is a beloved dish in Japanese cuisine known for its simplicity and elegance. The key to perfect tempura lies in the lightness of the batter, which is typically made from a mixture of cold water, flour, and sometimes egg. This batter is not over-mixed, allowing for a thin, crispy coating when fried. A variety of ingredients can be used for tempura, the most common being shrimp, squid, white fish, and vegetables like sweet potato, pumpkin, eggplant, and mushrooms. Each item is dipped in the batter and deep-fried briefly at a high temperature to ensure that the outside is crispy while the inside remains tender and moist.
+
+                Tempura is traditionally served with a dipping sauce called tentsuyu,
+            made from dashi(a type of broth),
+            soy sauce,
+            and mirin(a sweet rice wine).The delicate flavor of the sauce complements the lightness of the tempura without overpowering the taste of the ingredients.In some variations,
+            tempura is served over a bed of rice(tendon) or alongside soba or udon noodles.The versatility of tempura,
+            combined with its appealing texture and flavor,
+            makes it a popular choice in both casual dining and more refined settings in Japan.The dish’ s success lies in its careful balance of textures and its ability to elevate simple ingredients into something extraordinary.
+            ",
+            "fullDesc": "descriptions/12-Tempura.html"
+        },
+        {
+            "@sort": "13",
+            "itemName": "Mutton in Clay Pot (مٹن کُنا)",
+            "image": "",
+            "info": {
+                "Region": "South Asia (Pakistan)",
+                "Date of Origin": "Medieval(16th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Mutton Kunna is a traditional Pakistani dish, particularly famous in the Punjab region. Known for its rich, flavorful gravy and tender mutton, this dish is often served at special occasions, including weddings and family gatherings. It is slow-cooked to perfection in a clay pot, giving it a unique taste that sets it apart from other mutton curries. Kunna’s distinctive blend of spices creates a savory yet slightly tangy flavor that is deeply satisfying.",
+            "longerDesc": "Mutton Kunna holds a significant place in Pakistani cuisine, especially in the culinary traditions of rural Punjab. The dish gets its name from the special clay pot, kunna, in which it is cooked. The clay pot not only enhances the flavor but also allows the meat to cook slowly, ensuring that the mutton becomes soft and succulent. The slow-cooking process helps infuse the meat with spices, while the natural clay pot imparts an earthy aroma to the dish. 
+            The key ingredients in Mutton Kunna include bone - in mutton,
+            ginger,
+            garlic,
+            yogurt,
+            and an array of spices like cumin,
+            coriander,
+            cardamom,
+            and black pepper.The dish is often garnished with fried onions,
+            green chilies,
+            and fresh coriander.A hallmark of this dish is its rich,
+            velvety gravy,
+            thickened using wheat flour or gram flour,
+            which adds a smooth consistency.Mutton Kunna is traditionally served with naan or roti,
+            making it a hearty and comforting meal.
+            ",
+            "fullDesc": "descriptions/13-Mutton.html"
+        },
+        {
+            "@sort": "14",
+            "itemName": "Deep-fried Lentil Fritters (دہی بھلے چاٹ)",
+            "image": "",
+            "info": {
+                "Region": "South Asia (Pakistan)",
+                "Date of Origin": "Medieval(16th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Plant Based",
+                "preparation": "Fried"
+            },
+            "shortDesc": "Dahi Bhalla Chaat is a popular Pakistani street food dish made from lentil dumplings, known as bhallas, served in spiced yogurt and topped with an array of chutneys, herbs, and crispy toppings. It is a refreshing yet flavorful snack often enjoyed during iftar in Ramadan, or at family gatherings and festivals. The combination of tangy yogurt, sweet and spicy chutneys, and soft lentil dumplings makes it a beloved treat in Pakistan, offering a perfect balance of flavors and textures.",
+            "longerDesc": "Dahi Bhalla Chaat is not only a beloved street food but also a festive dish in Pakistan. Its popularity peaks during the holy month of Ramadan, where it’s often served at iftar, the meal to break the fast. Bhallas, which are soft dumplings made from urad dal (split black gram), are first soaked and then topped with thick, tangy yogurt. This yogurt layer is spiced with roasted cumin, red chili powder, and sometimes chaat masala, adding a punch of flavors to the dish. What truly elevates the Dahi Bhalla Chaat experience is the generous addition of chutneys, particularly sweet tamarind chutney and spicy green chutney, which give the dish its characteristic sweet, sour, and spicy notes.
+
+                The dish is garnished with crispy sev(fried chickpea noodles) or crushed papdi(crispy dough wafers),
+            along with chopped coriander leaves,
+            pomegranate seeds,
+            and sometimes a sprinkle of chaat masala.The variety of toppings adds a delightful contrast of textures,
+            making the dish both crunchy and creamy.The interplay of flavors and textures makes Dahi Bhalla Chaat an irresistible snack or appetizer,
+            often enjoyed on hot summer days
+            for its cooling effect from the yogurt.Its versatility allows it to be tailored to personal taste preferences,
+            making it a widely loved dish in Pakistani households.
+            ",
+            "fullDesc": "descriptions/14-Deep-friedLentil.html"
+        },
+        {
+            "@sort": "15",
+            "itemName": "Semolina Halwa (سوجی کا حلوہ)",
+            "image": "",
+            "info": {
+                "Region": "South Asia (Pakistan)",
+                "Date of Origin": "Medieval(16th century)",
+                "Meal": "Desserts",
+                "Ingredient": "Dairy",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Sooji ka Halwa is a beloved traditional dessert in Pakistan, made from semolina (sooji), sugar, ghee, and flavored with cardamom. This rich, aromatic, and comforting dish is often served during religious events, family gatherings, and festive occasions such as Eid. Known for its simple preparation and delightful texture, Sooji ka Halwa offers a perfect balance of sweetness and warmth, making it a cherished part of Pakistani culinary culture.",
+            "longerDesc": "Sooji ka Halwa is a staple dessert in Pakistani households, cherished not only for its delectable taste but also for its cultural and religious significance. The dessert is made by roasting semolina (sooji) in ghee until it turns golden brown and fragrant, then cooking it with sugar and water until it thickens into a soft, smooth halwa. Cardamom is added to enhance its flavor, and it’s often garnished with slivers of almonds, pistachios, and sometimes raisins for added texture and taste. While the ingredients are simple, the careful balance of ghee, sugar, and semolina is what creates the dish's iconic richness and slightly grainy texture.
+
+                Sooji ka Halwa is often prepared during religious ceremonies and festive events such as Eid or Milad celebrations.It is also made as a part of a sacred offering(nazar) during prayer gatherings and distributed to family and guests.It is typically paired with puris(fried flatbread) in a popular breakfast dish called Halwa Puri,
+            often enjoyed on weekends or during festive breakfasts.The smooth,
+            buttery texture of the halwa contrasts beautifully with the crispy puri,
+            creating a harmonious blend of textures that is deeply satisfying.
+            ",
+            "fullDesc": "descriptions/15-Halwa.html"
+        },
+        {
+            "@sort": "16",
+            "itemName": "Chicken Pilaf (چکن بریانی)",
+            "image": "",
+            "info": {
+                "Region": "South Asia (Pakistan)",
+                "Date of Origin": "Medieval(16th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Chicken Biryani is one of Pakistan’s most iconic and beloved dishes, known for its aromatic spices, tender chicken, and flavorful basmati rice. A symbol of festive dining, this dish is often served at weddings, family gatherings, and special occasions. With its layers of fragrant rice, succulent chicken, and vibrant spices like saffron and cardamom, Chicken Biryani represents the rich culinary heritage of Pakistan. It is a dish that brings together family and friends, creating an unforgettable dining experience.",
+            "longerDesc": "Chicken Biryani is a rich, layered rice dish that holds a central place in Pakistani cuisine. It is made by cooking marinated chicken with basmati rice and an intricate blend of spices, including cinnamon, cardamom, cloves, and cumin. The chicken is often marinated with yogurt, garlic, and ginger, which not only tenderizes the meat but also infuses it with deep flavors. As the chicken cooks, its juices and spices mingle with the rice, creating a flavorful and aromatic experience that permeates the entire dish. Biryani is usually cooked in a “dum” style, where the pot is sealed with dough or a tight-fitting lid, allowing the steam to cook the ingredients to perfection.
+            Chicken Biryani varies across regions in Pakistan,
+            with each area offering its own unique take on the dish.Karachi - style biryani,
+            for instance,
+            is known
+            for its intense heat and bold spices,
+            while Lahore - style biryani may be slightly milder but equally fragrant.The dish is often garnished with fried onions,
+            fresh coriander,
+            mint,
+            and sometimes boiled eggs or sliced potatoes.Chicken Biryani is usually accompanied by cooling sides like raita(a yogurt - based condiment) or kachumber salad(a tangy tomato, onion, and cucumber salad).The complexity of its flavors,
+            from the richness of the chicken to the aromatic notes of the spices,
+            makes it a favorite
+            for both casual meals and special occasions in Pakistan.
+            ",
+            "fullDesc": "descriptions/16-Pilaf.html"
+        },
+        {
+            "@sort": "17",
+            "itemName": "Hummus (حمص)",
+            "image": "",
+            "info": {
+                "Region": "West Asia(Lebanon)",
+                "Date of Origin": "Medieval(13th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Plant Based",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Hummus is a beloved Middle Eastern dish made from blended chickpeas (garbanzo beans), tahini (sesame seed paste), olive oil, lemon juice, and garlic. This creamy and nutritious dip has ancient roots in Levantine cuisine and is widely enjoyed across the Mediterranean and Middle Eastern regions. Traditionally served as a part of mezze platters with pita bread, fresh vegetables, or spread on flatbreads, hummus has gained worldwide popularity for its rich flavor, versatility, and health benefits, especially as a plant-based source of protein and fiber.",
+            "longerDesc": "Hummus holds a special place in Middle Eastern cuisine as both a comfort food and a symbol of regional pride. Its name derives from the Arabic word for chickpeas, the key ingredient that gives hummus its creamy texture and earthy flavor. Chickpeas are first cooked until soft and then blended with tahini, lemon juice, olive oil, and garlic to create a smooth and rich dip. The balance of flavors in hummus is crucial: the nuttiness of tahini, the tang of lemon juice, and the warmth of garlic all complement the mildness of the chickpeas, while olive oil adds a luxurious finish. Some variations may include additional spices like cumin or paprika, or toppings such as pine nuts, herbs, and sumac for added texture and flavor.
+
+                Hummus is traditionally served with warm pita bread,
+            but its versatility allows it to pair well with a variety of other foods,
+            including vegetables like cucumbers,
+            carrots,
+            and tomatoes.It can also be used as a spread in sandwiches or wraps,
+            making it a versatile staple in many kitchens.In Middle Eastern households,
+            hummus is often part of a larger mezze selection,
+            which includes small dishes like tabbouleh,
+            falafel,
+            and baba ganoush,
+            all of which are shared communally.The simplicity of hummus,
+            combined with its nutrient - rich ingredients,
+            has made it a go - to food
+            for those seeking plant - based options,
+            with many variations and flavorings now appearing in modern kitchens around the world.
+            ",
+            "fullDesc": "descriptions/17-Hummus.html"
+        },
+        {
+            "@sort": "18",
+            "itemName": "Meat wrap (شاورما)",
+            "image": "",
+            "info": {
+                "Region": "West Asia(Lebanon)",
+                "Date of Origin": "Modern(20th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Shawarma is a popular Middle Eastern street food consisting of thinly sliced marinated meat—often lamb, beef, chicken, or a mix—cooked on a vertical rotisserie and wrapped in pita or flatbread. The meat is shaved off the rotating spit, piled into the bread, and typically garnished with fresh vegetables, pickles, and drizzled with sauces like tahini or garlic sauce. Shawarma’s rich flavor comes from the marinade, which often includes a blend of spices such as cumin, turmeric, paprika, and cardamom, making it a flavorful, portable, and filling meal enjoyed across the world.",
+            "longerDesc": "Shawarma is a culinary staple across the Middle East, and its unique preparation method gives it its distinctive flavor and texture. The meat used in shawarma is marinated for several hours in a combination of spices, herbs, and often yogurt or vinegar, which tenderizes the meat and enhances its flavor. Once marinated, the meat is layered on a large vertical spit, which slowly rotates in front of a heat source. As the meat roasts, the outer layer becomes crispy and caramelized, while the inside remains tender and juicy. The cooked meat is then shaved off in thin slices and served in a warm flatbread or pita wrap, typically accompanied by vegetables such as tomatoes, onions, lettuce, and cucumbers.
+
+                What sets shawarma apart is its flexibility in both preparation and presentation.Depending on the region or personal preference,
+            shawarma can be paired with a variety of condiments and sauces.In Levantine regions,
+            garlic sauce,
+            or toum,
+            is a popular addition,
+            providing a creamy,
+            garlicky contrast to the savory meat.In some places,
+            tahini or hummus may be added
+            for extra richness,
+            while in others,
+            hot sauce or chili paste is used
+            for a spicy kick.Shawarma is often served alongside French fries,
+            pickled vegetables,
+            or even rice,
+            making it a versatile dish that can be adapted to individual tastes.Its widespread appeal lies not only in its bold,
+            aromatic flavors but also in its convenience,
+            making it one of the most popular street foods worldwide.
+            ",
+            "fullDesc": "descriptions/18-shawarma.html"
+        },
+        {
+            "@sort": "19",
+            "itemName": "Kibbeh (كبة)",
+            "image": "",
+            "info": {
+                "Region": "West Asia(Lebanon)",
+                "Date of Origin": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Fried"
+            },
+            "shortDesc": "Kibbeh is a traditional Middle Eastern dish made primarily from bulgur wheat, minced onions, and finely ground meat—usually lamb or beef—seasoned with a variety of aromatic spices. It is considered the national dish of several countries, including Lebanon and Syria, and is enjoyed in different forms, such as baked, fried, or served raw. Kibbeh’s outer shell is typically made of bulgur and meat, while the filling often includes spiced meat, pine nuts, and onions. This dish is widely loved for its rich flavors, crispy texture, and its cultural significance in Middle Eastern feasts and family gatherings.",
+            "longerDesc": "Kibbeh is a dish that embodies the flavors and traditions of the Levantine region, with its origins deeply rooted in the culinary practices of Lebanon, Syria, and other parts of the Middle East. The name 
+            kibbeh comes from the Arabic word
+            for ball or to form,
+            referring to its distinct shape— often resembling a torpedo or football.The basic ingredients of kibbeh include bulgur wheat,
+            which is soaked and softened,
+            and ground meat(commonly lamb or beef),
+            mixed with a blend of spices such as cinnamon,
+            allspice,
+            and cumin.This mixture forms a dough - like shell that encases a filling made of spiced meat sautéed with onions and pine nuts,
+            creating a harmony of flavors that is both savory and aromatic.
+
+            Kibbeh can be prepared in various ways,
+            depending on regional preferences and occasions.One of the most popular versions is fried kibbeh,
+            where the bulgur and meat dough is shaped into oval patties,
+            filled with the spiced meat mixture,
+            and deep - fried until golden brown and crispy on the outside.Another common preparation is baked kibbeh,
+            where layers of the bulgur and meat mixture are spread into a tray with the filling sandwiched in between,
+            then baked to perfection.In some regions,
+            raw kibbeh(kibbeh nayyeh) is also enjoyed,
+            where the ingredients are mixed and served fresh,
+            similar to a tartare.Regardless of the variation,
+            kibbeh is often accompanied by fresh vegetables,
+            yogurt - based dips,
+            or pickled sides,
+            making it a versatile dish suitable
+            for both everyday meals and festive occasions.
+            ",
+            "fullDesc": "descriptions/19-Kibbeh.html"
+        },
+        {
+            "@sort": "20",
+            "itemName": "Filo Pastry (كنافة)",
+            "image": "",
+            "info": {
+                "Region": "West Asia(Lebanon)",
+                "Date of Origin": "Ancient (10th Centurry)",
+                "Meal": "Desserts",
+                "Ingredient": "Dairy",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Knafeh is a traditional Lebanese dessert made from layers of shredded filo dough or semolina, soaked in sweet syrup, and filled with cheese or cream. This popular pastry, known for its crispy golden crust and gooey cheese filling, is often topped with crushed pistachios for added texture and flavor. Knafeh is widely enjoyed across the Middle East, especially during special occasions and festivals, and is typically served warm. Its sweet and rich flavor, combined with the contrast of textures, makes it a beloved treat in Lebanese cuisine and beyond.",
+            "longerDesc": "Lebanese Knafeh is a unique dessert that holds a special place in the hearts of many across Lebanon and the wider Middle Eastern region. This decadent pastry is made with a base of shredded filo dough (kataifi) or semolina that is layered with a rich cheese filling, most commonly akkawi or nabulsi cheese, which are mild, salty cheeses that melt beautifully when heated. The dough and cheese are baked together until the top layer becomes golden and crispy, while the cheese inside becomes soft and gooey. Once the knafeh is out of the oven, it is drenched in a fragrant syrup made with sugar, water, and orange blossom or rose water, which adds a sweet, floral note to the dish.
+
+                Knafeh’ s preparation varies slightly depending on the region.In Lebanon,
+            it is traditionally made with semolina dough,
+            giving it a more cake - like texture compared to the filo dough version popular in other Middle Eastern countries.It is often topped with a sprinkling of crushed pistachios
+            for a nutty contrast to the sweet,
+            cheesy filling.The dish is usually enjoyed warm,
+            ensuring that the cheese remains stretchy and the syrup fully absorbed.It’ s a popular choice
+            for breakfast,
+            especially during weekends and holidays,
+            but it is also served as a dessert after large meals,
+            during Ramadan,
+            or at celebratory events like weddings and family gatherings.Knafeh’ s indulgent sweetness and rich flavors make it a symbol of comfort and celebration in Lebanese culture.
+            ",
+            "fullDesc": "descriptions/20-Knafeh.html"
+        }
+
+    ]
+}
