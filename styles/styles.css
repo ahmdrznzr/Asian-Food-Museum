@@ -19,7 +19,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman';
 }
 
 body {
@@ -187,8 +187,7 @@ header {
 
 .section-one .main-btn:hover {
     color: var(--yellow);
-    border: 3px solid var(--dark-red);
-    background-color: var(--red);
+    background-color: var(--dark-red);
     /* Change background color to darker red on hover */
 }
 
@@ -210,9 +209,10 @@ header {
 /* Image styles */
 
 .section-one .food-image {
-    width: 100%;
+    max-width: 90%;
     /* Image takes 65% of the container width */
-    max-height: 90%;
+    max-height: 100%;
+    border-radius: 50%;
     transition: transform 2s ease-in-out;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
@@ -310,7 +310,6 @@ header {
 /* Button hover effect */
 
 .section-two .btn:hover {
-    border: 3px solid var(--yellow);
     color: var(--yellow);
     background-color: var(--dark-red);
     /* Darken the button background color on hover */
@@ -461,13 +460,12 @@ header {
     /* Add padding around the button text */
     border-radius: 15px;
     /* Rounded corners */
+    transition: all 0.5s ease;
 }
 
 .narrative-btn:hover {
-    background-color: var(--yellow);
-    font-weight: 600;
-    border: 3px solid var(--red);
-    color: var(--red);
+    background-color: var(--dark-red);
+    color: var(--yellow);
 }
 
 
@@ -762,16 +760,70 @@ footer {
 
 /* Responsive design for tablets */
 
+@media (max-width: 1280px) {
+    .home {
+        min-height: auto;
+    }
+    .section-one {
+        width: 100%;
+        flex-direction: column-reverse;
+        /* Stack text and image vertically with text first */
+        justify-content: center;
+        /* Center content vertically */
+    }
+    .section-one .text-content {
+        padding-left: 0;
+        /* Remove left padding on smaller screens */
+        text-align: center;
+        /* Center the text */
+    }
+    .section-one .btn {
+        margin: 360px auto 0 auto;
+        /* Center the button */
+        display: block;
+        /* Ensure the button is displayed as a block element */
+        padding: 8px 16px;
+        /* Reduce padding for the button */
+        width: 50%;
+        /* Reduce button width */
+        height: 48px;
+        /* Reduce button height */
+        font-size: 20px;
+        /* Reduce button font size */
+    }
+    .section-one .text-content p {
+        display: none;
+    }
+    .section-one .image-content {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        max-width: 40%;
+        /* Full width of the section */
+        max-height: 40%;
+        /* Full height of the section */
+        z-index: 1;
+        overflow: hidden;
+        /* Hide overflowing image */
+    }
+    .section-one .image-content img {
+        width: 85%;
+        height: 85%;
+        align-items: center;
+        /* Make the image faint for better readability */
+    }
+    .section-one .btn {
+        width: 30%;
+    }
+    .section-one .text-content h1 {
+        font-size: 50px;
+    }
+}
+
 
 /* Responsive cards */
 
 @media screen and (max-width: 970px) {
-    .section-one .text-content h1 {
-        font-size: 36px;
-    }
-    .section-one .text-content p {
-        font-size: 18px;
-    }
     .section-one {
         min-height: 100%;
     }
@@ -794,56 +846,8 @@ footer {
 }
 
 @media (max-width: 769px) {
-    .home {
-        min-height: auto;
-    }
-    .section-one {
-        width: 100%;
-        flex-direction: column-reverse;
-        /* Stack text and image vertically with text first */
-        justify-content: center;
-        /* Center content vertically */
-    }
-    .section-one .text-content {
-        padding-left: 0;
-        /* Remove left padding on smaller screens */
-        text-align: center;
-        /* Center the text */
-    }
-    .section-one .image-content {
-        display: none;
-        /* Maximum image width for small screens */
-    }
-    .section-one .text-content h1 {
-        font-size: 45px;
-        /* Reduce heading size on smaller screens */
-    }
-    .section-one .text-content p {
-        font-size: 18px;
-        text-align: center;
-        /* Reduce paragraph font size on smaller screens */
-    }
     .section-one .btn {
-        margin: 72px auto 0 auto;
-        /* Center the button */
-        display: block;
-        /* Ensure the button is displayed as a block element */
-        padding: 8px 16px;
-        /* Reduce padding for the button */
-        width: 50%;
-        /* Reduce button width */
-        height: 48px;
-        /* Reduce button height */
-        font-size: 20px;
-        /* Reduce button font size */
-    }
-    .section-one .food-image {
-        width: 100%;
-        /* Image takes full width of the container */
-        max-width: 400px;
-        /* Limit the maximum width of the image */
-        margin-bottom: 20px;
-        /* Add margin below the image */
+        margin-top: 280px;
     }
     .team-member {
         width: 40%;
@@ -976,7 +980,14 @@ footer {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
+    .section-one .text-content h1 {
+        font-size: 36px;
+        /* Reduce heading size on smaller screens */
+    }
+    .section-one .main-btn {
+        width: 50%;
+    }
     .section-three {
         display: flex;
         justify-content: center;
@@ -1041,9 +1052,10 @@ footer {
 
 /* Responsive styles for navigation bar */
 
-@media (max-width: 768px) {
-    .image-content .food-image {
-        display: none;
+@media (max-width: 992px) {
+    .navbar {
+        margin-top: -15px;
+        height: 60px;
     }
     .navbar-toggler {
         display: block;
@@ -1068,7 +1080,6 @@ footer {
         left: 0;
         width: 100%;
         padding: 4px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .navbar-nav {
         flex-direction: column;
@@ -1077,10 +1088,6 @@ footer {
     .nav-item {
         font-size: 14px;
         margin: 0;
-    }
-    .navbar-toggler {
-        display: block;
-        /* Show hamburger button */
     }
     .navbar-brand img {
         margin: 0;
