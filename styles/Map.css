@@ -1,3 +1,92 @@
+
+
+/* define colors as variable to use them easily */
+
+@font-face {
+  font-family: myFont;
+  src: url();
+}
+
+:root {
+  --darkest: #1B1A17;
+  --dark: #0e1511;
+  --yellow: #eee5c8;
+  --red: #772017;
+  --dark-red: #281102;
+  --light: #696969;
+  --lightest: #EFEFEF;
+  --green: #9c9b84;
+  --brown: #a6997c;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  /* the total size of the element will not exceed the specified dimensions */
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--darkest);
+  /* Set the background color of the navbar */
+  display: flex;
+  justify-content: space-between;
+  /* Space out the logo and menu items */
+  align-items: center;
+  /* Vertically center the items */
+  /* Ensure the navbar spans the full width of the page */
+  box-sizing: border-box;
+  /* Include padding and border in the element's width and height */
+  padding: 1.5rem 1rem;
+  height: 48px;
+}
+
+.navbar-brand {
+  padding-left: 24px;
+}
+
+.navbar-nav {
+  padding-right: 24px;
+  gap: 24px;
+}
+
+.navbar-nav li a {
+  color: var(--lightest);
+  font-size: 18px;
+  /* show the border when it is hovered */
+  transition: color 0.9s, border-left 0.1s;
+}
+
+.navbar-nav .nav-item .nav-link a.active {
+  color: var(--yellow);
+}
+
+.nav-item a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: color 0.7s, outline 0.7s;
+}
+
+.nav-item .active-btn {
+  color: var(--yellow);
+}
+
+
+/* style of the border */
+
+.nav-item a:hover {
+  color: var(--yellow);
+  border-left: 2px solid var(--yellow);
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

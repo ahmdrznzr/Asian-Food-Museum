@@ -3,12 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Food Museum Map Page</title>
   <link rel="stylesheet" href="styles/Map.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Map Page</title>
 </head>
 <body>
   <header>
-    <h1>Food Museum Map Page</h1>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <a class="navbar-brand"><img src="images/foodMuseumLogo.jpg" alt="" style="height: 45px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto mb-0">
+              <li class="nav-item active ">
+                  <a class="nav-link active-btn " href="#home ">Home</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link " href="#about " tabindex="-1 " aria-disabled="true ">About</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link " href="#project " tabindex="-1 " aria-disabled="true ">Narratives</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link " href="#map " tabindex="-1 " aria-disabled="true ">Map</a>
+              </li>
+              <li class="nav-item ">
+                  <a class="nav-link " href="#team " tabindex="-1 " aria-disabled="true ">Team</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
   </header>
 
   <main>
@@ -29,32 +55,13 @@
         <button class="subcategory-btn" data-subcategory="modern">Modern</button>
       <!-- Subcategories will be dynamically injected here -->
       </div>
-
+      
       <!-- Item List -->
       <div class="sub-category">
-        <h2></h2>
-        <ul class="item-list">
-          <li><a href="#" class="active">Chinese Hot Pot (火锅)</a></li>
-          <li><a href="#" class="inactive">Lebanese Kibbeh (كبة)</a></li>
-          <li><a href="#" class="inactive">Lebanese Filo Pastry (كنافة)</a></li>
-          <li><a href="#" class="inactive">Persian Noodle Soup (آش رشته)</a></li>
-          <li><a href="#" class="inactive">Persian Herb Stew (قرمه سبزی)</a></li>
-          <li><a href="#" class="inactive">Chinese Sour Soup with Beef Slices (酸汤肥牛)</a></li>
-          <li><a href="#" class="inactive">Lebanese Hummus (حمص)</a></li>
-          <li><a href="#" class="inactive">Chinese Peking Duck (北京烤鸭)</a></li>
-          <li><a href="#" class="inactive">Persian Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)</a></li>
-          <li><a href="#" class="inactive">Persian Saffron Ice cream (بستنی سنتی)</a></li>
-          <li><a href="#" class="inactive">Pakistani Deep-fried Lentil Fritters (دہی بھلے چاٹ)</a></li>
-          <li><a href="#" class="inactive">Pakistani Chicken Pilaf (چکن بریانی)</a></li>
-          <li><a href="#" class="inactive">Pakistani Mutton in Clay Pot (مٹن کُنا)</a></li>
-          <li><a href="#" class="inactive">Pakistani Semolina Halwa (سوجی کا حلوہ)</a></li>
-          <li><a href="#" class="inactive">Japanese Tempura (天婦羅)</a></li>
-          <li><a href="#" class="inactive">Japanese Sukiyaki (すき焼き)</a></li>
-          <li><a href="#" class="inactive">Japanese Pork Bone Ramen (豚骨ラーメン)</a></li>
-          <li><a href="#" class="inactive">Japanese Rotation Sushi (回転寿司)</a></li>
-          <li><a href="#" class="inactive">Lebanese Meat wrap (شاورما)</a></li>
-          <li><a href="#" class="inactive">Chinese Coca-Cola Chicken Wings (可乐鸡翅)</a></li>
-          <!-- 20 items -->
+       <h2 id="subcategory-title"></h2>
+       <ul class="item-list" id="item-list">
+
+    <!-- Items will be dynamically injected -->
         </ul>
       </div>
     </section>
