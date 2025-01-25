@@ -54,17 +54,15 @@
             <!-- first part of item content -->
             <div class="item-content">
                 <!-- name of object -->
-                <h2 class="item-heading">Name of the Object</h2>
+                <h2 class="item-heading" id="item-heading">Name of the Object</h2>
                 <!-- image and short description part -->
                 <div class="item-info">
                     <!-- item image section -->
-                    <div class="item-img">
+                    <div class="item-img" id="item-img">
                         <img src="" alt="">
                     </div>
                     <!-- item short description page -->
                     <div class="item-des">
-                        <!-- heading -->
-                        <h4>What we need to know</h4>
                         <!-- the short description -->
                         <div class="infos">
                             <!-- fixed titles -->
@@ -80,11 +78,11 @@
                             <!-- short information related to fixed titles -->
 
                             <ul class="desc-list">
-                                <li class="short-desc">The Region</li>
-                                <li class="short-desc">The Date</li>
-                                <li class="short-desc">The Meal</li>
-                                <li class="short-desc">The Ingredient</li>
-                                <li class="short-desc">The Prep</li>
+                                <li class="short-desc" id="reg-name">The Region</li>
+                                <li class="short-desc" id="date-name">The Date</li>
+                                <li class="short-desc" id="meal-name">The Meal</li>
+                                <li class="short-desc" id="ingredient-name">The Ingredient</li>
+                                <li class="short-desc" id="prep-name">The Prep</li>
                             </ul>
                         </div>
                     </div>
@@ -96,10 +94,10 @@
         </div>
         <div class="description-section">
             <h4 class="data-header">Description</h4>
-            <div class="desc-text" id="shortInfo">The short info</div>
-            <div class="hidden desc-text" id="longerInfo">Longer info</div>
+            <div class="desc-text" id="shortInfo"></div>
+            <div class="hidden desc-text" id="longerInfo"></div>
             <div class="hidden desc-text" id="fullInfo">
-                <div id="fullInfoContent">full info</div>
+                <div id="fullInfoContent"></div>
             </div>
             <div class="read-btn" id="readButtons">
                 <button class="desc-button" id="lessBtn" onclick="less()">Tell Me Less</button>
@@ -115,69 +113,8 @@
                 <br> All copyright on the typographic and layout choices are 2024 &copy; Zahra Farajihormozi, Nazanin Fakharian, Ahmadreza Nazari, Yifan Wu.</p>
         </footer>
     </footer>
-
-    <script>
-        // JSON food data array
-        const foodData = [{
-                "id": 1,
-                "name": "Dango",
-                "country": "Japan",
-                "type": "Dessert",
-                "period": "Traditional Food",
-                "technique": "Steamed",
-                "description": "Dango is a traditional Japanese dessert made from glutinous rice flour, giving it a soft and chewy texture.",
-                "image": "img/Dango.png"
-            },
-            // More food data...
-        ];
-
-        // Function to load food details from localStorage and display on the page
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the selected food from localStorage
-            const food = JSON.parse(localStorage.getItem('selectedFood'));
-
-            if (food) {
-                // Set the details on the page
-                document.getElementById('food-title').innerText = food.name;
-                document.getElementById('food-image').src = food.image;
-                document.getElementById('food-country').innerText = food.country;
-                document.getElementById('food-type').innerText = food.type;
-                document.getElementById('food-period').innerText = food.period;
-                document.getElementById('food-technique').innerText = food.technique;
-                document.getElementById('food-description').innerText = food.description;
-
-                // Set the food ID
-                document.getElementById('food-id').innerText = food.id;
-            } else {
-                console.error('No food data found!');
-            }
-
-            // Logic for "Tell me more" button
-            const toggleButton = document.getElementById('toggle-description');
-            const moreDetailsSection = document.getElementById('more-details-section');
-
-            toggleButton.addEventListener('click', function() {
-                if (moreDetailsSection.style.display === 'none' || moreDetailsSection.style.display === '') {
-                    moreDetailsSection.style.display = 'block'; // Show more content
-                    toggleButton.innerText = 'Show less...'; // Update button text
-                } else {
-                    moreDetailsSection.style.display = 'none'; // Hide more content
-                    toggleButton.innerText = 'Tell me more...'; // Update button text
-                }
-            });
-
-            // Logic for "Tell me even more" button
-            const evenMoreButton = document.getElementById('even-more-link');
-            evenMoreButton.addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent default link behavior
-                // Save the current food data to localStorage
-                localStorage.setItem('selectedFood', JSON.stringify(food));
-                // Redirect to the MoreDetailsPage.html page
-                window.location.href = 'MoreDetailsPage.html';
-            });
-        });
-    </script>
     <script src="js/header.js"></script>
+    <script src="js/items.js"></script>
 </body>
 
 </html>
