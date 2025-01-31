@@ -1,68 +1,65 @@
-// Load the JSON data and populate narrative cards
-fetch('items.json')
-    .then(response => response.json())
-    .then(items => {
-        // For Narrative Page: Populate cards dynamically
-        const cardsContainer = document.querySelector('#cards-container'); // Assuming container ID
+document.addEventListener("DOMContentLoaded", async function() {
+    let currentIndex = 0;
+    let items = [];
 
-        items.forEach((item, index) => {
-            const card = document.createElement('div');
-            card.classList.add('card');
-            card.innerHTML = `
-        <h3>${item.title}</h3>
-        <p>${item.shortDescription}</p>
-      `;
-            card.addEventListener('click', () => {
-                window.location.href = `item.html?id=${index}`;
-            });
-            cardsContainer.appendChild(card);
-        });
+    // Fetch JSON data
+    async function fetchItems() {
+        try {
+            const response = await fetch("../data/items.json");
+            items = await response.json();
+            if (items.length > 0) {
+                displayItem(currentIndex);
+            }
+        } catch (error) {
+            console.error("Error loading items:", error);
+        }
+    }
+
+    // Display item data in HTML
+    function displayItem(index) {
+        if (index < 0 || index >= items.length) return;
+        let item = items[index];
+        document.getElementById("item-heading").textContent = item.itemName;
+        document.getElementById("item-img").innerHTML = `<img src="${item.image}" alt="${item.name}">`;
+        document.getElementById("reg-name").textContent = item.region;
+        document.getElementById("date-name").textContent = item.date;
+        document.getElementById("meal-name").textContent = item.meal;
+        document.getElementById("ingredient-name").textContent = item.ingredient;
+        document.getElementById("prep-name").textContent = item.preparation;
+        document.getElementById("shortInfo").textContent = item.shortDesc;
+        document.getElementById("longerInfo").textContent = item.longDesc;
+
+        document.getElementById("longerInfo").style.display = "none";
+        document.getElementById("shortInfo").style.display = "block";
+    }
+
+    // Event listeners for navigation
+    document.querySelector(".next-btn").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (currentIndex < items.length - 1) {
+            currentIndex++;
+            displayItem(currentIndex);
+        }
     });
 
-// Handle the Item Page Logic
-if (window.location.pathname.includes('item.html')) {
-    const urlParams = new URLSearchParams(window.location.search);
-    const itemId = parseInt(urlParams.get('id'));
+    document.querySelector(".previous-btn").addEventListener("click", function(event) {
+        event.preventDefault();
+        if (currentIndex > 0) {
+            currentIndex--;
+            displayItem(currentIndex);
+        }
+    });
 
-    fetch('items.json')
-        .then(response => response.json())
-        .then(items => {
-            const item = items[itemId];
+    // Toggle description
+    document.getElementById("moreBtn").addEventListener("click", function() {
+        document.getElementById("shortInfo").style.display = "none";
+        document.getElementById("longerInfo").style.display = "block";
+    });
 
-            if (!item) {
-                document.body.innerHTML = '<h1>Item not found</h1>';
-                return;
-            }
+    document.getElementById("lessBtn").addEventListener("click", function() {
+        document.getElementById("shortInfo").style.display = "block";
+        document.getElementById("longerInfo").style.display = "none";
+    });
 
-            // Populate item page details
-            const titleEl = document.querySelector('#item-title');
-            const descEl = document.querySelector('#item-description');
-
-            titleEl.textContent = item.title;
-            descEl.textContent = item.shortDescription;
-
-            // "Tell Me More" functionality
-            const tellMeMoreBtn = document.querySelector('#tell-me-more');
-            let showFullDescription = false;
-
-            tellMeMoreBtn.addEventListener('click', () => {
-                showFullDescription = !showFullDescription;
-                descEl.textContent = showFullDescription ? item.longDescription : item.shortDescription;
-                tellMeMoreBtn.textContent = showFullDescription ? 'Show Less' : 'Tell Me More';
-            });
-
-            // Next/Previous Navigation
-            const prevBtn = document.querySelector('#prev-item');
-            const nextBtn = document.querySelector('#next-item');
-
-            prevBtn.addEventListener('click', () => {
-                const prevId = (itemId - 1 + items.length) % items.length;
-                window.location.href = `item.html?id=${prevId}`;
-            });
-
-            nextBtn.addEventListener('click', () => {
-                const nextId = (itemId + 1) % items.length;
-                window.location.href = `item.html?id=${nextId}`;
-            });
-        });
-}
+    fetchItems();
+});
