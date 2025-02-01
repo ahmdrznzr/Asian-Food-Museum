@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         let item = items[index];
         document.getElementById("item-heading").textContent = item.itemName;
         document.getElementById("item-img").innerHTML = `<img src="${item.image}" alt="${item.name}">`;
-        document.getElementById("reg-name").textContent = item.region;
+        document.getElementById("reg-name").textContent = item.info.Region;
         document.getElementById("date-name").textContent = item.date;
         document.getElementById("meal-name").textContent = item.meal;
         document.getElementById("ingredient-name").textContent = item.ingredient;
