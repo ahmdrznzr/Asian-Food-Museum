@@ -18,6 +18,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--yellow);
+    text-align: justify;
 }
 
 
@@ -150,7 +151,7 @@ body {
     color: var(--red);
     text-decoration: underline;
     transform: translateX(16px);
-    cursor: grab;
+    cursor: pointer;
 }
 
 .seperator {
@@ -172,7 +173,7 @@ body {
 }
 
 .desc-text {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .read-btn {

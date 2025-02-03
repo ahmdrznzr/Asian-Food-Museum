@@ -1003,15 +1003,31 @@ footer {
         display: block;
         margin-bottom: 20px;
     }
+    .team-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .team-container {
+        width: 70%;
+    }
+    .team-member {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .map .image-content {
+        display: none;
+    }
+    .map-btn {
+        margin-top: 16px;
+        width: 50%;
+    }
 }
 
 
 /* Responsive design for mobile devices */
 
 @media (max-width: 481px) {
-    .team-member {
-        width: 70%;
-    }
     .info-section {
         flex-direction: column;
         /* Keep vertical stacking layout */
