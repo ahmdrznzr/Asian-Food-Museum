@@ -123,6 +123,24 @@ header {
 
 /* Section-one heading styles */
 
+.section-one .text-content {
+    animation: 1.5s fadeInUp;
+}
+
+
+/* fade up the information */
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
 .section-one .text-content h1 {
     color: var(--darkest);
     /* Set text color to black */
@@ -331,7 +349,7 @@ header {
 .section-two .food-image {
     width: 90%;
     /* Set image width to 70% of the container */
-    height: 85vh;
+    height: 90vh;
     /* Maintain aspect ratio */
     max-width: 100%;
     /* Ensure the image doesn’t exceed the container's width */
