@@ -82,8 +82,7 @@ body {
 /* Image section */
 
 .item-img {
-    width: 300px;
-    height: 300px;
+    width: 40%;
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
@@ -152,6 +151,10 @@ body {
     text-decoration: underline;
     transform: translateX(16px);
     cursor: pointer;
+}
+
+.space {
+    margin-top: 36px;
 }
 
 .seperator {

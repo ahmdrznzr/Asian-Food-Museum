@@ -13,7 +13,7 @@
 }
 
 header {
-    background-image: url("../images/nar-landing.jpg");
+    background-image: url("../images/narrative-bg.webp");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,7 +21,7 @@ header {
 }
 
 .nar-content {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.75);
     /* cover full page on the screen */
     height: 100vh;
     width: 100%;
@@ -41,6 +41,19 @@ header {
     /* have a space of 36px in the page. so the content does not stick to the corner */
     padding: 36px;
     width: 100%;
+    animation: animatezoom 1.5s;
+}
+
+
+/* fade up the information */
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
 }
 
 .nar-head {
@@ -87,6 +100,8 @@ header {
 
 .nar-btn span {
     transition: all 0.3s;
+    font-weight: 550;
+    font-size: 24px;
     color: var(--lightest);
     position: relative;
 }
@@ -132,7 +147,8 @@ header {
     height: 100%;
     z-index: 1;
     transition: all 0.3s;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
 }
 
 
@@ -157,11 +173,6 @@ header {
     font-weight: 500;
     padding-top: 36px;
     color: var(--lightest);
-}
-
-.nar-h3 {
-    font-size: 20px;
-    font-weight: 500;
 }
 
 

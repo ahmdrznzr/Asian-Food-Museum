@@ -8,9 +8,9 @@
     "items": [{
             "@sort": "1",
             "itemName": "Herb Stew (قرمه سبزی)",
-            "image": "",
+            "image": "../images/items/item-1.webp",
             "info": {
-                "Region": "West Asia(Iran)",
+                "Region": "West Asia",
                 "Date": "Ancient (10th Centurry)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -25,7 +25,7 @@
             "itemName": "Saffron Ice cream (بستنی سنتی)",
             "image": "",
             "info": {
-                "Region": "West Asia(Iran)",
+                "Region": "West Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Dessert",
                 "Ingredient": "Dairy",
@@ -38,9 +38,9 @@
         {
             "@sort": "3",
             "itemName": "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)",
-            "image": "",
+            "image": "../images/items/item-3.webp",
             "info": {
-                "Region": "West Asia(Iran)",
+                "Region": "West Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -55,7 +55,7 @@
             "itemName": "Noodle Soup (آش رشته)",
             "image": "",
             "info": {
-                "Region": "West Asia(Iran)",
+                "Region": "West Asia",
                 "Date": "Ancient (10th Centurry)",
                 "Meal": "Main Course",
                 "Ingredient": "Plant Based",
@@ -70,7 +70,7 @@
             "itemName": "Coca-Cola Chicken Wings (可乐鸡翅)",
             "image": "",
             "info": {
-                "Region": "East Asia(China)",
+                "Region": "East Asia",
                 "Date": "Modern(20th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Meat Based",
@@ -85,7 +85,7 @@
             "itemName": "Hot Pot (火锅)",
             "image": "",
             "info": {
-                "Region": "East Asia(China)",
+                "Region": "East Asia",
                 "Date": "Ancient (9th Centurry)",
                 "Meal": "Appetizers",
                 "Ingredient": "Meat Based",
@@ -100,7 +100,7 @@
             "itemName": "Sour Soup with Beef Slices (酸汤肥牛)",
             "image": "",
             "info": {
-                "Region": "East Asia(China)",
+                "Region": "East Asia",
                 "Date": "Ancient (10th Centurry)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -115,7 +115,7 @@
             "itemName": "Peking Duck (北京烤鸭)",
             "image": "",
             "info": {
-                "Region": "East Asia(China)",
+                "Region": "East Asia",
                 "Date": "Medieval(14th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Meat Based",
@@ -130,7 +130,7 @@
             "itemName": "Pork Bone Ramen (豚骨ラーメン)",
             "image": "",
             "info": {
-                "Region": "East Asia(Japan)",
+                "Region": "East Asia",
                 "Date": "Modern(20th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Meat Based",
@@ -145,7 +145,7 @@
             "itemName": "Sukiyaki (すき焼き)",
             "image": "",
             "info": {
-                "Region": "East Asia(Japan)",
+                "Region": "East Asia",
                 "Date": "Modern(19th century)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -160,7 +160,7 @@
             "itemName": "Rotation Sushi (回転寿司)",
             "image": "",
             "info": {
-                "Region": "East Asia(Japan)",
+                "Region": "East Asia",
                 "Date": "Modern(20th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Meat Based",
@@ -175,7 +175,7 @@
             "itemName": "Tempura (天婦羅)",
             "image": "",
             "info": {
-                "Region": "East Asia(Japan)",
+                "Region": "East Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Meat Based",
@@ -190,7 +190,7 @@
             "itemName": "Mutton in Clay Pot (مٹن کُنا)",
             "image": "",
             "info": {
-                "Region": "South Asia (Pakistan)",
+                "Region": "South Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -205,7 +205,7 @@
             "itemName": "Deep-fried Lentil Fritters (دہی بھلے چاٹ)",
             "image": "",
             "info": {
-                "Region": "South Asia (Pakistan)",
+                "Region": "South Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Plant Based",
@@ -220,7 +220,7 @@
             "itemName": "Semolina Halwa (سوجی کا حلوہ)",
             "image": "",
             "info": {
-                "Region": "South Asia (Pakistan)",
+                "Region": "South Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Desserts",
                 "Ingredient": "Dairy",
@@ -235,7 +235,7 @@
             "itemName": "Chicken Pilaf (چکن بریانی)",
             "image": "",
             "info": {
-                "Region": "South Asia (Pakistan)",
+                "Region": "South Asia",
                 "Date": "Medieval(16th century)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -250,7 +250,7 @@
             "itemName": "Hummus (حمص)",
             "image": "",
             "info": {
-                "Region": "West Asia(Lebanon)",
+                "Region": "West Asia",
                 "Date": "Medieval(13th century)",
                 "Meal": "Appetizers",
                 "Ingredient": "Plant Based",
@@ -265,7 +265,7 @@
             "itemName": "Meat wrap (شاورما)",
             "image": "",
             "info": {
-                "Region": "West Asia(Lebanon)",
+                "Region": "West Asia",
                 "Date": "Modern(20th century)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -280,7 +280,7 @@
             "itemName": "Kibbeh (كبة)",
             "image": "",
             "info": {
-                "Region": "West Asia(Lebanon)",
+                "Region": "West Asia",
                 "Date": "Ancient (10th Centurry)",
                 "Meal": "Main Course",
                 "Ingredient": "Meat Based",
@@ -295,7 +295,7 @@
             "itemName": "Filo Pastry (كنافة)",
             "image": "",
             "info": {
-                "Region": "West Asia(Lebanon)",
+                "Region": "West Asia",
                 "Date": "Ancient (10th Centurry)",
                 "Meal": "Desserts",
                 "Ingredient": "Dairy",

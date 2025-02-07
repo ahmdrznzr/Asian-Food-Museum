@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (index < 0 || index >= items.length) return;
         let item = items[index];
         document.getElementById("item-heading").innerHTML = item.itemName;
-        // document.getElementById("item-img").innerHTML = `<img src="${item.image}" alt="${item.name}">`;
+        document.getElementById("item-img").innerHTML = `<img src="${item.image}" alt="${item.name}">`;
         document.getElementById("reg-name").innerHTML = item.info.Region;
         document.getElementById("date-name").innerHTML = item.info.Date;
         document.getElementById("meal-name").innerHTML = item.info.Meal;

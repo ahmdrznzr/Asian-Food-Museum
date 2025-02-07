@@ -95,17 +95,14 @@ header {
     color: var(--lightest);
     font-size: 18px;
     /* show the border when it is hovered */
-    transition: color 0.9s, border-left 0.1s;
-}
-
-.navbar-nav .nav-item .nav-link a.active {
-    color: var(--yellow);
-}
-
-.nav-item a {
+    transition: color 0.9s, border-left 0.3s;
     padding-left: 1rem;
     padding-right: 1rem;
-    transition: color 0.7s, outline 0.7s;
+    transition: color 0.7s;
+}
+
+.nav-link a.active {
+    color: var(--yellow);
 }
 
 .nav-item .active-btn {
@@ -227,12 +224,20 @@ header {
 /* Image styles */
 
 .section-one .food-image {
-    max-width: 90%;
+    max-width: 80%;
     /* Image takes 65% of the container width */
     max-height: 100%;
     border-radius: 50%;
-    transition: transform 2s ease-in-out;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    animation: spin 3s linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
 }
 
 .section-one .food-image:hover {
@@ -240,24 +245,13 @@ header {
 }
 
 .about {
-    background-color: var(--red);
-    /* Set background color */
-    gap: 20px;
-    /* Add spacing between items inside the section */
-    min-height: 100vh;
-    display: flex;
-    /* Flexbox layout */
-    justify-content: space-between;
-    /* Space out content evenly */
-    padding: 36px;
-}
-
-
-/* Text content in Section-two */
-
-.section-two .text-content {
-    flex: 1;
-    /* Take up available space */
+    /* Set background */
+    background-image: url("../images/about-bg.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
 }
 
 
@@ -267,6 +261,7 @@ header {
     color: var(--lightest);
     /* Set text color to light gray */
     font-size: 45px;
+    text-align: center;
     font-weight: 600;
     /* Set font size for the heading */
     margin-top: 8px;
@@ -285,80 +280,6 @@ header {
     margin-top: 24px;
     margin-bottom: 20px;
     /* Add margin below the paragraph */
-}
-
-
-/* Button styles in Section-two */
-
-.section-two .btn {
-    display: flex;
-    /* Flexbox to center button text */
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    /* Remove underline from the button */
-    padding-right: 24px;
-    padding-left: 24px;
-    /* Add padding around the button text */
-    background-color: var(--yellow);
-    /* Set button background color */
-    color: var(--dark-red);
-    /* Set button text color */
-    border: none;
-    /* Remove button border */
-    border-radius: 15px;
-    /* Rounded corners for the button */
-    cursor: pointer;
-    /* Change cursor to pointer on hover */
-    width: 150px;
-    /* Set fixed button width */
-    height: 50px;
-    /* Set fixed button height */
-    font-size: 18px;
-    /* Set button font size */
-    position: relative;
-    top: 36px;
-    margin-bottom: 24px;
-    /* Adjust button's vertical position */
-    transition: all 500ms;
-    /* Smooth background color transition on hover */
-}
-
-
-/* Button hover effect */
-
-.section-two .btn:hover {
-    color: var(--yellow);
-    background-color: var(--dark-red);
-    /* Darken the button background color on hover */
-}
-
-
-/* Image container in Section-two */
-
-.section-two .image-content {
-    flex: 1;
-    /* Take up available space */
-    display: flex;
-    /* Flexbox layout */
-}
-
-
-/* Image styles */
-
-.section-two .food-image {
-    width: 90%;
-    /* Set image width to 70% of the container */
-    height: 90vh;
-    /* Maintain aspect ratio */
-    max-width: 100%;
-    /* Ensure the image doesn’t exceed the container's width */
-    border-radius: 15px;
-    /* Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add a subtle shadow below the image */
-    object-fit: cover;
-    /* Ensure the image fills the container while maintaining aspect ratio */
 }
 
 
@@ -474,8 +395,8 @@ header {
     justify-content: center;
     /* Remove underline from button text */
     padding: 12px 24px;
-    margin-top: 80px;
     /* Add padding around the button text */
+    margin-top: 80px;
     border-radius: 15px;
     /* Rounded corners */
     transition: all 0.5s ease;
@@ -542,12 +463,21 @@ header {
     /* The element is initially invisible */
 }
 
+.map {
+    background-image: url("../images/map-pic.webp");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60vh;
+}
+
 
 /* section four: map */
 
-.section-four {
-    background-color: var(--red);
-    /* Set background color */
+.section-four,
+.section-two {
+    background-color: rgba(0, 0, 0, 0.75);
     gap: 20px;
     /* Add spacing between items inside the section */
     display: flex;
@@ -556,6 +486,7 @@ header {
     align-items: center;
     /* Center horizontally */
     padding: 36px;
+    min-height: 60vh;
 }
 
 
@@ -567,7 +498,7 @@ header {
     font-size: 45px;
     font-weight: 600;
     /* Title font size */
-    margin-bottom: 24px;
+    margin-bottom: 36px;
     /* Margin below the title */
 }
 
@@ -587,7 +518,8 @@ header {
     /* Margin above the paragraph */
 }
 
-.section-four a {
+.section-four a,
+.section-two a {
     display: inline-block;
     /* Ensure inline-block layout */
     padding: 12px 20px;
@@ -608,11 +540,13 @@ header {
     text-align: center;
     /* Center text */
     transition: all 0.8s ease;
-    margin-bottom: 20px;
-    /* Margin below the button */
+    margin-bottom: 16px;
+    margin-top: 80px;
+    /* Margin of the button */
 }
 
-.section-four a:hover {
+.section-four a:hover,
+.section-two a:hover {
     background-color: var(--green);
     color: var(--darkest);
 }
@@ -934,7 +868,8 @@ footer {
         /* Maintain aspect ratio */
     }
     /* Adaptation for small screens */
-    .section-four {
+    .section-four,
+    .section-two {
         flex-direction: column;
         /* Stack content vertically */
         justify-content: center;
@@ -1033,12 +968,10 @@ footer {
         width: 100%;
         margin-bottom: 24px;
     }
-    .map .image-content {
-        display: none;
-    }
-    .map-btn {
+    .map-btn,
+    .more-btn {
         margin-top: 16px;
-        width: 50%;
+        width: 55%;
     }
 }
 
