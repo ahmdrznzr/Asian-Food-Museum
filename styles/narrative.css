@@ -44,6 +44,14 @@ header {
     animation: animatezoom 1.5s;
 }
 
+.region-section,
+.meal-section,
+.prepration-section,
+.reg-section,
+.time-section {
+    animation: animatezoom 1.5s;
+}
+
 
 /* fade up the information */
 
