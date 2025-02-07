@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", async function() {
         document.getElementById("longerInfo").innerHTML = item.longDesc;
         document.getElementById("longerInfo").style.display = "none";
         document.getElementById("shortInfo").style.display = "block";
+
+        // Reset buttons when switching items
+        document.getElementById("moreBtn").innerText = "Tell Me More"; // Ensure correct button text
+        document.getElementById("moreBtn").style.display = "block"; // Ensure "Tell Me More" is visible
+        document.getElementById("lessBtn").style.display = "none"; // Hide "Tell Me Less"
+
+        isShowingFullDescription = false; // Reset description state
+
     }
 
     // Event listeners for navigation
