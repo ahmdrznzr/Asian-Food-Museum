@@ -108,13 +108,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const subcategoryContainer = document.getElementById("subcategory-container");
   const itemList = document.getElementById("item-list");
   const subcategoryTitle = document.getElementById("subcategory-title");
-  const floorPlanImage = document.getElementById("floor-plan");
-  const mapImage = document.getElementById("map");
+  const floorPlanImg = document.getElementById("floor-plan-img");
+  const geoMapImg = document.getElementById("geographical-map-img");
 
   // Function to update subcategories dynamically
   function updateSubcategories(narrative) {
-    const subcategories = narratives[narrative];
-    subcategoryContainer.innerHTML = ""; // Clear previous buttons
+    const subcategories = Object.keys(contentData[narrative]);
+      subcategoryContainer.innerHTML = ""; // Clear existing subcategories
 
     subcategories.forEach((subcategory, index) => {
       const button = document.createElement("button");
@@ -124,10 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
       subcategoryContainer.appendChild(button);
 
       // Set first subcategory as active by default
-      if (index === 0) {
+      if (index === 0) 
         button.classList.add("active");
-        updateContent(narrative, button.dataset.subcategory);
-      }
+      
 
       // Add click event
       button.addEventListener("click", () => {
@@ -140,22 +139,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Function to update content (items, floor plan, map)
+  // Function to update content dynamically (buttons, items, floor plan, maps)
   function updateContent(narrative, subcategory) {
     const currentData = contentData[narrative][subcategory];
 
     // Update subcategory title
     subcategoryTitle.textContent =
-      subcategory.charAt(0).toUpperCase() + subcategory.slice(1).replace(/([A-Z])/g, " $1");
+      subcategory.charAt(0).toUpperCase() + subcategory.slice(1);
 
     // Update item list
     itemList.innerHTML = ""; // Clear previous items
-    currentData.items.forEach((item, index) => {
+    currentData.items.forEach((item) => {
       const li = document.createElement("li");
       const link = document.createElement("a");
-      link.href = index % 2 === 0 ? "#" : ""; // Alternate active/inactive links
+      link.href = "#"; // Make all items active
       link.textContent = item;
-      link.className = index % 2 === 0 ? "active" : "inactive";
+      link.className = "active";
       li.appendChild(link);
       itemList.appendChild(li);
     });
@@ -164,13 +163,13 @@ document.addEventListener("DOMContentLoaded", () => {
     floorPlanImage.src = currentData.floorPlan;
     mapImage.src = currentData.map;
   }
-
+  
   // Add event listeners to narrative buttons
   narrativeButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      narrativeButtons.forEach((btn) => btn.classList.remove("active"));
+       narrativeButtons.forEach((btn) => btn.classList.remove("active"));
       button.classList.add("active");
-
+  
       const narrative = button.dataset.narrative;
       updateSubcategories(narrative);
     });
