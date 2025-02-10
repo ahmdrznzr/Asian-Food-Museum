@@ -1,0 +1,93 @@
+:root {
+    --darkest: #1B1A17;
+    --dark: #0e1511;
+    --yellow: #eee5c8;
+    --red: #772017;
+    --dark-red: #281102;
+    --light: #696969;
+    --lightest: #EFEFEF;
+    --green: #9c9b84;
+    --brown: #a6997c;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    text-align: justify;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    /* Keep aside and main-content side by side */
+    min-height: 100vh;
+}
+
+.aside {
+    width: 25%;
+    padding-top: 100px;
+    min-height: calc(100vh - 70px);
+    /* Subtract navbar height */
+    border: 1px solid black;
+    background-color: var(--brown);
+}
+
+.options {
+    position: fixed;
+}
+
+
+/* Ensure main-content takes remaining space */
+
+.main-content {
+    width: 75%;
+    min-height: calc(100vh - 70px);
+    padding-top: 70px;
+    padding-right: 16px;
+    padding-left: 24px;
+    background-color: var(--yellow);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--dark-red);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+}
+
+.image-content {
+    width: 80%;
+    height: 70%;
+}
+
+.doc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 16px;
+    justify-items: center;
+    align-items: center;
+}

@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/Map.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <title>Map Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Map.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Map Page</title>
 </head>
+
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand"><img src="images/foodMuseumLogo.jpg" alt="" style="height: 45px;"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand"><img src="images/foodMuseumLogo.jpg" alt="" style="height: 45px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ms-auto mb-0">
-              <li class="nav-item active ">
-                  <a class="nav-link active-btn " href="#home ">Home</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link " href="#about " tabindex="-1 " aria-disabled="true ">About</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link " href="#project " tabindex="-1 " aria-disabled="true ">Narratives</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link " href="#map " tabindex="-1 " aria-disabled="true ">Map</a>
-              </li>
-              <li class="nav-item ">
-                  <a class="nav-link " href="#team " tabindex="-1 " aria-disabled="true ">Team</a>
-              </li>
-          </ul>
-      </div>
-  </nav>
-  </header>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto mb-0">
+                    <li class="nav-item active ">
+                        <a class="nav-link active-btn " href="#home ">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#about " tabindex="-1 " aria-disabled="true ">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#project " tabindex="-1 " aria-disabled="true ">Narratives</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#map " tabindex="-1 " aria-disabled="true ">Map</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#team " tabindex="-1 " aria-disabled="true ">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  <main>
-    <section class="controls">
-      <!-- Narrative Buttons -->
-      <div class="narrative-buttons">
-        <button class="narrative-btn active" data-narrative="time">Time</button>
-        <button class="narrative-btn" data-narrative="region">Region</button>
-        <button class="narrative-btn" data-narrative="ingredients">Ingredients</button>
-        <button class="narrative-btn" data-narrative="meal">Meal</button>
-        <button class="narrative-btn" data-narrative="preparation">Preparation</button>
-      </div>
+    <main>
+        <section class="controls">
+            <!-- Narrative Buttons -->
+            <div class="narrative-buttons">
+                <button class="narrative-btn active" data-narrative="time">Time</button>
+                <button class="narrative-btn" data-narrative="region">Region</button>
+                <button class="narrative-btn" data-narrative="ingredients">Ingredients</button>
+                <button class="narrative-btn" data-narrative="meal">Meal</button>
+                <button class="narrative-btn" data-narrative="preparation">Preparation</button>
+            </div>
 
-      <!-- Subcategory Buttons -->
-      <div class="subcategory-buttons" id="subcategory-container">
-        
-      <!-- Subcategories will be dynamically injected here -->
-      </div>
-      
-      <!-- Item List -->
-      <div class="sub-category">
-       <h2 id="subcategory-title"></h2>
-       <ul class="item-list" id="item-list">
+            <!-- Subcategory Buttons -->
+            <div class="subcategory-buttons" id="subcategory-container">
 
-    <!-- Items will be dynamically injected -->
-        </ul>
-      </div>
-    </section>
+                <!-- Subcategories will be dynamically injected here -->
+            </div>
 
-    <!-- Map Section -->
-    <section class="maps">
-      <div class="map">
-        <h3>Exhibition Layout</h3>
-        <img id="floor-plan-img" src="images/Maps/Slide13.PNG" alt="Exhibition Floor Plan">
-      </div>
-      <div class="map">
-        <h3>Geographical Map</h3>
-        <img id="geographical-map-img" src="images/Maps/Slide14.PNG" alt="Geographical Map">
-      </div>
-    </section>
-  </main>
+            <!-- Item List -->
+            <div class="sub-category">
+                <h2 id="subcategory-title"></h2>
+                <ul class="item-list" id="item-list">
 
-  <footer>
-    <p>&copy; 2025 Food Museum</p>
-  </footer>
+                    <!-- Items will be dynamically injected -->
+                </ul>
+            </div>
+        </section>
 
-  <script src="js/Map.js"></script>
+        <!-- Map Section -->
+        <section class="maps">
+            <div class="map">
+                <h3>Exhibition Layout</h3>
+                <img id="floor-plan-img" src="images/Maps/Slide13.PNG" alt="Exhibition Floor Plan">
+            </div>
+            <div class="map">
+                <h3>Geographical Map</h3>
+                <img id="geographical-map-img" src="images/Maps/Slide14.PNG" alt="Geographical Map">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Food Museum</p>
+    </footer>
+
+    <script src="js/Map.js"></script>
 </body>
+
 </html>
