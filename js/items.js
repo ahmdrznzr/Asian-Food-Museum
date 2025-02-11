@@ -1,25 +1,82 @@
 document.addEventListener("DOMContentLoaded", async function() {
+
+    let key = '';
+    let value = '';
     let currentIndex = 0;
     let items = [];
-
+    let filtereditems = [];
+    
     // Fetch JSON data
     async function fetchItems() {
         try {
-            const response = await fetch("../data/items.json");
+            const response = await fetch("http://localhost:8000/data/items.json");
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
             const jsonData = await response.json();
             items = jsonData.items;
-            if (items.length > 0) {
+            
+            // Apply filtering
+            filter(items);
+            
+            // Display the first item if results exist
+            if (filtereditems.length > 0) {
                 displayItem(currentIndex);
+            } else {
+                console.log("No matching items found.");
             }
         } catch (error) {
             console.error("Error loading items:", error);
         }
     }
+    
+    function filter(arr) {
+        const querystring = window.location.search;
+        const urlParams = new URLSearchParams(querystring);  
+    
+        // Reset filtered items
+        filtereditems = []; 
+    
+        // Extract the first key-value pair
+        for (let [k, v] of urlParams.entries()) {
+            key = k;
+            value = v.replace(/([a-z])([A-Z])/g, "$1 $2")
+                     .replace(/^./, match => match.toUpperCase());
+            break;  // Only process the first key-value pair
+        }
+    
+        console.log("Filtering by:", key, value);
+    
+        // If no valid key-value pair, return all items
+        if (!key || !value) {
+            filtereditems = [...items]; // Clone items to avoid reference issues
+            return;
+        }
+    
+        // Convert key to lowercase for case-insensitive comparison
+        const lowerKey = key.toLowerCase();
+        const lowerValue = value.toLowerCase();
+    
+        for (let item of arr) {
+            if (
+                (lowerKey === 'region' && item.info.Region?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'date' && item.info.Date?.toLowerCase().includes(lowerValue)) ||
+                (lowerKey === 'meal' && item.info.Meal?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'ingredient' && item.info.Ingredient?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'preparation' && item.info.preparation?.toLowerCase() === lowerValue)
+            ) {
+                filtereditems.push(item);
+            }
+        }
+    }
+    
 
     // Display item data in HTML
     function displayItem(index) {
-        if (index < 0 || index >= items.length) return;
-        let item = items[index];
+        if (index < 0 || index >= filtereditems.length) return;
+        let item = filtereditems[index];
+
+        console.log(item)
         document.getElementById("item-heading").innerHTML = item.itemName;
         document.getElementById("item-img").innerHTML = `<img src="${item.image}" alt="${item.name}">`;
         document.getElementById("reg-name").innerHTML = item.info.Region;
@@ -39,13 +96,13 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         isShowingFullDescription = false; // Reset description state
 
-    }
+        };
 
     // Event listeners for navigation
     // next item button
     document.querySelector(".next-btn").addEventListener("click", function(event) {
         event.preventDefault();
-        if (currentIndex < items.length - 1) {
+        if (currentIndex < filtereditems.length - 1) {
             currentIndex++;
             displayItem(currentIndex);
         }
@@ -63,7 +120,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     let isShowingFullDescription = false;
     //show more information from JSON file
     document.getElementById("moreBtn").addEventListener("click", async function() {
-        const item = items[currentIndex]; // Ensure you get the current item
+        const item = filtereditems[currentIndex]; // Ensure you get the current item
         const descriptionElement = document.getElementById("longerInfo");
         if (item) {
             try {
