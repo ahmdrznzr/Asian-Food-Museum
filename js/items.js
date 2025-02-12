@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", async function() {
             // Display the first item if results exist
             if (filtereditems.length > 0) {
                 displayItem(currentIndex);
+                regNarrative();         // Build different narratives based on the current selection
+                dateNarrative();
+                mealNarrative();
+                ingredNarrative();
+                prepNarrative();
             } else {
                 console.log("No matching items found.");
             }
@@ -76,7 +81,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (index < 0 || index >= filtereditems.length) return;
         let item = filtereditems[index];
 
-        console.log(item)
         document.getElementById("item-heading").innerHTML = item.itemName;
         document.getElementById("item-img").innerHTML = `<img src="${item.image}" alt="${item.itemName}">`;
         document.getElementById("reg-name").innerHTML = item.info.Region;
@@ -95,8 +99,9 @@ document.addEventListener("DOMContentLoaded", async function() {
         document.getElementById("lessBtn").style.display = "none"; // Hide "Tell Me Less"
 
         isShowingFullDescription = false; // Reset description state
-
         };
+
+
 
     // Event listeners for navigation
     // next item button
@@ -105,6 +110,11 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (currentIndex < filtereditems.length - 1) {
             currentIndex++;
             displayItem(currentIndex);
+            regNarrative(); // Update narratives on the user's navigation
+            dateNarrative();
+            mealNarrative();
+            ingredNarrative();
+            prepNarrative();
         }
     });
     // previous button item
@@ -113,6 +123,11 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (currentIndex > 0) {
             currentIndex--;
             displayItem(currentIndex);
+            regNarrative();  // Update narratives on the user's navigation
+            dateNarrative();
+            mealNarrative();
+            ingredNarrative();
+            prepNarrative();
         }
     });
 
@@ -173,3 +188,51 @@ document.addEventListener("DOMContentLoaded", async function() {
     //fetch data on the item page
     fetchItems();
 });
+
+function regNarrative(){
+    aTag = document.querySelector("#reg-name");
+    let text = aTag.textContent.trim();
+    if (!text) return; 
+    let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
+        (_, first, second) => first.toLowerCase() + second
+        );
+    aTag.setAttribute("href", `item.html?region=${par}`);
+};
+
+function dateNarrative(){
+    aTag = document.querySelector("#date-name");
+    let text = aTag.textContent.trim();
+    if (!text) return; 
+    let par = text.replace(/\b([A-Z][a-z]+).*\(.*/g,
+        (_, first) => first.toLowerCase()
+        );
+    aTag.setAttribute("href", `item.html?date=${par}`);
+};
+
+function mealNarrative(){
+    aTag = document.querySelector("#meal-name");
+    let text = aTag.textContent.trim();
+    if (!text) return;
+    let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
+        (_, first, second) => first.toLowerCase() + second
+        );
+    aTag.setAttribute("href", `item.html?meal=${par}`);
+};
+
+function ingredNarrative(){
+    aTag = document.querySelector("#ingredient-name")
+    let text = aTag.textContent.trim();
+    let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
+        (_, first, second) => first.toLowerCase() + second
+        );
+    aTag.setAttribute("href", `item.html?ingredient=${par}`);
+};
+
+function prepNarrative(){
+    aTag = document.querySelector("#prep-name")
+    let text = aTag.textContent.trim();
+    let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
+        (_, first, second) => first.toLowerCase() + second
+        );
+    aTag.setAttribute("href", `item.html?preparation=${par}`);
+};
