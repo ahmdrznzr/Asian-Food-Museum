@@ -24,6 +24,11 @@ body {
     padding: 0;
 }
 
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
 .main-page {
     display: flex;
     flex-direction: row;
