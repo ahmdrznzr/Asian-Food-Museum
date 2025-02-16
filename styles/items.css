@@ -135,6 +135,11 @@ body {
     color: var(--darkest);
 }
 
+.item-link {
+    text-decoration: none;
+    color: var(--darkest);
+}
+
 
 /* Short descriptions */
 
