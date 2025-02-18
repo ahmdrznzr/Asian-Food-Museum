@@ -140,7 +140,9 @@ body {
     color: var(--darkest);
 }
 
-
+.item-link:hover{
+    color : var(--red);
+}
 /* Short descriptions */
 
 .short-desc {
