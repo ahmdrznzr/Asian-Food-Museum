@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", async function() {
         for (let [k, v] of urlParams.entries()) {
             key = k;
             value = v.replace(/([a-z])([A-Z])/g, "$1 $2")
-                     .replace(/^./, match => match.toUpperCase());
+                     .replace(/\b\w/g, match => match.toUpperCase());
             break;  // Only process the first key-value pair
         }
     
-        console.log("Filtering by:", key, value);
+        
     
         // If no valid key-value pair, return all items
         if (!key || !value) {
@@ -61,6 +61,8 @@ document.addEventListener("DOMContentLoaded", async function() {
         // Convert key to lowercase for case-insensitive comparison
         const lowerKey = key.toLowerCase();
         const lowerValue = value.toLowerCase();
+
+        console.log("Filtering by:", lowerKey, lowerValue);
     
         for (let item of arr) {
             if (
@@ -68,7 +70,8 @@ document.addEventListener("DOMContentLoaded", async function() {
                 (lowerKey === 'date' && item.info.Date?.toLowerCase().includes(lowerValue)) ||
                 (lowerKey === 'meal' && item.info.Meal?.toLowerCase() === lowerValue) ||
                 (lowerKey === 'ingredient' && item.info.Ingredient?.toLowerCase() === lowerValue) ||
-                (lowerKey === 'preparation' && item.info.preparation?.toLowerCase() === lowerValue)
+                (lowerKey === 'preparation' && item.info.preparation?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'itemname' && item.itemName?.toLowerCase().includes(lowerValue))
             ) {
                 filtereditems.push(item);
             }
