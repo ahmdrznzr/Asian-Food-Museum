@@ -8,16 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
         preparation: ["Grilled", "Fried", "Stewed", "No-cook"],
 
     };
-    // define a place to start in your data
-    //   "meta": {
-    //     "startWith": 0,
-    //     "startNarrative": "Region",
-    //     "startValue": "West Asia",
-    //     "narratives": ["Region", "Meal", "Ingredients", "Preparation", "Time"]
-    // },
 
     // Define items, floor plans, and maps for each narrative and subcategory
     const contentData = {
+        all: {
+            all: {
+                title: "All",
+                items: ["Hot Pot", "Kibbeh", "Filo Pastry", "Noodle Soup", "Herb Stew", "Sour Soup with Beef Slices", "Hummus", "Peking Duck", "Barberry and Saffron Rice Cake with Chicken", "Saffron Ice cream", "Deep-fried Lentil Fritters", "Chicken Pilaf", "Mutton in Clay Pot", "Semolina Halwa", "Tempura", "Sukiyaki", "Pork Bone Ramen", "Rotation Sushi", "Meat wrap", "Coca-Cola Chicken Wings"],
+                floorPlan: "images/Maps/03.PNG",
+                map: "images/Maps/05.PNG",
+            }
+        },
         time: {
             ancient: {
                 items: ["Chinese Hot Pot (火锅)", "Lebanese Kibbeh (كبة)", "Lebanese Filo Pastry (كنافة)", "Persian Noodle Soup (آش رشته)", "Persian Herb Stew (قرمه سبزی)", "Chinese Sour Soup with Beef Slices (酸汤肥牛)"],
@@ -123,11 +124,17 @@ document.addEventListener("DOMContentLoaded", () => {
         const subcategories = Object.keys(contentData[narrative]);
         subcategoryContainer.innerHTML = ""; // Clear existing subcategories
 
+         // If "All" is selected, don't show any subcategories
+        if (narrative === "all") {
+            subcategoryTitle.textContent = ""; // Clear subcategory title
+            return;
+        }
+
         subcategories.forEach((subcategory, index) => {
             const button = document.createElement("button");
             button.classList.add("subcategory-btn");
-            button.textContent = subcategory;
-            button.dataset.subcategory = subcategory.toLowerCase().replace(/\s+/g, "");
+            button.textContent = contentData[narrative][subcategory].title;
+            button.dataset.subcategory = subcategory; // Keep the exact key name
             subcategoryContainer.appendChild(button);
 
             // Set first subcategory as active by default
@@ -144,31 +151,50 @@ document.addEventListener("DOMContentLoaded", () => {
                 updateContent(narrative, button.dataset.subcategory);
             });
         });
+        // Automatically select and load the first subcategory
+        if (subcategories.length > 0) {
+            updateContent(narrative, subcategories[0]);
+        }
     }
 
     // Function to update content dynamically (buttons, items, floor plan, maps)
     function updateContent(narrative, subcategory) {
         const currentData = contentData[narrative][subcategory];
-
-        // Update subcategory title
-        subcategoryTitle.textContent =
-            subcategory.charAt(0).toUpperCase() + subcategory.slice(1);
+        // Use the correct title from the data instead of modifying the subcategory name
+        subcategoryTitle.textContent = currentData.title;;
 
         // Update item list
+        itemList.classList.remove("show"); // Remove animation before updating
         itemList.innerHTML = ""; // Clear previous items
-        currentData.items.forEach((item) => {
-            const li = document.createElement("li");
-            const link = document.createElement("a");
-            link.href = "#"; // Make all items active
-            link.textContent = item;
-            link.className = "active";
-            li.appendChild(link);
-            itemList.appendChild(li);
-        });
 
-        // Update floor plan and map
-        floorPlanImg.src = currentData.floorPlan;
-        geoMapImg.src = currentData.map;
+        setTimeout(() => {
+            currentData.items.forEach((item) => {
+                const li = document.createElement("li");
+                const link = document.createElement("a");
+                link.href = "#";
+                link.textContent = item;
+                link.className = "active";
+                li.appendChild(link);
+                itemList.appendChild(li);
+            });
+
+            itemList.classList.add("show"); // Add fade-in effect after updating
+        }, 50);
+
+
+        // Remove animation before updating images
+        floorPlanImg.classList.remove("show");
+        geoMapImg.classList.remove("show");
+
+        // Update images with a slight delay for smooth transition
+        setTimeout(() => {
+            floorPlanImg.src = currentData.floorPlan;
+            geoMapImg.src = currentData.map;
+
+            floorPlanImg.classList.add("show");
+            geoMapImg.classList.add("show");
+        }, 50);
+
     }
 
     // Add event listeners to narrative buttons
@@ -179,9 +205,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const narrative = button.dataset.narrative;
             updateSubcategories(narrative);
+            // If "All" is selected, manually call updateContent to show all items
+            if (narrative === "all") {
+                updateContent("all", "all");
+            }
         });
     });
 
     // Initialize default state
-    updateSubcategories("time");
+    document.querySelector(".narrative-btn[data-narrative='all']").classList.add("active");
+    updateSubcategories("all");
+    updateContent("all", "all");
 });

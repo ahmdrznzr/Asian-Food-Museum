@@ -1,12 +1,5 @@
 
 
-/* define colors as variable to use them easily */
-
-@font-face {
-  font-family: myFont;
-  src: url();
-}
-
 :root {
   --darkest: #1B1A17;
   --dark: #0e1511;
@@ -17,6 +10,16 @@
   --lightest: #EFEFEF;
   --green: #9c9b84;
   --brown: #a6997c;
+}
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
 * {
@@ -30,154 +33,299 @@ body {
   width: 100%;
 }
 
-header {
-  padding: 0;
+
+.main-page {
+  background-color: var(--dark-red);
 }
 
-.navbar {
-  background-color: var(--darkest);
-  /* Set the background color of the navbar */
+hr.seperate {
+  border-width: 0 0 3px;
+  border-image: linear-gradient( 90deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 50%, rgba(239, 239, 239, 0) 100%) 0 0 100%;
+  border-style: solid;
+}
+
+h2 {
+  text-align: center;
+}
+
+.main-content h1 {
+  font-size: 54px;
+  font-weight: 600;
+  color: var(--yellow);
+  text-align: center;
+}
+
+.main-content {
+  padding: 36px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+}
+
+.subcategory-buttons {
   display: flex;
   justify-content: space-between;
-  /* Space out the logo and menu items */
-  align-items: center;
-  /* Vertically center the items */
-  /* Ensure the navbar spans the full width of the page */
+  gap: 16px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.narrative-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  /* space between buttons */
+  gap: 16px;
+  width: 100%;
+  /* Space between the options */
+  justify-content: center;
+  /* make the items in a line according to the text that they have */
+  align-items: baseline;
+}
+
+.narrative-buttons .nar-btn {
+  flex: 1;
+  /* Ensure responsiveness with flex-grow, flex-shrink, and flex-basis */
+  max-width: 16.6%;
   box-sizing: border-box;
-  /* Include padding and border in the element's width and height */
-  padding: 1.5rem 1rem;
-  height: 48px;
+  /* Include padding and border in width calculation */
 }
 
-.navbar-brand {
-  padding-left: 24px;
+.narrative-btn {
+  width: 100%;
+  font-size: 20px;
 }
 
-.navbar-nav {
-  padding-right: 24px;
-  gap: 24px;
-}
-
-.navbar-nav li a {
-  color: var(--lightest);
+.subcategory-btn {
+  width: 15%;
   font-size: 18px;
-  /* show the border when it is hovered */
-  transition: color 0.9s, border-left 0.1s;
+  border-radius: 10px;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
-.navbar-nav .nav-item .nav-link a.active {
+.narrative-buttons .narrative-btn,
+.subcategory-btn.active {
+  background-color: var(--yellow);
+  color: var(--darkest);
+  border-radius: 10px;
+}
+
+.narrative-btn.active,
+.subcategory-btn.active {
+  text-decoration: underline;
+}
+
+.narrative-btn.active,
+.subcategory-btn {
+  background-color: var(--dark-red);
   color: var(--yellow);
+  border: 2px solid var(--yellow);
 }
 
-.nav-item a {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  transition: color 0.7s, outline 0.7s;
+.narrative-btn.active {
+  box-shadow: 4px 4px 8px rgba(238, 229, 200, 0.4);
 }
 
-.nav-item .active-btn {
+
+/* Existing styles remain unchanged */
+
+.subcategory-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.subcategory-buttons button {
+  flex: 1 1 50%;
+  /* Two buttons per row on small screens */
+  max-width: 45%;
+}
+
+.maps {
+  margin-top: 54px;
+}
+
+.map-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 36px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sub-category {
+  width: 30%;
+  min-height: 100vh;
+}
+
+.layout {
+  width: 35%;
+  min-height: 100vh;
+}
+
+.geo-map {
+  width: 35%;
+  min-height: 100vh;
+}
+
+.map-info h2,
+.geo-map h2 {
+  font-size: 36px;
+  color: var(--lightest);
+  font-weight: 550;
+  margin-bottom: 16px;
+}
+
+.layout-img,
+.geo-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+}
+
+.sub-category .item-list {
+  padding: 16px;
+  transition: opacity 1s ease-in-out;
+}
+
+.item-list.show {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+.sub-category .item-list li {
+  margin: 8px 0;
+  font-size: 18px;
+  color: var(--lightest);
+}
+
+.sub-category .item-list a {
+  text-decoration: none;
+  color: var(--lightest);
+  transition: all 0.3s ease-in;
+}
+
+.sub-category .item-list a:hover {
   color: var(--yellow);
+  text-decoration: underline;
+  font-size: 20px;
 }
 
-
-/* style of the border */
-
-.nav-item a:hover {
-  color: var(--yellow);
-  border-left: 2px solid var(--yellow);
+.sub-category .item-list a.inactive {
+  color: grey;
+  pointer-events: none;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #EFEFEF;
+.item-list,
+.layout-img,
+.geo-img {
+  opacity: 0;
+  /* Initially hidden */
+  transition: opacity 1s ease-in-out;
+}
+
+.layout-img,
+.geo-img {
+  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
+  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
+}
+
+.item-list.show,
+.layout-img.show,
+.geo-img.show {
+  animation: fadeIn 1s ease-in-out;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .main-content h1 {
+      font-size: 48px;
   }
-  
-  header {
-    background-color: #A71721;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+  .narrative-buttons {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
   }
-  
-  main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+  .narrative-buttons .nar-btn {
+      flex: 1 1 30%;
+      /* Flex-grow, flex-shrink, flex-basis */
+      margin-bottom: 20px;
+      max-width: 30%;
+      /* Ensure they don't exceed this width */
   }
-  
-  .controls {
-    flex: 1;
-    min-width: 300px;
+  .narrative-btn,
+  .subcategory-btn {
+      width: 100%;
+      font-size: 16px;
+      text-align: center;
   }
-  
-  .narrative-buttons, .subcategory-buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 1rem;
+  .map-info {
+      flex-direction: column;
+      /* Stack items vertically on smaller screens */
   }
-  
-  .narrative-btn, .subcategory-btn {
-    background-color: #A71721;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
+  .sub-category,
+  .layout {
+      width: 100%;
+      /* Make each section take full width on smaller screens */
+      height: auto;
+      /* Adjust height for smaller screens */
   }
-  
-  .narrative-btn.active, .subcategory-btn.active {
-    background-color: #E0A75E;
-    color: #1B1A17;
+  .layout-img,
+  .geo-img {
+      width: 100%;
+      /* Ensure images are responsive */
+      height: auto;
   }
-  
-  .sub-category h2 {
-    color: #1B1A17;
+}
+
+@media (max-width: 769px) {
+  .main-content h1 {
+      font-size: 28px;
   }
-  
-  .item-list {
-    list-style-type: none;
-    padding: 0;
+  .narrative-buttons .nar-btn {
+      flex: 1 1 50%;
+      /* Flex-grow, flex-shrink, flex-basis */
+      margin-bottom: 20px;
+      max-width: 45%;
+      /* Ensure they don't exceed this width */
   }
-  
-  .item-list li {
-    margin: 5px 0;
+  .narrative-btn {
+      width: 100%;
+      padding: 12px 0;
+      font-size: 16px;
+      text-align: center;
   }
-  
-  .item-list a {
-    text-decoration: none;
-    color: #A71721;
+  .sub-category .item-list li {
+      font-size: 16px;
   }
-  
-  .item-list a.inactive {
-    color: grey;
-    pointer-events: none;
+  .sub-category .item-list a:hover {
+      font-size: 18px;
   }
-  
-  .maps {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+}
+
+@media(max-width:1200px) {
+  .sub-category,
+  .layout {
+      width: 100%;
+      /* Make each section take full width on smaller screens */
+      height: auto;
+      /* Adjust height for smaller screens */
   }
-  
-  .map {
-    flex: 1;
-    min-width: 300px;
+  .geo-map {
+      display: none;
   }
-  
-  .map img {
-    width: 100%;
-    border: 1px solid #E0A75E;
-    border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+  .subcategory-buttons button {
+      flex: unset;
+      max-width: unset;
   }
-  
-  footer {
-    background-color: #1B1A17;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
-  
+}
