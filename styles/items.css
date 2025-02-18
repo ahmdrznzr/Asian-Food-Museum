@@ -208,8 +208,29 @@ body {
     background-color: var(--red);
 }
 
+#explore-btn {
+    background-color: var(--yellow);
+    border-radius: 10px;
+    color: var(--red);
+    border: none;
+    padding: 10px 24px;
+    font-size: 14px;
+    transition: color 0.8s ease, background-color 0.8s ease, font-size 0.5s ease;
+    text-decoration: none;
+    float: right;
+}
+
+#explore-btn:hover {
+    color: var(--yellow);
+    background-color: var(--red);
+}s
+
 .hidden {
     display: none;
+}
+
+.explore {
+    margin-top: 5rem;
 }
 
 @media (max-width: 768px) {
@@ -227,6 +248,13 @@ body {
         width: 300px;
         height: 300px;
         border: 1px solid #ccc;
+    }
+    #explore-btn {
+        float: none;
+    }
+    .explore{
+        text-align: center;
+        margin-top: 3rem;
     }
 }
 
@@ -256,21 +284,25 @@ body {
     .description-section h4 {
         text-align: center;
     }
+    #explore-btn{
+        float: none;
+    }
+
+    .explore{
+        text-align: center;
+        margin-top: 3rem;
+    }
 }
 
 @media (max-width: 1024px) {
-    .fixed-list{
-        font-size: 24px;
-    }
+    .fixed-list,
     .desc-list{
         font-size: 24px;
     }
 }
 
 @media (max-width: 970px) {
-    .fixed-list{
-        font-size: 20px;
-    }
+    .fixed-list,
     .desc-list{
         font-size: 20px;
     }
