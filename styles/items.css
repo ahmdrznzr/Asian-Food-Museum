@@ -257,3 +257,24 @@ body {
         text-align: center;
     }
 }
+
+@media (max-width: 1024px) {
+    .fixed-list{
+        font-size: 24px;
+    }
+    .desc-list{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 970px) {
+    .fixed-list{
+        font-size: 20px;
+    }
+    .desc-list{
+        font-size: 20px;
+    }
+    .item-heading{
+        font-size: 36px;
+    }
+}

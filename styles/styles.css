@@ -78,7 +78,7 @@ header {
     /* Ensure the navbar spans the full width of the page */
     box-sizing: border-box;
     /* Include padding and border in the element's width and height */
-    padding: 1.5rem 1rem;
+    /*padding: 1.5rem 1rem; */
     height: 48px;
 }
 
