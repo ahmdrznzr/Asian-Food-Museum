@@ -877,6 +877,9 @@ footer {
         height: auto;
         /* Auto height for small screens */
     }
+    .map {
+        padding: 20px;
+    }
     .text-content h1 {
         font-size: 36px;
         /* Reduce title font size */
