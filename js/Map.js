@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 map: "images/Maps/32_map_eastasia.png",
             },
             southAsia: {
-                
+                title: "ُSouth Asia",
                 items: ["[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[12] Chicken Pilaf (چکن بریانی)", "[13] Mutton in Clay Pot (مٹن کُنا)", "[14] Semolina Halwa (سوجی کا حلوہ)"],
                 floorPlan: "images/Maps/36_floorplan_southasia.png",
                 map: "images/Maps/35_map_southasia.png",
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const subcategories = Object.keys(contentData[narrative]);
         subcategoryContainer.innerHTML = ""; // Clear existing subcategories
 
-         // If "All" is selected, don't show any subcategories
+        // If "All" is selected, don't show any subcategories
         if (narrative === "all") {
             subcategoryTitle.textContent = ""; // Clear subcategory title
             return;
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function formatDishName(name) {
         return name
-            .replace(/\s*\(.*?\)/g, '') 
+            .replace(/\s*\(.*?\)/g, '')
             .replace(/\s(.)/g, (match, p1) => p1.toUpperCase())
             .replace(/^\w/, (match) => match.toLowerCase());
     }
