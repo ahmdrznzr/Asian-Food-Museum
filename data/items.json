@@ -42,7 +42,7 @@
             "info": {
                 "Region": "West Asia",
                 "Date": "Ancient (10th Centurry)",
-                "Meal": "Desserts",
+                "Meal": "dessert",
                 "Ingredient": "Dairy",
                 "preparation": "Grilled"
             },
@@ -207,7 +207,7 @@
             "info": {
                 "Region": "South Asia",
                 "Date": "Medieval(16th century)",
-                "Meal": "Desserts",
+                "Meal": "dessert",
                 "Ingredient": "Dairy",
                 "preparation": "No-Cook"
             },
