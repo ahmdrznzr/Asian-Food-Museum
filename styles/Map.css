@@ -1,331 +1,329 @@
-
-
 :root {
-  --darkest: #1B1A17;
-  --dark: #0e1511;
-  --yellow: #eee5c8;
-  --red: #772017;
-  --dark-red: #281102;
-  --light: #696969;
-  --lightest: #EFEFEF;
-  --green: #9c9b84;
-  --brown: #a6997c;
+    --darkest: #1B1A17;
+    --dark: #0e1511;
+    --yellow: #eee5c8;
+    --red: #772017;
+    --dark-red: #281102;
+    --light: #696969;
+    --lightest: #EFEFEF;
+    --green: #9c9b84;
+    --brown: #a6997c;
 }
+
 @keyframes fadeIn {
-  from {
-      opacity: 0;
-      transform: translateY(10px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 * {
-  box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
-  /* the total size of the element will not exceed the specified dimensions */
-  margin: 0;
-  width: 100%;
+    /* the total size of the element will not exceed the specified dimensions */
+    margin: 0;
+    width: 100%;
 }
 
-
 .main-page {
-  background-color: var(--dark-red);
+    background-color: var(--dark-red);
 }
 
 hr.seperate {
-  border-width: 0 0 3px;
-  border-image: linear-gradient( 90deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 50%, rgba(239, 239, 239, 0) 100%) 0 0 100%;
-  border-style: solid;
+    border-width: 0 0 3px;
+    border-image: linear-gradient( 90deg, rgba(239, 239, 239, 0), rgba(239, 239, 239, 1) 50%, rgba(239, 239, 239, 0) 100%) 0 0 100%;
+    border-style: solid;
 }
 
 h2 {
-  text-align: center;
+    text-align: center;
 }
 
 .main-content h1 {
-  font-size: 54px;
-  font-weight: 600;
-  color: var(--yellow);
-  text-align: center;
+    font-size: 54px;
+    font-weight: 600;
+    color: var(--yellow);
+    text-align: center;
 }
 
 .main-content {
-  padding: 36px;
+    padding: 36px;
 }
 
 .controls {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
 }
 
 .subcategory-buttons {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  width: 70%;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .narrative-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  /* space between buttons */
-  gap: 16px;
-  width: 100%;
-  /* Space between the options */
-  justify-content: center;
-  /* make the items in a line according to the text that they have */
-  align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    /* space between buttons */
+    gap: 16px;
+    width: 100%;
+    /* Space between the options */
+    justify-content: center;
+    /* make the items in a line according to the text that they have */
+    align-items: baseline;
 }
 
 .narrative-buttons .nar-btn {
-  flex: 1;
-  /* Ensure responsiveness with flex-grow, flex-shrink, and flex-basis */
-  max-width: 16.6%;
-  box-sizing: border-box;
-  /* Include padding and border in width calculation */
+    flex: 1;
+    /* Ensure responsiveness with flex-grow, flex-shrink, and flex-basis */
+    max-width: 16.6%;
+    box-sizing: border-box;
+    /* Include padding and border in width calculation */
 }
 
 .narrative-btn {
-  width: 100%;
-  font-size: 20px;
+    width: 100%;
+    font-size: 20px;
 }
 
 .subcategory-btn {
-  width: 15%;
-  font-size: 18px;
-  border-radius: 10px;
-  padding-top: 12px;
-  padding-bottom: 8px;
+    width: 15%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding-top: 12px;
+    padding-bottom: 8px;
 }
 
 .narrative-buttons .narrative-btn,
 .subcategory-btn.active {
-  background-color: var(--yellow);
-  color: var(--darkest);
-  border-radius: 10px;
+    background-color: var(--yellow);
+    color: var(--darkest);
+    border-radius: 10px;
 }
 
 .narrative-btn.active,
 .subcategory-btn.active {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .narrative-btn.active,
 .subcategory-btn {
-  background-color: var(--dark-red);
-  color: var(--yellow);
-  border: 2px solid var(--yellow);
+    background-color: var(--dark-red);
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
 }
 
 .narrative-btn.active {
-  box-shadow: 4px 4px 8px rgba(238, 229, 200, 0.4);
+    box-shadow: 4px 4px 8px rgba(238, 229, 200, 0.4);
 }
 
 
 /* Existing styles remain unchanged */
 
 .subcategory-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 
 .subcategory-buttons button {
-  flex: 1 1 50%;
-  /* Two buttons per row on small screens */
-  max-width: 45%;
+    flex: 1 1 50%;
+    /* Two buttons per row on small screens */
+    max-width: 45%;
 }
 
 .maps {
-  margin-top: 54px;
+    margin-top: 54px;
 }
 
 .map-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 36px;
-  width: 100%;
-  min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 36px;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .sub-category {
-  width: 30%;
-  min-height: 100vh;
+    width: 30%;
+    min-height: 100vh;
 }
 
 .layout {
-  width: 35%;
-  min-height: 100vh;
+    width: 35%;
+    min-height: 100vh;
 }
 
 .geo-map {
-  width: 35%;
-  min-height: 100vh;
+    width: 35%;
+    min-height: 100vh;
 }
 
 .map-info h2,
 .geo-map h2 {
-  font-size: 36px;
-  color: var(--lightest);
-  font-weight: 550;
-  margin-bottom: 16px;
+    font-size: 36px;
+    color: var(--lightest);
+    font-weight: 550;
+    margin-bottom: 16px;
 }
 
 .layout-img,
 .geo-img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 
 .sub-category .item-list {
-  padding: 16px;
-  transition: opacity 1s ease-in-out;
+    padding: 16px;
+    transition: opacity 1s ease-in-out;
 }
 
 .item-list.show {
-  animation: fadeIn 1s ease-in-out;
-  opacity: 1;
+    animation: fadeIn 1s ease-in-out;
+    opacity: 1;
 }
 
 .sub-category .item-list li {
-  margin: 8px 0;
-  font-size: 18px;
-  color: var(--lightest);
+    margin: 8px 0;
+    font-size: 18px;
+    color: var(--lightest);
 }
 
 .sub-category .item-list a {
-  text-decoration: none;
-  color: var(--lightest);
-  transition: all 0.3s ease-in;
+    text-decoration: none;
+    color: var(--lightest);
+    transition: all 0.3s ease-in;
 }
 
 .sub-category .item-list a:hover {
-  color: var(--yellow);
-  text-decoration: underline;
-  font-size: 20px;
+    color: var(--yellow);
+    text-decoration: underline;
+    font-size: 20px;
 }
 
 .sub-category .item-list a.inactive {
-  color: grey;
-  pointer-events: none;
+    color: grey;
+    pointer-events: none;
 }
 
 .item-list,
 .layout-img,
 .geo-img {
-  opacity: 0;
-  /* Initially hidden */
-  transition: opacity 1s ease-in-out;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 1s ease-in-out;
 }
 
 .layout-img,
 .geo-img {
-  -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
-  mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
+    mask-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 1) calc(100% - 50px), rgba(0, 0, 0, 0) 100%);
 }
 
 .item-list.show,
 .layout-img.show,
 .geo-img.show {
-  animation: fadeIn 1s ease-in-out;
-  opacity: 1;
+    animation: fadeIn 1s ease-in-out;
+    opacity: 1;
 }
 
 @media (max-width: 1024px) {
-  .main-content h1 {
-      font-size: 48px;
-  }
-  .narrative-buttons {
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: stretch;
-  }
-  .narrative-buttons .nar-btn {
-      flex: 1 1 30%;
-      /* Flex-grow, flex-shrink, flex-basis */
-      margin-bottom: 20px;
-      max-width: 30%;
-      /* Ensure they don't exceed this width */
-  }
-  .narrative-btn,
-  .subcategory-btn {
-      width: 100%;
-      font-size: 16px;
-      text-align: center;
-  }
-  .map-info {
-      flex-direction: column;
-      /* Stack items vertically on smaller screens */
-  }
-  .sub-category,
-  .layout {
-      width: 100%;
-      /* Make each section take full width on smaller screens */
-      height: auto;
-      /* Adjust height for smaller screens */
-  }
-  .layout-img,
-  .geo-img {
-      width: 100%;
-      /* Ensure images are responsive */
-      height: auto;
-  }
+    .main-content h1 {
+        font-size: 48px;
+    }
+    .narrative-buttons {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    .narrative-buttons .nar-btn {
+        flex: 1 1 30%;
+        /* Flex-grow, flex-shrink, flex-basis */
+        margin-bottom: 20px;
+        max-width: 30%;
+        /* Ensure they don't exceed this width */
+    }
+    .narrative-btn,
+    .subcategory-btn {
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+    }
+    .map-info {
+        flex-direction: column;
+        /* Stack items vertically on smaller screens */
+    }
+    .sub-category,
+    .layout {
+        width: 100%;
+        /* Make each section take full width on smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
+    .layout-img,
+    .geo-img {
+        width: 100%;
+        /* Ensure images are responsive */
+        height: auto;
+    }
 }
 
 @media (max-width: 769px) {
-  .main-content h1 {
-      font-size: 28px;
-  }
-  .narrative-buttons .nar-btn {
-      flex: 1 1 50%;
-      /* Flex-grow, flex-shrink, flex-basis */
-      margin-bottom: 20px;
-      max-width: 45%;
-      /* Ensure they don't exceed this width */
-  }
-  .narrative-btn {
-      width: 100%;
-      padding: 12px 0;
-      font-size: 16px;
-      text-align: center;
-  }
-  .sub-category .item-list li {
-      font-size: 16px;
-  }
-  .sub-category .item-list a:hover {
-      font-size: 18px;
-  }
+    .main-content h1 {
+        font-size: 28px;
+    }
+    .narrative-buttons .nar-btn {
+        flex: 1 1 50%;
+        /* Flex-grow, flex-shrink, flex-basis */
+        margin-bottom: 20px;
+        max-width: 45%;
+        /* Ensure they don't exceed this width */
+    }
+    .narrative-btn {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 16px;
+        text-align: center;
+    }
+    .sub-category .item-list li {
+        font-size: 16px;
+    }
+    .sub-category .item-list a:hover {
+        font-size: 18px;
+    }
 }
 
 @media(max-width:1200px) {
-  .sub-category,
-  .layout {
-      width: 100%;
-      /* Make each section take full width on smaller screens */
-      height: auto;
-      /* Adjust height for smaller screens */
-  }
-  .geo-map {
-      display: none;
-  }
+    .sub-category,
+    .layout {
+        width: 100%;
+        /* Make each section take full width on smaller screens */
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
+    .geo-map {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {
-  .subcategory-buttons button {
-      flex: unset;
-      max-width: unset;
-  }
+    .subcategory-buttons button {
+        flex: unset;
+        max-width: unset;
+    }
 }
