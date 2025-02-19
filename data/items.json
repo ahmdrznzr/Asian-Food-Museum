@@ -1,0 +1,310 @@
+{
+    "meta": {
+        "startWith": 0,
+        "startNarrative": "Region",
+        "startValue": "West Asia",
+        "narratives": ["Region", "Meal", "Ingredients", "Preparation", "Time"]
+    },
+    "items": [{
+            "@sort": "6",
+            "itemName": "Hot Pot (火锅)",
+            "image": "../images/items/item-6.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Ancient (9th Centurry)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Hot pot, a beloved Chinese meal, is a communal dining experience where ingredients are cooked at the table in a simmering pot of flavorful broth. The dish involves a variety of fresh vegetables, meats, seafood, tofu, and noodles, all dipped and cooked in the pot before being eaten with a selection of sauces. Hot pot is popular throughout China and varies by region, with different broths and dipping sauces reflecting local flavors. This interactive dining style promotes sharing and is often enjoyed during family gatherings, festivals, or casual social events.",
+            "longerDesc": "longer-description/06-HotPot.html",
+            "fullDesc": "full-description/06-HotPot.html"
+        },
+        {
+            "@sort": "19",
+            "itemName": "Kibbeh (كبة)",
+            "image": "../images/items/item-19.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Fried"
+            },
+            "shortDesc": "Kibbeh is a traditional Middle Eastern dish made primarily from bulgur wheat, minced onions, and finely ground meat—usually lamb or beef—seasoned with a variety of aromatic spices. It is considered the national dish of several countries, including Lebanon and Syria, and is enjoyed in different forms, such as baked, fried, or served raw. Kibbeh's outer shell is typically made of bulgur and meat, while the filling often includes spiced meat, pine nuts, and onions. This dish is widely loved for its rich flavors, crispy texture, and its cultural significance in Middle Eastern feasts and family gatherings.",
+            "longerDesc": "longer-description/19-Kibbeh.html", 
+            "fullDesc": "full-description/19-Kibbeh.html"
+        },
+        {
+            "@sort": "20",
+            "itemName": "Filo Pastry (كنافة)",
+            "image": "../images/items/item-20.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Ancient (10th Centurry)",
+                "Meal": "dessert",
+                "Ingredient": "Dairy",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Knafeh is a traditional Lebanese dessert made from layers of shredded filo dough or semolina, soaked in sweet syrup, and filled with cheese or cream. This popular pastry, known for its crispy golden crust and gooey cheese filling, is often topped with crushed pistachios for added texture and flavor. Knafeh is widely enjoyed across the Middle East, especially during special occasions and festivals, and is typically served warm. Its sweet and rich flavor, combined with the contrast of textures, makes it a beloved treat in Lebanese cuisine and beyond.",
+            "longerDesc": "longer-description/20-Knafeh.html",
+            "fullDesc": "full-description/20-Knafeh.html"
+        },
+        {
+            "@sort": "4",
+            "itemName": "Noodle Soup (آش رشته)",
+            "image": "../images/items/item-4.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Plant Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Ash Reshteh is a hearty and flavorful Iranian noodle soup that holds a special place in Persian cuisine, particularly during cold months and festive occasions. This comforting dish is made with a mix of herbs, legumes, and traditional Persian noodles called reshteh, all cooked in a thick, savory broth. It is typically garnished with fried onions, dried mint, kashk (a fermented whey product), and sometimes garlic. Ash Reshteh is deeply connected to Persian cultural traditions and is often served during celebrations or family gatherings, especially during the Persian New Year (Norooz) and religious ceremonies.",
+            "longerDesc": "longer-description/04-NoodleSoup.html",
+            "fullDesc": "full-description/04-NoodleSoup.html"
+        },
+        {
+            "@sort": "1",
+            "itemName": "Herb Stew (قرمه سبزی)",
+            "image": "../images/items/item-1.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Ghormeh Sabzi is a traditional Persian stew and one of Iran's most beloved national dishes. Made with a combination of aromatic herbs like parsley, cilantro, and fenugreek, slow-cooked with tender lamb or beef, red kidney beans, and dried limes, it offers a deep, tangy, and savory flavor. Known for its unique green appearance and complex taste, Ghormeh Sabzi is a comforting dish enjoyed by Iranians during family meals and festive occasions. Its rich blend of herbs and spices makes it a standout in Persian cuisine, symbolizing warmth and tradition.",
+            "longerDesc": "longer-description/01-herbStew.html",
+            "fullDesc": "full-description/01-herbStew.html"
+        },
+        {
+            "@sort": "7",
+            "itemName": "Sour Soup with Beef Slices (酸汤肥牛)",
+            "image": "../images/items/item-7.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Ancient (10th Centurry)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Sour Soup with Beef Slices is a popular Chinese dish known for its tangy, spicy, and savory flavors. Originating from the Guizhou province, this dish features thinly sliced beef cooked in a sour broth made with fermented ingredients, typically tomato or pickled vegetables, and flavored with chili and aromatics. The combination of tender beef, vibrant soup, and the balanced contrast between sour and spicy flavors make this dish a favorite in many Chinese restaurants. Its lively taste and warming qualities are particularly enjoyed during cooler months or when seeking something bold and refreshing.",
+            "longerDesc": "longer-description/07-SourSoup.html",
+            "fullDesc": "full-description/07-SourSoup.html"
+        },
+        {
+            "@sort": "17",
+            "itemName": "Hummus (حمص)",
+            "image": "../images/items/item-17.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Medieval(13th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Plant Based",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Hummus is a beloved Middle Eastern dish made from blended chickpeas (garbanzo beans), tahini (sesame seed paste), olive oil, lemon juice, and garlic. This creamy and nutritious dip has ancient roots in Levantine cuisine and is widely enjoyed across the Mediterranean and Middle Eastern regions. Traditionally served as a part of mezze platters with pita bread, fresh vegetables, or spread on flatbreads, hummus has gained worldwide popularity for its rich flavor, versatility, and health benefits, especially as a plant-based source of protein and fiber.",
+            "longerDesc": "longer-description/17-Hummus.html",
+            "fullDesc": "full-description/17-Hummus.html"
+        },
+        {
+            "@sort": "8",
+            "itemName": "Peking Duck (北京烤鸭)",
+            "image": "../images/items/item-8.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Medieval(14th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Peking Duck is one of China's most famous dishes, originating from the imperial kitchens of Beijing during the Yuan Dynasty. Known for its crispy skin and succulent meat, this dish is served with thin pancakes, scallions, cucumber, and a savory hoisin or sweet bean sauce. The meticulous preparation, which involves air-drying and roasting the duck to perfection, makes Peking Duck a culinary masterpiece that is enjoyed both in fine restaurants and on special occasions. Its rich flavors and elegant presentation have earned it a reputation as a symbol of Chinese culinary excellence.",
+            "longerDesc": "longer-description/08-PekingDuck.html",
+            "fullDesc": "full-description/08-PekingDuck.html"
+        },
+        {
+            "@sort": "3",
+            "itemName": "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)",
+            "image": "../images/items/item-3.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Tahchin is a beloved Persian dish known for its beautiful golden crust and its layered, flavorful composition. It is a savory saffron rice cake, often made with layers of yogurt-marinated chicken or lamb, rice, saffron, and sometimes barberries or other dried fruits. This dish is visually stunning and aromatic, with the saffron-infused rice forming a crispy outer layer called “tahdig”, which is a prized part of the dish. Tahchin is often served at special occasions and family gatherings, embodying the rich tradition and attention to detail that Persian cuisine is famous for.",
+            "longerDesc": "longer-description/03-RiceCakeWithChicken.html",
+            "fullDesc": "full-description/03-RiceCakeWithChicken.html"
+        },
+        {
+            "@sort": "2",
+            "itemName": "Saffron Ice cream (بستنی سنتی)",
+            "image": "../images/items/item-2.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "Dessert",
+                "Ingredient": "Dairy",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Bastani Sonnati, or Persian traditional ice cream, is a classic dessert in Iran known for its rich, creamy texture and unique flavors of saffron, rosewater, and pistachios. Often called the ice cream of kings, this dessert has been cherished for centuries, especially during hot summer months. Its distinct golden-yellow color, from the infusion of saffron, and the added crunchy texture of pistachios make Bastani Sonnati a luxurious treat that holds a special place in Persian culture.",
+            "longerDesc": "longer-description/02-SaffronIcecream.html",
+            "fullDesc": "full-description/02-SaffronIcecream.html"
+        },
+        {
+            "@sort": "14",
+            "itemName": "Deep-fried Lentil Fritters (دہی بھلے چاٹ)",
+            "image": "../images/items/item-14.webp",
+            "info": {
+                "Region": "South Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Plant Based",
+                "preparation": "Fried"
+            },
+            "shortDesc": "Dahi Bhalla Chaat is a popular Pakistani street food dish made from lentil dumplings, known as bhallas, served in spiced yogurt and topped with an array of chutneys, herbs, and crispy toppings. It is a refreshing yet flavorful snack often enjoyed during iftar in Ramadan, or at family gatherings and festivals. The combination of tangy yogurt, sweet and spicy chutneys, and soft lentil dumplings makes it a beloved treat in Pakistan, offering a perfect balance of flavors and textures.",
+            "longerDesc": "longer-description/14-Deep-friedLentil.html",
+            "fullDesc": "full-description/14-Deep-friedLentil.html"
+        },
+        {
+            "@sort": "16",
+            "itemName": "Chicken Pilaf (چکن بریانی)",
+            "image": "../images/items/item-16.webp",
+            "info": {
+                "Region": "South Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Chicken Biryani is one of Pakistan's most iconic and beloved dishes, known for its aromatic spices, tender chicken, and flavorful basmati rice. A symbol of festive dining, this dish is often served at weddings, family gatherings, and special occasions. With its layers of fragrant rice, succulent chicken, and vibrant spices like saffron and cardamom, Chicken Biryani represents the rich culinary heritage of Pakistan. It is a dish that brings together family and friends, creating an unforgettable dining experience.",
+            "longerDesc": "longer-description/16-Pilaf.html",
+            "fullDesc": "full-description/16-Pilaf.html"
+        },
+        {
+            "@sort": "13",
+            "itemName": "Mutton in Clay Pot (مٹن کُنا)",
+            "image": "../images/items/item-13.webp",
+            "info": {
+                "Region": "South Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Mutton Kunna is a traditional Pakistani dish, particularly famous in the Punjab region. Known for its rich, flavorful gravy and tender mutton, this dish is often served at special occasions, including weddings and family gatherings. It is slow-cooked to perfection in a clay pot, giving it a unique taste that sets it apart from other mutton curries. Kunna's distinctive blend of spices creates a savory yet slightly tangy flavor that is deeply satisfying.",
+            "longerDesc": "longer-description/13-Mutton.html",
+            "fullDesc": "full-description/13-Mutton.html"
+        },
+        {
+            "@sort": "15",
+            "itemName": "Semolina Halwa (سوجی کا حلوہ)",
+            "image": "../images/items/item-15.webp",
+            "info": {
+                "Region": "South Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "dessert",
+                "Ingredient": "Dairy",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Sooji ka Halwa is a beloved traditional dessert in Pakistan, made from semolina (sooji), sugar, ghee, and flavored with cardamom. This rich, aromatic, and comforting dish is often served during religious events, family gatherings, and festive occasions such as Eid. Known for its simple preparation and delightful texture, Sooji ka Halwa offers a perfect balance of sweetness and warmth, making it a cherished part of Pakistani culinary culture.",
+            "longerDesc": "longer-description/15-Halwa.html",
+            "fullDesc": "full-description/15-Halwa.html"
+        },
+        {
+            "@sort": "12",
+            "itemName": "Tempura (天婦羅)",
+            "image": "../images/items/item-12.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Medieval(16th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Fried"
+            },
+            "shortDesc": "Tempura is a popular Japanese dish consisting of seafood, vegetables, or sometimes even meats that are lightly battered and deep-fried to achieve a crispy texture. Originating from Japan but with influences from Portuguese cooking methods introduced in the 16th century, tempura has become a staple in Japanese cuisine. The light, airy batter used in tempura creates a delicate coating that enhances the natural flavors of the ingredients without overwhelming them. This dish is served either as part of a larger meal or as a standalone dish with dipping sauces, rice, or noodles.",
+            "longerDesc": "longer-description/12-Tempura.html",
+            "fullDesc": "full-description/12-Tempura.html"
+        },
+        {
+            "@sort": "10",
+            "itemName": "Sukiyaki (すき焼き)",
+            "image": "../images/items/item-10.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Modern(19th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Sukiyaki is a traditional Japanese hot pot dish that combines thinly sliced beef, vegetables, tofu, and noodles, simmered in a sweet and savory broth made from soy sauce, sugar, and mirin. Often cooked at the table, sukiyaki is a social dish, enjoyed communally by family and friends. Its delicate balance of sweet and salty flavors, along with the variety of textures, makes it a popular choice during special occasions, particularly in the colder months. This dish is deeply rooted in Japanese food culture, symbolizing warmth and togetherness.",
+            "longerDesc": "longer-description/10-Sukiyaki.html",
+            "fullDesc": "full-description/10-Sukiyaki.html"
+        },
+        {
+            "@sort": "9",
+            "itemName": "Pork Bone Ramen (豚骨ラーメン)",
+            "image": "../images/items/item-9.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Modern(20th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Stewed"
+            },
+            "shortDesc": "Tonkotsu Ramen is a rich and flavorful Japanese noodle soup, known for its creamy pork bone broth. Originating from Fukuoka on the island of Kyushu, this ramen variety is characterized by its milky-white broth made by boiling pork bones for hours to extract collagen and fat, giving it a luscious, smooth texture. Served with thin noodles, slices of tender pork (chashu), and a variety of toppings such as soft-boiled eggs, green onions, and seaweed, Tonkotsu Ramen offers a deeply savory and comforting meal, beloved across Japan and increasingly popular worldwide.",
+            "longerDesc": "longer-description/09-PorkBone.html",
+            "fullDesc": "full-description/09-PorkBone.html"
+        },
+        {
+            "@sort": "11",
+            "itemName": "Rotation Sushi (回転寿司)",
+            "image": "../images/items/item-11.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Modern(20th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "No-Cook"
+            },
+            "shortDesc": "Kaiten-zushi, or rotation sushi, is a popular style of sushi dining in Japan where plates of sushi move along a conveyor belt, allowing customers to select their preferred dishes as they pass by. This modern, efficient style of serving sushi originated in the 1950s and has since become a casual and accessible way for people to enjoy a variety of sushi at an affordable price. Diners can choose from an assortment of sushi types, from classic nigiri to more creative rolls, making kaiten-zushi an engaging and convenient dining experience.",
+            "longerDesc": "longer-description/11-RotationSushi.html",
+            "fullDesc": "full-description/11-RotationSushi.html"
+        },
+        {
+            "@sort": "18",
+            "itemName": "Meat wrap (شاورما)",
+            "image": "../images/items/item-18.webp",
+            "info": {
+                "Region": "West Asia",
+                "Date": "Modern(20th century)",
+                "Meal": "Main Course",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Shawarma is a popular Middle Eastern street food consisting of thinly sliced marinated meat—often lamb, beef, chicken, or a mix—cooked on a vertical rotisserie and wrapped in pita or flatbread. The meat is shaved off the rotating spit, piled into the bread, and typically garnished with fresh vegetables, pickles, and drizzled with sauces like tahini or garlic sauce. Shawarma's rich flavor comes from the marinade, which often includes a blend of spices such as cumin, turmeric, paprika, and cardamom, making it a flavorful, portable, and filling meal enjoyed across the world.",
+            "longerDesc": "longer-description/18-shawarma.html",
+            "fullDesc": "full-description/18-shawarma.html"
+        },
+        {
+            "@sort": "5",
+            "itemName": "Coca-Cola Chicken Wings (可乐鸡翅)",
+            "image": "../images/items/item-5.webp",
+            "info": {
+                "Region": "East Asia",
+                "Date": "Modern(20th century)",
+                "Meal": "Appetizers",
+                "Ingredient": "Meat Based",
+                "preparation": "Grilled"
+            },
+            "shortDesc": "Coca-Cola Chicken Wings is a popular Chinese dish that uniquely combines the sweetness of Coca-Cola with the savory flavors of soy sauce and ginger. This dish is widely loved for its tender chicken wings coated in a glossy, caramelized sauce. The Coca-Cola not only adds sweetness but also enhances the rich color and stickiness of the sauce, making it an irresistible and simple meal often enjoyed as part of family dinners or informal gatherings.",
+            "longerDesc": "longer-description/05-Coca-ColaChicken.html",
+            "fullDesc": "full-description/05-Coca-ColaChicken.html"
+        }
+
+    ]
+}

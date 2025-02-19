@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/narrative.css">
     <title>Food Museum</title>
-    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/foodMuseumLogo.jpg" type="image/x-icon">
     <title>Narrative</title>
 </head>
 
@@ -17,7 +19,7 @@
     <!-- navigation bar -->
 
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand"><img src="./images/logo.png" alt="" style="height: 45px;"></a>
+        <a class="navbar-brand" href="index.html"><img src="images/foodMuseumLogo.jpg" alt="" style="height: 45px;"></a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,16 +29,16 @@
                     <a class="nav-link" href="index.html#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about" tabindex="-1" aria-disabled="true">About</a>
+                    <a class="nav-link" href="index.html#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#project" tabindex="-1" aria-disabled="true">Project</a>
+                    <a class="nav-link" href="narrative.html">Narrative</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#map" tabindex="-1" aria-disabled="true">Map</a>
+                    <a class="nav-link" href="Map.html">Map</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#team" tabindex="-1" aria-disabled="true">Team</a>
+                    <a class="nav-link" href="index.html#team">Team</a>
                 </li>
             </ul>
         </div>
@@ -89,12 +91,16 @@
                             </a>
                         </div>
                     </div>
+
                 </section>
             </div>
+
         </div>
     </header>
+    <!-- <a class="up-icon" href="">up</a> -->
     <!-- main page and content -->
     <div class="main-page">
+
         <!-- region section -->
         <section id="region" class="region">
             <div class="reg-section">
@@ -102,33 +108,21 @@
                 <!-- cards container -->
                 <div class="nar-cards">
                     <!-- individual card -->
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>East Asia</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>East Asia</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>East Asia</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="nar-card" id="east-card">
+                        <a class="card" href="item.html?region=eastAsia">
+                            <img src="images/Buttons/narratives_icon (21).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="west-card">
+                        <a class="card" href="item.html?region=westAsia">
+                            <img src="images/Buttons/narratives_icon (22).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="south-card">
+                        <a class="card" href="item.html?region=southAsia">
+                            <img src="images/Buttons/narratives_icon (23).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -136,77 +130,49 @@
             <div class="meal-section">
                 <h1 class="general-header">Meal</h1>
                 <div class="nar-cards">
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Appetizer</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Main Course</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Dessert</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="nar-card" id="appetizer-card">
+                        <a class="card" href="item.html?meal=appetizers">
+                            <img src="images/Buttons/narratives_icon (8).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="main-card">
+                        <a class="card" href="item.html?meal=mainCourse">
+                            <img src="images/Buttons/narratives_icon (10).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="dessert-card">
+                        <a class="card" href="item.html?meal=dessert">
+                            <img src="images/Buttons/narratives_icon (12).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- prepration section  -->
         <section id="prepration" class="prepration">
             <div class="prepration-section">
-                <h1 class="general-header">Prepration Method</h1>
-                <div class="nar-cards">
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Roasted</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Deep Fried</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Stewed</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Cold</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
+                <h1 class="general-header">Preparation Method</h1>
+                <div class="nar-cards" id="grilled-card">
+                    <div class="nar-card">
+                        <a class="card" href="item.html?preparation=grilled">
+                            <img src="images/Buttons/narratives_icon (14).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="fried-card">
+                        <a class="card" href="item.html?preparation=fried">
+                            <img src="images/Buttons/narratives_icon (18).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="stewed-card">
+                        <a class="card" href="item.html?preparation=stewed">
+                            <img src="images/Buttons/narratives_icon (16).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="no-cook-card">
+                        <a class="card" href="item.html?preparation=No-Cook">
+                            <img src="images/Buttons/narratives_icon (20).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -215,33 +181,21 @@
             <div class="reg-section">
                 <h1 class="general-header">Ingredient</h1>
                 <div class="nar-cards">
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Protein-based</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Vegetable</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Diary-based</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="nar-card" id="meat-card">
+                        <a class="card" href="item.html?ingredient=meatBased">
+                            <img src="images/Buttons/narratives_icon (2).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="plant-card">
+                        <a class="card" href="item.html?ingredient=plantBased">
+                            <img src="images/Buttons/narratives_icon (4).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="diary-card">
+                        <a class="card" href="item.html?ingredient=dairy">
+                            <img src="images/Buttons/narratives_icon (6).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -250,46 +204,35 @@
             <div class="time-section">
                 <h1 class="general-header">Time</h1>
                 <div class="nar-cards">
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Acient</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Medieval</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="nar-card">
-                        <div class="card">
-                            <img src="" alt="Avatar" style="width:100%">
-                            <div class="nar-container">
-                                <h4><b>Modern</b></h4>
-                                <p>Description is below</p>
-                            </div>
-                        </div>
-                    </a>
+                    <div class="nar-card" id="ancient-card">
+                        <a class="card" href="item.html?date=ancient">
+                            <img src="images/Buttons/narratives_icon (24).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="medival-card">
+                        <a class="card" href="item.html?date=medieval">
+                            <img src="images/Buttons/narratives_icon (25).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
+                    <div class="nar-card" id="modern-card">
+                        <a class="card" href="item.html?date=modern">
+                            <img src="images/Buttons/narratives_icon (26).PNG" alt="Avatar" style="width:100%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- footer section -->
         <footer>
-            <p>The purpose of this web site is to explore various types of typographic and layout style for musem pages, as an end-of-course project for the "Information Modeling and Web technologies" course of the Master Degree in Digital Humanities and
-                Digital Knowledge of the University of Bologna, under prof. Fabio Vitali. The documents contained in this web site have been selected ....</p>
+            <p>The purpose of this web site is to explore various types of typographic and layout style for musem pages, as an end-of-course project for the "Information Modeling and Web technologies " course of the Master Degree in <em>Digital Humanities and Digital Knowledge</em>.</p>
             <p>All copyrights and related rights on the content remain with their original owners.
-                <br> All copyright on the typographic and layout choices are 2024 &copy; Zahra Farajihormozi, Nazanin Fakharian, Ahmadreza Nazari, Yifan Wu.</p>
+                <br> All copyright on the typographic and layout choices are 2025 &copy; Zahra Farajihormozi, Nazanin Fakharian, Ahmadreza Nazari, Yifan Wu.</p>
+            <p>Read full documention <a href="documentation.html">here</a>.</p>
         </footer>
     </div>
-
-
+    <button id="scrollToTop">↑</button>
+    <script src="js/header.js"></script>
+    <script src="js/scroll.js"></script>
 </body>
 
 </html>

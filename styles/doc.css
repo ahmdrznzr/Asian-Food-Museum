@@ -1,0 +1,111 @@
+:root {
+    --darkest: #1B1A17;
+    --dark: #0e1511;
+    --yellow: #eee5c8;
+    --red: #772017;
+    --dark-red: #281102;
+    --light: #696969;
+    --lightest: #EFEFEF;
+    --green: #9c9b84;
+    --brown: #a6997c;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman';
+    text-align: justify;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    /* Keep aside and main-content side by side */
+    min-height: 100vh;
+}
+
+
+/* Ensure main-content takes remaining space */
+
+.main-content {
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 70px;
+    background-color: var(--yellow);
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--dark-red);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    color: var(--red);
+    margin-bottom: 16px;
+}
+
+h3,
+h4 {
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+}
+
+.intro,
+.museum,
+.research,
+.design,
+.development {
+    margin-bottom: 48px;
+}
+
+.options li {
+    list-style-type: none;
+}
+
+.image-content {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin: auto;
+    /* Center the container itself if needed */
+}
+
+.doc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 16px;
+    justify-items: center;
+    align-items: center;
+}
+
+@media (max-width: 970px) {
+    .aside {
+        display: none;
+    }
+    .main-content {
+        width: 100%;
+    }
+}
