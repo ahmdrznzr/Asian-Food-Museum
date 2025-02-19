@@ -231,6 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function formatDishName(name) {
         return name
             .replace(/\s*\(.*?\)/g, '')
+            .replace(/\[\d{2}\] ?/g, '')
             .replace(/\s(.)/g, (match, p1) => p1.toUpperCase())
             .replace(/^\w/, (match) => match.toLowerCase());
     }
