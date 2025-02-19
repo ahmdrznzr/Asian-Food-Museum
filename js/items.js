@@ -61,8 +61,6 @@ document.addEventListener("DOMContentLoaded", async function() {
         // Convert key to lowercase for case-insensitive comparison
         const lowerKey = key.toLowerCase();
         const lowerValue = value.toLowerCase();
-
-        console.log("Filtering by:", lowerKey, lowerValue);
     
         for (let item of arr) {
             if (
