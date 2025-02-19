@@ -240,6 +240,23 @@ s .hidden {
     margin-top: 5rem;
 }
 
+@media (max-width: 1024px) {
+    .fixed-list,
+    .desc-list {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 970px) {
+    .fixed-list,
+    .desc-list {
+        font-size: 20px;
+    }
+    .item-heading {
+        font-size: 36px;
+    }
+}
+
 @media (max-width: 768px) {
     .previous-btn,
     .next-btn {
@@ -301,22 +318,5 @@ s .hidden {
     .explore {
         text-align: center;
         margin-top: 3rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .fixed-list,
-    .desc-list {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 970px) {
-    .fixed-list,
-    .desc-list {
-        font-size: 20px;
-    }
-    .item-heading {
-        font-size: 36px;
     }
 }
