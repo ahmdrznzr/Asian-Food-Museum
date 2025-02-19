@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     // Fetch JSON data
     async function fetchItems() {
         try {
-            const response = await fetch("http://localhost:8000/data/items.json");
+            const response = await fetch("../data/items.json");
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
