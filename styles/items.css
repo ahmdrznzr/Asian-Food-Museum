@@ -13,6 +13,11 @@
 
 /* General page styles */
 
+* {
+    box-sizing: border-box;
+    font-family: 'lora', serif;
+}
+
 body {
     margin: 0;
     padding: 0;

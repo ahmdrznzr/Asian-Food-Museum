@@ -23,7 +23,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'lora', serif;
 }
 
 body {
@@ -199,15 +199,13 @@ h2 {
 }
 
 .sub-category .item-list li {
-<<<<<<< HEAD
-    margin: 8px 0;
+    <<<<<<< HEAD margin: 8px 0;
     font-size: 18px;
     color: var(--lightest);
-=======
-  margin: 8px 0;
-  font-size: 18px;
-  list-style-type: none;
->>>>>>> b1c66ab28623f221fcf347adf8e684040fe2930d
+    =======margin: 8px 0;
+    font-size: 18px;
+    list-style-type: none;
+    >>>>>>>b1c66ab28623f221fcf347adf8e684040fe2930d
 }
 
 .sub-category .item-list a {

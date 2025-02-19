@@ -12,6 +12,11 @@
     --brown: rgb(166, 153, 124);
 }
 
+* {
+    box-sizing: border-box;
+    font-family: 'lora', serif;
+}
+
 header {
     background-image: url("../images/narrative-bg.webp");
     background-attachment: fixed;
