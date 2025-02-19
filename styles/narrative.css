@@ -27,10 +27,8 @@ header {
 
 .nar-content {
     background-color: rgba(0, 0, 0, 0.75);
-    /* cover full page on the screen */
     height: 100vh;
     width: 100%;
-    /* display the content in flex way and put them in the center of the page */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +36,10 @@ header {
 }
 
 .landing {
-    /* align each item of a column */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* have a space of 36px in the page. so the content does not stick to the corner */
     padding: 36px;
     width: 100%;
     animation: animatezoom 1.5s;
@@ -79,12 +75,9 @@ header {
 .nar-options {
     display: flex;
     flex-wrap: wrap;
-    /* space between buttons */
     gap: 16px;
     width: 90%;
-    /* Space between the options */
     justify-content: center;
-    /* make the items in a line according to the text that they have */
     align-items: baseline;
 }
 
@@ -96,7 +89,6 @@ header {
     /* Ensure responsiveness with flex-grow, flex-shrink, and flex-basis */
     max-width: 20%;
     box-sizing: border-box;
-    /* Include padding and border in width calculation */
 }
 
 
@@ -213,24 +205,18 @@ header {
     padding: 36px;
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    /* Center items horizontally */
     flex-wrap: wrap;
-    /* Allow items to wrap to the next line if needed */
 }
 
 .general-header {
     font-size: 45px;
-    /* Set font size for the heading */
     margin-top: 8px;
     margin-bottom: 16px;
     font-weight: 600;
-    /* Add margin below the heading */
 }
 
 a {
-    /* remove the underline */
     text-decoration: none;
     cursor: pointer;
 }
@@ -265,19 +251,12 @@ a {
 
 .nar-card .card {
     border: 1px solid #ccc;
-    /* Add a light gray border */
     border-radius: 15px;
-    /* Add rounded corners */
     padding: 16px;
-    /* Add padding inside the card */
     margin: 10px;
-    /* Add margin around each card */
     background-color: var(--lightest);
-    /* Set white background for the card */
     text-align: center;
-    /* Center the text inside the card */
     box-shadow: 0 4px 8px rgba(27, 26, 23, 0.1);
-    /* Add a subtle shadow below the card */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -299,12 +278,10 @@ a {
     height: 40px;
     font-size: 24px;
     background-color: var(--red);
-    /* Button color */
     color: var(--yellow);
     border: none;
     border-radius: 50%;
     display: none;
-    /* Initially hidden */
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -313,16 +290,11 @@ a {
 
 #scrollToTop:hover {
     background-color: var(--dark-red);
-    /* Darker blue on hover */
 }
 
 .show-scroll-button {
     display: flex !important;
-    /* Show the button */
 }
-
-
-/* up button style end */
 
 
 /* Responsive adjustments */
