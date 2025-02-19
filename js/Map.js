@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 map: "images/Maps/12_map_ancient.PNG",
             },
             medieval: {
-                title: "Medival",
+                title: "Medieval",
                 items: ["[07] Hummus (حمص)", "[08] Peking Duck (北京烤鸭)", "[09] Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "[10] Saffron Ice cream (بستنی سنتی)", "[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[12] Chicken Pilaf (چکن بریانی)", "[13] Mutton in Clay Pot (مٹن کُنا)", "[14] Semolina Halwa (سوجی کا حلوہ)", "[15] Tempura (天婦羅)"],
                 floorPlan: "images/Maps/16_floorplan_medieval.png",
                 map: "images/Maps/15_map_medieval.png",
