@@ -14,97 +14,113 @@ document.addEventListener("DOMContentLoaded", () => {
         all: {
             all: {
                 title: "All",
-                items: ["Hot Pot", "Kibbeh", "Filo Pastry", "Noodle Soup", "Herb Stew", "Sour Soup with Beef Slices", "Hummus", "Peking Duck", "Barberry and Saffron Rice Cake with Chicken", "Saffron Ice cream", "Deep-fried Lentil Fritters", "Chicken Pilaf", "Mutton in Clay Pot", "Semolina Halwa", "Tempura", "Sukiyaki", "Pork Bone Ramen", "Rotation Sushi", "Meat wrap", "Coca-Cola Chicken Wings"],
-                floorPlan: "images/Maps/03.PNG",
-                map: "images/Maps/05.PNG",
+                items: ["[01] Hot Pot", "[02] Kibbeh", "[03] Filo Pastry", "[04] Noodle Soup", "[05] Herb Stew", "[06] Sour Soup with Beef Slices", "[07] Hummus", "[08] Peking Duck", "[09] Barberry and Saffron Rice Cake with Chicken", "[10] Saffron Ice cream", "[11] Deep-fried Lentil Fritters", "[12] Chicken Pilaf", "[13] Mutton in Clay Pot", "[14] Semolina Halwa", "[15] Tempura", "[16] Sukiyaki", "[17] Pork Bone Ramen", "[18] Rotation Sushi", "[19] Meat wrap", "[20] Coca-Cola Chicken Wings"],
+                floorPlan: "images/Maps/03_floorplan_all.PNG",
+                map: "images/Maps/05_map_all.PNG",
             }
         },
         time: {
             ancient: {
-                items: ["Hot Pot (火锅)", "Kibbeh (كبة)", "Filo Pastry (كنافة)", "Noodle Soup (آش رشته)", "Herb Stew (قرمه سبزی)", "Sour Soup with Beef Slices (酸汤肥牛)"],
+                title: "Ancient",
+                items: ["[01]Hot Pot (火锅)", "[02] Kibbeh (كبة)", "[03] Filo Pastry (كنافة)", "[04] Noodle Soup (آش رشته)", "[05] Herb Stew (قرمه سبزی)", "[06] Sour Soup with Beef Slices (酸汤肥牛)"],
                 floorPlan: "images/Maps/13_floorplan_ancient.PNG",
                 map: "images/Maps/12_map_ancient.PNG",
             },
             medieval: {
-                items: ["Hummus (حمص)", "Peking Duck (北京烤鸭)", "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "Saffron Ice cream (بستنی سنتی)", "Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "Chicken Pilaf (چکن بریانی)", "Mutton in Clay Pot (مٹن کُنا)", "Semolina Halwa (سوجی کا حلوہ)", "Tempura (天婦羅)"],
+                title: "Medival",
+                items: ["[07] Hummus (حمص)", "[08] Peking Duck (北京烤鸭)", "[09] Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "[10] Saffron Ice cream (بستنی سنتی)", "[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[12] Chicken Pilaf (چکن بریانی)", "[13] Mutton in Clay Pot (مٹن کُنا)", "[14] Semolina Halwa (سوجی کا حلوہ)", "[15] Tempura (天婦羅)"],
                 floorPlan: "images/Maps/16_floorplan_medieval.png",
                 map: "images/Maps/15_map_medieval.png",
             },
             modern: {
-                items: ["Sukiyaki (すき焼き)", "Pork Bone Ramen (豚骨ラーメン)", "Rotation Sushi (回転寿司)", "Meat wrap (شاورما)", "Coca-Cola Chicken Wings (可乐鸡翅)"],
+                title: "Modern",
+                items: ["[16] Sukiyaki (すき焼き)", "[17] Pork Bone Ramen (豚骨ラーメン)", "[18] Rotation Sushi (回転寿司)", "[19] Meat wrap (شاورما)", "[20] Coca-Cola Chicken Wings (可乐鸡翅)"],
                 floorPlan: "images/Maps/19_floorplan_modern.png",
                 map: "images/Maps/18_map_modern.png",
             },
         },
         ingredients: {
             proteinBased: {
-                items: ["Hot Pot (火锅)", "Kibbeh (كبة)", "Herb Stew (قرمه سبزی)", "Sour Soup with Beef Slices (酸汤肥牛)", "Peking Duck (北京烤鸭)", "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "Chicken Pilaf (چکن بریانی)", "Mutton in Clay Pot (مٹن کُنا)", "Tempura (天婦羅)", "Sukiyaki (すき焼き)", "Pork Bone Ramen (豚骨ラーメン)", "Rotation Sushi (回転寿司)", "Meat wrap (شاورما)", "Coca-Cola Chicken Wings (可乐鸡翅)"],
+                title: "Protein-based",
+                items: ["[01]Hot Pot (火锅)", "[02] Kibbeh (كبة)", "[05] Herb Stew (قرمه سبزی)", "[06] Sour Soup with Beef Slices (酸汤肥牛)", "[08] Peking Duck (北京烤鸭)", "[09] Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "[12] Chicken Pilaf (چکن بریانی)", "[13] Mutton in Clay Pot (مٹن کُنا)", "[15] Tempura (天婦羅)", "[16] Sukiyaki (すき焼き)", "[17] Pork Bone Ramen (豚骨ラーメン)", "[18] Rotation Sushi (回転寿司)", "[19] Meat wrap (شاورما)", "[20] Coca-Cola Chicken Wings (可乐鸡翅)"],
                 floorPlan: "images/Maps/23_floorplan_proteinbased.png",
                 map: "images/Maps/22_map_proteinbased.png",
             },
             plantBased: {
-                items: ["Hot Pot (火锅)", "Noodle Soup (آش رشته)", "Hummus (حمص)", "Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "Tempura (天婦羅)", "Rotation Sushi (回転寿司)"],
+                title: "Plant-based",
+                items: ["[01]Hot Pot (火锅)", "[04] Noodle Soup (آش رشته)", "[07] Hummus (حمص)", "[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[15] Tempura (天婦羅)", "[18] Rotation Sushi (回転寿司)"],
                 floorPlan: "images/Maps/26_floorplan_plantbased.png",
                 map: "images/Maps/25_map_plantbased.png",
             },
             dairyBased: {
-                items: ["Filo Pastry (كنافة)", "Saffron Ice cream (بستنی سنتی)", "Semolina Halwa (سوجی کا حلوہ)"],
+                title: "Dairy-based",
+                items: ["[03] Filo Pastry (كنافة)", "[10] Saffron Ice cream (بستنی سنتی)", "[14] Semolina Halwa (سوجی کا حلوہ)"],
                 floorPlan: "images/Maps/29_floorplan_dairybased.png",
                 map: "images/Maps/28_map_dairybased.png",
             },
         },
         meal: {
             appetizer: {
-                items: ["Kibbeh (كبة)", "Filo Pastry (كنافة)", "Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "Tempura (天婦羅)", "Rotation Sushi (回転寿司)", "Coca-Cola Chicken Wings (可乐鸡翅)"],
+                title: "Appetizer",
+                items: ["[02] Kibbeh (كبة)", "[03] Filo Pastry (كنافة)", "[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[15] Tempura (天婦羅)", "[18] Rotation Sushi (回転寿司)", "[20] Coca-Cola Chicken Wings (可乐鸡翅)"],
                 floorPlan: "images/Maps/43_floorplan_appetizer.png",
                 map: "images/Maps/42_map_appetizer.png",
             },
             mainCourse: {
-                items: ["Hot Pot (火锅)", "Kibbeh (كبة)", "Filo Pastry (كنافة)", "Noodle Soup (آش رشته)", "Herb Stew (قرمه سبزی)", "Sour Soup with Beef Slices (酸汤肥牛)", "Peking Duck (北京烤鸭)", "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "Chicken Pilaf (چکن بریانی)", "Mutton in Clay Pot (مٹن کُنا)", "Tempura (天婦羅)", "Sukiyaki (すき焼き)", "Pork Bone Ramen (豚骨ラーメン)", "Rotation Sushi (回転寿司)", "Meat wrap (شاورما)"],
+                title: "Main Course",
+                items: ["[01]Hot Pot (火锅)", "[02] Kibbeh (كبة)", "[03] Filo Pastry (كنافة)", "[04] Noodle Soup (آش رشته)", "[05] Herb Stew (قرمه سبزی)", "[06] Sour Soup with Beef Slices (酸汤肥牛)", "[08] Peking Duck (北京烤鸭)", "[09] Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[12] Chicken Pilaf (چکن بریانی)", "[13] Mutton in Clay Pot (مٹن کُنا)", "[15] Tempura (天婦羅)", "[16] Sukiyaki (すき焼き)", "[17] Pork Bone Ramen (豚骨ラーメン)", "[18] Rotation Sushi (回転寿司)", "[19] Meat wrap (شاورما)"],
                 floorPlan: "images/Maps/46_floorplan_maincourse.png",
                 map: "images/Maps/45_map_maincourse.png",
             },
             dessert: {
-                items: ["Filo Pastry (كنافة)", "Saffron Ice cream (بستنی سنتی)", "Semolina Halwa (سوجی کا حلوہ)"],
+                title: "Dessert",
+                items: ["[03] Filo Pastry (كنافة)", "[10] Saffron Ice cream (بستنی سنتی)", "[14] Semolina Halwa (سوجی کا حلوہ)"],
                 floorPlan: "images/Maps/49_floorplan_dessert.png",
                 map: "images/Maps/48_map_dessert.png",
             },
         },
         preparation: {
             grilled: {
-                items: ["Filo Pastry (كنافة)", "Peking Duck (北京烤鸭)", "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "Meat wrap (شاورما)", "Coca-Cola Chicken Wings (可乐鸡翅)"],
+                title: "Grilled",
+                items: ["[03] Filo Pastry (كنافة)", "[08] Peking Duck (北京烤鸭)", "[09] Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "[19] Meat wrap (شاورما)", "[20] Coca-Cola Chicken Wings (可乐鸡翅)"],
                 floorPlan: "images/Maps/53_floorplan_grilled.png",
                 map: "images/Maps/52_map_grilled.png",
             },
             fried: {
-                items: ["Kibbeh (كبة)", "Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "Tempura (天婦羅)"],
+                title: "Fried",
+                items: ["[02] Kibbeh (كبة)", "[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[15] Tempura (天婦羅)"],
                 floorPlan: "images/Maps/56_floorplan_fried.png",
                 map: "images/Maps/55_map_fried.png",
             },
             stewed: {
-                items: ["Hot Pot (火锅)", "Noodle Soup (آش رشته)", "Herb Stew (قرمه سبزی)", "Sour Soup with Beef Slices (酸汤肥牛)", "Chicken Pilaf (چکن بریانی", "Mutton in Clay Pot (مٹن کُنا)", "Semolina Halwa (سوجی کا حلوہ)", "Sukiyaki (すき焼き)", "Pork Bone Ramen (豚骨ラーメン)"],
+                title: "Stewed",
+                items: ["[01]Hot Pot (火锅)", "[04] Noodle Soup (آش رشته)", "[05] Herb Stew (قرمه سبزی)", "[06] Sour Soup with Beef Slices (酸汤肥牛)", "[12] Chicken Pilaf (چکن بریانی", "[13] Mutton in Clay Pot (مٹن کُنا)", "[14] Semolina Halwa (سوجی کا حلوہ)", "[16] Sukiyaki (すき焼き)", "[17] Pork Bone Ramen (豚骨ラーメン)"],
                 floorPlan: "images/Maps/59_floorplan_stewed.png",
                 map: "images/Maps/58_map_stewed.png",
             },
             noCook: {
-                items: ["Hummus (حمص)", "Saffron Ice cream (بستنی سنتی)", "Rotation Sushi (回転寿司)"],
+                title: "No Cook",
+                items: ["[07] Hummus (حمص)", "[10] Saffron Ice cream (بستنی سنتی)", "[18] Rotation Sushi (回転寿司)"],
                 floorPlan: "images/Maps/62_floorplan_nocook.png",
                 map: "images/Maps/61_map_nocook.png",
             },
         },
         region: {
             eastAsia: {
-                items: ["Hot Pot (火锅)", "Sour Soup with Beef Slices (酸汤肥牛)", "Peking Duck (北京烤鸭)", "Tempura (天婦羅)", "Sukiyaki (すき焼き)", "Pork Bone Ramen (豚骨ラーメン)", "Rotation Sushi (回転寿司)", "Coca-Cola Chicken Wings (可乐鸡翅)"],
+                title: "East Asia",
+                items: ["[01]Hot Pot (火锅)", "[06] Sour Soup with Beef Slices (酸汤肥牛)", "[08] Peking Duck (北京烤鸭)", "[15] Tempura (天婦羅)", "[16] Sukiyaki (すき焼き)", "[17] Pork Bone Ramen (豚骨ラーメン)", "[18] Rotation Sushi (回転寿司)", "[20] Coca-Cola Chicken Wings (可乐鸡翅)"],
                 floorPlan: "images/Maps/33_floorplan_eastasia.png",
                 map: "images/Maps/32_map_eastasia.png",
             },
             southAsia: {
-                items: ["Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "Chicken Pilaf (چکن بریانی)", "Mutton in Clay Pot (مٹن کُنا)", "Semolina Halwa (سوجی کا حلوہ)"],
+                
+                items: ["[11] Deep-fried Lentil Fritters (دہی بھلے چاٹ)", "[12] Chicken Pilaf (چکن بریانی)", "[13] Mutton in Clay Pot (مٹن کُنا)", "[14] Semolina Halwa (سوجی کا حلوہ)"],
                 floorPlan: "images/Maps/36_floorplan_southasia.png",
                 map: "images/Maps/35_map_southasia.png",
             },
             westAsia: {
-                items: ["Kibbeh (كبة)", "Filo Pastry (كنافة)", "Noodle Soup (آش رشته)", "Herb Stew (قرمه سبزی)", "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "Saffron Ice cream (بستنی سنتی)", "Meat wrap (شاورما)"],
+                title: "West Asia",
+                items: ["[02] Kibbeh (كبة)", "[03] Filo Pastry (كنافة)", "[04] Noodle Soup (آش رشته)", "[05] Herb Stew (قرمه سبزی)", "[09] Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)", "[10] Saffron Ice cream (بستنی سنتی)", "[19] Meat wrap (شاورما)"],
                 floorPlan: "images/Maps/39_floorplan_westasia.png",
                 map: "images/Maps/38_map_westasia.png",
             },

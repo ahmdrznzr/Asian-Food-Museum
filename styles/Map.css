@@ -203,7 +203,7 @@ h2 {
 .sub-category .item-list li {
   margin: 8px 0;
   font-size: 18px;
-  color: var(--lightest);
+  list-style-type: none;
 }
 
 .sub-category .item-list a {
