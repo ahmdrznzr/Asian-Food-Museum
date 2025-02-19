@@ -140,9 +140,11 @@ body {
     color: var(--darkest);
 }
 
-.item-link:hover{
-    color : var(--red);
+.item-link:hover {
+    color: var(--red);
 }
+
+
 /* Short descriptions */
 
 .short-desc {
@@ -223,9 +225,9 @@ body {
 #explore-btn:hover {
     color: var(--yellow);
     background-color: var(--red);
-}s
+}
 
-.hidden {
+s .hidden {
     display: none;
 }
 
@@ -241,8 +243,12 @@ body {
     .item-info {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin-top: 36px;
+    }
+    .item-des {
+        text-align: center;
     }
     .item-img {
         width: 300px;
@@ -252,7 +258,7 @@ body {
     #explore-btn {
         float: none;
     }
-    .explore{
+    .explore {
         text-align: center;
         margin-top: 3rem;
     }
@@ -284,11 +290,10 @@ body {
     .description-section h4 {
         text-align: center;
     }
-    #explore-btn{
+    #explore-btn {
         float: none;
     }
-
-    .explore{
+    .explore {
         text-align: center;
         margin-top: 3rem;
     }
@@ -296,17 +301,17 @@ body {
 
 @media (max-width: 1024px) {
     .fixed-list,
-    .desc-list{
+    .desc-list {
         font-size: 24px;
     }
 }
 
 @media (max-width: 970px) {
     .fixed-list,
-    .desc-list{
+    .desc-list {
         font-size: 20px;
     }
-    .item-heading{
+    .item-heading {
         font-size: 36px;
     }
 }
