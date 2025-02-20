@@ -52,21 +52,6 @@ header {
     gap: 20px;
 }
 
-.section-one {
-    align-items: center;
-    /* Center items vertically */
-    display: flex;
-    /* Flexbox layout */
-    justify-content: space-between;
-    /* Space out content evenly */
-    margin-top: 50px;
-    /* Set fixed height for the section */
-    padding: 36px;
-    /* Add padding around the content */
-    gap: 20px;
-    width: 100%;
-}
-
 .navbar {
     background-color: var(--darkest);
     /* Set the background color of the navbar */
@@ -94,7 +79,6 @@ header {
 .navbar-nav li a {
     color: var(--lightest);
     font-size: 18px;
-    /* show the border when it is hovered */
     transition: color 0.9s, border-left 0.3s;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -125,6 +109,14 @@ header {
     border-left: 2px solid var(--yellow);
 }
 
+.toggle-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
 
 /* Section-one heading styles */
 
@@ -146,14 +138,21 @@ header {
     }
 }
 
+.section-one {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 36px;
+    gap: 20px;
+    width: 100%;
+}
+
 .section-one .text-content h1 {
     color: var(--darkest);
-    /* Set text color to black */
     font-size: 64px;
     font-weight: bold;
-    /* Large font size for the heading */
     margin-bottom: 16px;
-    /* Add space below the heading */
 }
 
 
@@ -161,11 +160,8 @@ header {
 
 .text-content .body-large {
     color: var(--light);
-    /* Set text color to gray */
     font-size: 24px;
-    /* Set font size */
     margin-bottom: 20px;
-    /* Add space below the paragraph */
 }
 
 
@@ -180,29 +176,18 @@ header {
 
 .section-one .main-btn {
     display: flex;
-    /* Flexbox to center the text inside the button */
     align-items: center;
     justify-content: center;
-    /* Remove underline from button text */
     margin-top: 80px;
     margin-left: 0;
-    /* Add padding around the button text */
     background-color: var(--red);
-    /* Dark red background color */
     color: var(--lightest);
-    /* White text color */
     border-radius: 15px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer cursor on hover */
     width: 30%;
-    /* Set button width */
     height: 48px;
-    /* Set button height */
     font-size: 20px;
-    /* Set font size */
     transition: all 500ms;
-    /* Smooth background color transition on hover */
 }
 
 
@@ -211,7 +196,6 @@ header {
 .section-one .main-btn:hover {
     color: var(--yellow);
     background-color: var(--dark-red);
-    /* Change background color to darker red on hover */
 }
 
 
@@ -221,11 +205,8 @@ header {
     flex: 1;
     /* Let the image content take up available space */
     display: flex;
-    /* Flexbox layout */
     justify-content: center;
-    /* Center the image horizontally */
     align-items: center;
-    /* Center the image vertically */
 }
 
 
@@ -233,7 +214,6 @@ header {
 
 .section-one .food-image {
     max-width: 80%;
-    /* Image takes 65% of the container width */
     max-height: 100%;
     border-radius: 50%;
     animation: spin 2s linear;
@@ -267,14 +247,11 @@ header {
 
 .section-two .text-content h1 {
     color: var(--lightest);
-    /* Set text color to light gray */
     font-size: 45px;
     text-align: center;
     font-weight: 600;
-    /* Set font size for the heading */
     margin-top: 8px;
     margin-bottom: 16px;
-    /* Add margin below the heading */
 }
 
 
@@ -282,12 +259,9 @@ header {
 
 .section-two .text-content p {
     color: var(--lightest);
-    /* Set text color to light gray */
     font-size: 18px;
-    /* Set font size for paragraph text */
     margin-top: 24px;
     margin-bottom: 20px;
-    /* Add margin below the paragraph */
 }
 
 
@@ -295,29 +269,23 @@ header {
 
 .project {
     background-color: var(--yellow);
-    /* Set light gray background color */
     display: flex;
-    /* Use Flexbox for layout */
     justify-content: center;
 }
 
 .section-three {
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
     align-items: center;
-    /* Center items horizontally */
     flex-wrap: wrap;
     /* Allow items to wrap to the next line if needed */
     padding: 36px;
-    /* Add padding around the section */
 }
 
 .section-three h1 {
     text-align: center;
     font-size: 45px;
     font-weight: 600;
-    /* Set font size for the heading */
     margin-top: 8px;
 }
 
@@ -350,13 +318,9 @@ header {
 .card-item .card {
     background-color: rgb(156, 155, 132, 0.4);
     border-radius: 15px;
-    /* Add rounded corners */
     padding: 16px;
-    /* Add padding inside the card */
     margin: 10px;
-    /* Add margin around each card */
     text-align: center;
-    /* Center the text inside the card */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     /* Add a subtle shadow below the card */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -383,9 +347,6 @@ header {
     box-shadow: rgba(119, 32, 23, 0.3) 6px 2px 16px 0px, rgba(119, 32, 23, 0.3) -6px -2px 16px 0px;
 }
 
-
-/* Hover effect for card items */
-
 .card h4 {
     color: var(--darkest);
     font-weight: 600;
@@ -400,12 +361,9 @@ header {
     transition: all 0.8s ease-in;
     align-items: center;
     justify-content: center;
-    /* Remove underline from button text */
     padding: 12px 24px;
-    /* Add padding around the button text */
     margin-top: 80px;
     border-radius: 15px;
-    /* Rounded corners */
     transition: all 0.5s ease;
 }
 
@@ -414,60 +372,11 @@ header {
     color: var(--yellow);
 }
 
-
-/* Toggle button for revealing additional content */
-
-.toggle-btn {
-    background: none;
-    /* No background for the button */
-    border: none;
-    /* No border */
-    font-size: 24px;
-    /* Large font size for the toggle button */
-    cursor: pointer;
-    /* Pointer cursor on hover */
-    margin: 10px 0;
-    /* Add margin around the button */
-}
-
 .category-image {
     width: 100%;
     height: auto;
     border-radius: 30px;
     margin-bottom: 16px;
-}
-
-
-/* Additional content that is hidden by default */
-
-.more-content {
-    margin-top: 15px;
-    /* Add margin above the additional content */
-    padding: 10px;
-    /* Add padding inside the extra content */
-    background-color: #f9f9f9;
-    /* Light gray background for the extra content */
-    border-top: 1px solid #ddd;
-    /* Add a light border at the top */
-    text-align: left;
-    /* Align text to the left */
-    display: none;
-    /* Hidden by default */
-}
-
-
-/* Fade-in and fade-out transition effects */
-
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s ease;
-    /* Smooth transition for opacity changes */
-}
-
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
-    /* The element is initially invisible */
 }
 
 .map {
@@ -486,12 +395,9 @@ header {
 .section-two {
     background-color: rgba(0, 0, 0, 0.75);
     gap: 20px;
-    /* Add spacing between items inside the section */
     display: flex;
     flex-direction: column;
-    /* Vertical arrangement */
     align-items: center;
-    /* Center horizontally */
     padding: 36px;
     min-height: 60vh;
 }
@@ -501,56 +407,34 @@ header {
 
 .text-content h1 {
     color: var(--lightest);
-    /* Title text color */
     font-size: 45px;
     font-weight: 600;
-    /* Title font size */
     margin-bottom: 36px;
-    /* Margin below the title */
     text-align: center;
 }
 
 .text-content p {
     color: var(--lightest);
-    /* Description text color */
     font-size: 18px;
-    /* Description font size */
-    margin-bottom: 0;
-    /* Margin below the description */
     line-height: 1.5;
-    /* Set line height for readability */
-    /* Justify text alignment */
     word-break: break-word;
-    /* Force line breaks on long words */
     margin-top: 10px;
-    /* Margin above the paragraph */
 }
 
 .section-four a,
 .section-two a {
     display: inline-block;
-    /* Ensure inline-block layout */
     padding: 12px 20px;
     background-color: var(--yellow);
-    /* Button background color */
     color: var(--dark-red);
-    /* Button text color */
-    border: none;
-    /* Remove border */
     border-radius: 15px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer cursor on hover */
     font-size: 18px;
-    /* Button font size */
     text-decoration: none;
-    /* Remove underline for link */
     text-align: center;
-    /* Center text */
     transition: all 0.8s ease;
     margin-bottom: 16px;
     margin-top: 80px;
-    /* Margin of the button */
 }
 
 .section-four a:hover,
@@ -661,16 +545,13 @@ header {
 
 .info-section {
     width: 100%;
-    /* Add spacing between items inside the section */
-    height: auto;
+    min-height: 100vh;
     display: flex;
-    /* Flexbox layout */
     justify-content: space-between;
-    gap: 60px;
-    /* Space out content evenly */
+    gap: 36px;
     background-color: var(--darkest);
     color: var(--lightest);
-    padding: 0;
+    padding-left: 36px;
 }
 
 .contact-info {
@@ -684,20 +565,19 @@ header {
 }
 
 .info-img .info-picture {
-    width: 100%;
-    /* Set image width to 70% of the container */
-    height: 100vh;
-    /* Maintain aspect ratio */
+    width: 90%;
+    max-height: 100vh;
     max-width: 100%;
-    /* Ensure the image doesn’t exceed the container's width */
     object-fit: cover;
 }
 
 .contact-info {
+    min-height: 100vh;
     padding-top: 36px;
+    padding-bottom: 36px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    justify-content: space-between;
 }
 
 .contact-info h3 {
@@ -741,29 +621,19 @@ footer {
     .section-one {
         width: 100%;
         flex-direction: column-reverse;
-        /* Stack text and image vertically with text first */
         justify-content: center;
-        /* Center content vertically */
     }
     .section-one .text-content {
         padding-left: 0;
-        /* Remove left padding on smaller screens */
         text-align: center;
-        /* Center the text */
     }
     .section-one .btn {
         margin: 360px auto 0 auto;
-        /* Center the button */
         display: block;
-        /* Ensure the button is displayed as a block element */
         padding: 8px 16px;
-        /* Reduce padding for the button */
         width: 50%;
-        /* Reduce button width */
         height: 48px;
-        /* Reduce button height */
         font-size: 20px;
-        /* Reduce button font size */
     }
     .section-one .text-content p {
         display: none;
@@ -773,18 +643,14 @@ footer {
         justify-content: center;
         align-items: center;
         max-width: 40%;
-        /* Full width of the section */
         max-height: 40%;
-        /* Full height of the section */
         z-index: 1;
         overflow: hidden;
-        /* Hide overflowing image */
     }
     .section-one .image-content img {
         width: 85%;
         height: 85%;
         align-items: center;
-        /* Make the image faint for better readability */
     }
     .section-one .btn {
         width: 30%;
@@ -828,127 +694,87 @@ footer {
     }
     .about {
         flex-direction: column;
-        /* Stack content vertically */
         justify-content: center;
-        /* Center content vertically */
         height: auto;
-        /* Allow height to adjust automatically */
         padding: 20px;
-        /* Maintain padding */
     }
     .section-two .image-content {
         display: none;
     }
     .section-two .text-content {
         padding-left: 0;
-        /* Remove left padding on smaller screens */
         margin-bottom: 20px;
-        /* Add margin below the text */
         margin-top: 20px;
-        /* Add margin above the text */
         width: 100%;
     }
     .section-two .text-content h1 {
         text-align: center;
         font-size: 32px;
-        /* Reduce heading size on smaller screens */
     }
     .section-two .text-content p {
         text-align: justify;
         font-size: 16px;
-        /* Reduce paragraph font size on smaller screens */
     }
     .section-two .btn {
         margin: 0 auto;
-        /* Center the button */
         display: block;
-        /* Ensure the button is displayed as a block element */
         padding: 8px 16px;
-        /* Reduce padding for the button */
         width: 120px;
-        /* Reduce button width */
         height: 40px;
-        /* Reduce button height */
         font-size: 16px;
-        /* Reduce button font size */
         margin-bottom: 16px;
     }
     .section-two .food-image {
         width: auto;
-        /* Allow the image width to adjust */
         height: auto;
-        /* Allow the image height to adjust */
         max-width: 400px;
-        /* Set a maximum width for the image */
         max-height: 300px;
-        /* Set a maximum height for the image */
         border-radius: 15px;
-        /* Keep rounded corners */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Keep shadow effect */
         object-fit: cover;
-        /* Maintain aspect ratio */
     }
     /* Adaptation for small screens */
     .section-four,
     .section-two {
         flex-direction: column;
-        /* Stack content vertically */
         justify-content: center;
-        /* Center content vertically */
         height: auto;
-        /* Auto height for small screens */
     }
     .map {
         padding: 20px;
     }
     .text-content h1 {
         font-size: 36px;
-        /* Reduce title font size */
     }
     .text-content p {
         text-align: justify;
         font-size: 16px;
-        /* Reduce description font size */
     }
     .btn {
         width: 65%;
-        /* Full width button on small screens */
         max-width: 300px;
-        /* Set maximum width */
         padding: 10px 20px;
-        /* Adjust padding */
     }
     .info-section {
         flex-direction: column;
-        /* Stack content vertically */
         padding: 20px;
-        /* Reduce overall padding */
         gap: 30px;
-        /* Decrease spacing between elements */
     }
     .contact-info {
         flex: none;
-        /* Remove automatic stretching */
         width: 100%;
-        /* Take up full width */
         text-align: center;
-        /* Center text content */
     }
     .info-img {
         display: none;
     }
     .contact-info h3 {
         font-size: 28px;
-        /* Adjust heading font size */
         margin-bottom: 10px;
-        /* Adjust heading spacing */
     }
     .contact-info p {
         font-size: 18px;
-        /* Reduce paragraph font size */
         line-height: 1.5;
-        /* Increase paragraph line height */
     }
     .location-info {
         justify-content: center;
@@ -962,7 +788,6 @@ footer {
 @media screen and (max-width: 640px) {
     .section-one .text-content h1 {
         font-size: 36px;
-        /* Reduce heading size on smaller screens */
     }
     .section-one .main-btn {
         width: 50%;
@@ -1007,35 +832,29 @@ footer {
 @media (max-width: 481px) {
     .info-section {
         flex-direction: column;
-        /* Keep vertical stacking layout */
         padding: 15px;
-        /* Further reduce padding */
         gap: 20px;
-        /* Decrease spacing between elements */
     }
 }
 
 
 /* Responsive styles for navigation bar */
 
-@media (max-width: 992px) {
+@media (max-width: 970px) {
     .navbar {
         margin-top: -15px;
         height: 60px;
     }
     .navbar-toggler {
         display: block;
-        /* Show hamburger button on small screens */
     }
     .collapse {
         display: none;
-        /* Hidden by default */
         flex-direction: column;
         align-items: center;
     }
     .collapse.show {
         display: flex;
-        /* Show the menu when toggled */
     }
     .navbar-collapse {
         flex-direction: column;
