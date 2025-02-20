@@ -10,6 +10,9 @@
     --brown: #a6997c;
 }
 
+
+/* all contents are fading in */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -75,10 +78,8 @@ h2 {
 .narrative-buttons {
     display: flex;
     flex-wrap: wrap;
-    /* space between buttons */
     gap: 16px;
     width: 100%;
-    /* Space between the options */
     justify-content: center;
     /* make the items in a line according to the text that they have */
     align-items: baseline;
@@ -185,7 +186,6 @@ h2 {
     width: 100%;
     height: auto;
     object-fit: cover;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
 }
 
 .sub-category .item-list {
@@ -249,9 +249,7 @@ h2 {
     .sub-category,
     .layout {
         width: 100%;
-        /* Make each section take full width on smaller screens */
         height: auto;
-        /* Adjust height for smaller screens */
     }
     .geo-map {
         display: none;
@@ -294,9 +292,7 @@ h2 {
     .sub-category,
     .layout {
         width: 100%;
-        /* Make each section take full width on smaller screens */
         height: auto;
-        /* Adjust height for smaller screens */
     }
     .layout-img {
         width: 100%;
@@ -313,7 +309,6 @@ h2 {
         /* Flex-grow, flex-shrink, flex-basis */
         margin-bottom: 20px;
         max-width: 45%;
-        /* Ensure they don't exceed this width */
     }
     .narrative-btn {
         width: 100%;
