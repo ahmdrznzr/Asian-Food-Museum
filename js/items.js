@@ -1,4 +1,3 @@
-import axios from 'axios'
 document.addEventListener("DOMContentLoaded", async function() {
 
     let key = '';
