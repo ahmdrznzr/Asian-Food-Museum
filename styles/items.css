@@ -248,6 +248,10 @@ s .hidden {
 }
 
 @media (max-width: 970px) {
+    .item-content .item-heading {
+        font-size: 36px;
+        margin-top: 36px;
+    }
     .fixed-list,
     .desc-list {
         font-size: 20px;
