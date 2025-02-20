@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", async function() {
 
         for (let item of arr) {
             if (
-                (lowerKey === 'region' && item.info.Region ? .toLowerCase() === lowerValue) ||
-                (lowerKey === 'date' && item.info.Date ? .toLowerCase().includes(lowerValue)) ||
-                (lowerKey === 'meal' && item.info.Meal ? .toLowerCase() === lowerValue) ||
-                (lowerKey === 'ingredient' && item.info.Ingredient ? .toLowerCase() === lowerValue) ||
-                (lowerKey === 'preparation' && item.info.preparation ? .toLowerCase() === lowerValue) ||
-                (lowerKey === 'itemname' && item.itemName ? .toLowerCase().includes(lowerValue))
+                (lowerKey === 'region' && item.info.Region ?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'date' && item.info.Date ?.toLowerCase().includes(lowerValue)) ||
+                (lowerKey === 'meal' && item.info.Meal ?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'ingredient' && item.info.Ingredient ?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'preparation' && item.info.preparation ?.toLowerCase() === lowerValue) ||
+                (lowerKey === 'itemname' && item.itemName ?.toLowerCase().includes(lowerValue))
             ) {
                 filtereditems.push(item);
             }
