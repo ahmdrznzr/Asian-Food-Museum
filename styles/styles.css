@@ -50,7 +50,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
- 
 }
 
 .section-one {
@@ -65,7 +64,7 @@ header {
     padding: 36px;
     /* Add padding around the content */
     gap: 20px;
-    width:100% ;
+    width: 100%;
 }
 
 .navbar {
@@ -73,36 +72,23 @@ header {
     /* Set the background color of the navbar */
     display: flex;
     justify-content: space-between;
+    /* Space out the logo and menu items */
     align-items: center;
+    /* Vertically center the items */
+    /* Ensure the navbar spans the full width of the page */
     box-sizing: border-box;
     /* Include padding and border in the element's width and height */
-    /*padding: 1.5rem 1rem; */
+    padding: 1.5rem 1rem;
     height: 48px;
 }
 
-header .navbar .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.85) !important; 
-    border: none !important; 
-    box-shadow: none !important; 
-    padding: 0.30rem 0.5rem; 
-    margin-top: -10px; 
-    margin-right: 5px;
-    border-radius: 50%; 
-    transition: background-color 0.3s ease; 
-}
-
-
-
-
 .navbar-brand {
-    margin-top: -5px; 
     padding-left: 24px;
 }
 
 .navbar-nav {
+    padding-right: 24px;
     gap: 24px;
-    background-color: var(--darkest);
-    align-items: center;
 }
 
 .navbar-nav li a {
@@ -121,6 +107,14 @@ header .navbar .navbar-toggler {
 
 .nav-item .active-btn {
     color: var(--yellow);
+}
+
+
+/* style of the border */
+
+.nav-item a:hover {
+    color: var(--yellow);
+    border-left: 2px solid var(--yellow);
 }
 
 
@@ -325,7 +319,6 @@ header .navbar .navbar-toggler {
     font-weight: 600;
     /* Set font size for the heading */
     margin-top: 8px;
-
 }
 
 .section-three p {
