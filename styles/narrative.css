@@ -17,7 +17,7 @@
     font-family: 'lora', serif;
 }
 
-header {
+body {
     background-image: url("../images/narrative-bg.webp");
     background-attachment: fixed;
     background-position: center;
@@ -183,10 +183,21 @@ header {
 
 /* narrative sections style */
 
+.main-page {
+    background-color: rgba(27, 26, 23, 0.3);
+}
+
+.region,
+.prepration,
+.meal,
+.ingredient {
+    margin-bottom: 16px;
+}
+
 .region,
 .prepration,
 .time {
-    background-color: rgb(166, 153, 124, 0.5);
+    background-color: rgb(166, 153, 124);
     height: auto;
 }
 
@@ -214,6 +225,10 @@ header {
     margin-top: 8px;
     margin-bottom: 16px;
     font-weight: 600;
+    padding: 0 48px 16px 48px;
+    border-width: 0 0 3px;
+    border-image: linear-gradient( 90deg, rgba(239, 239, 239, 0), rgb(46, 45, 45) 50%, rgba(239, 239, 239, 0) 100%) 0 0 100%;
+    border-style: solid;
 }
 
 a {
@@ -300,6 +315,10 @@ a {
 /* Responsive adjustments */
 
 @media (max-width: 992px) {
+    .general-header {
+        font-size: 36px;
+        text-align: center;
+    }
     .nar-h1 {
         font-size: 57px;
     }
@@ -337,7 +356,8 @@ a {
 
 @media (max-width: 600px) {
     .general-header {
-        font-size: 36px;
+        font-size: 24px;
+        text-align: center;
     }
     .nar-option {
         flex: 1 1 45%;
