@@ -1,3 +1,4 @@
+import axios from 'axios'
 document.addEventListener("DOMContentLoaded", async function() {
 
     let key = '';
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     // Fetch JSON data - Ahamdreza
     async function fetchItems() {
         try {
-            const response = await fetch("https://github.com/ahmdrznzr/Asian-Food-Museum/blob/main/data/items.json");
+            const response = axios.get("https://github.com/ahmdrznzr/Asian-Food-Museum/blob/main/data/items.json");
             if (!response.ok) {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
