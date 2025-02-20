@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", async function() {
     // Fetch JSON data - Ahamdreza
     async function fetchItems() {
 
-            fetch("../data/items.json")
+            fetch("https://raw.githubusercontent.com/ahmdrznzr/Asian-Food-Museum/blob/main/data/items.json")
             .then(response => response.json())
             .then(items =>{
 
