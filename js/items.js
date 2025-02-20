@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", async function() {
     let currentIndex = 0;
     let items = [];
     let filtereditems = [];
-    
-    // Fetch JSON data
+
+    // Fetch JSON data - Ahamdreza
     async function fetchItems() {
         try {
             const response = await fetch("../data/items.json");
@@ -15,14 +15,14 @@ document.addEventListener("DOMContentLoaded", async function() {
             }
             const jsonData = await response.json();
             items = jsonData.items;
-            
+
             // Apply filtering
             filter(items);
-            
+
             // Display the first item if results exist
             if (filtereditems.length > 0) {
                 displayItem(currentIndex);
-                regNarrative();         // Build different narratives based on the current selection
+                regNarrative(); // Build different narratives based on the current selection
                 dateNarrative();
                 mealNarrative();
                 ingredNarrative();
@@ -34,50 +34,50 @@ document.addEventListener("DOMContentLoaded", async function() {
             console.error("Error loading items:", error);
         }
     }
-    
+    // end fetch
+
+    //filtering - Ahmadreza
     function filter(arr) {
         const querystring = window.location.search;
-        const urlParams = new URLSearchParams(querystring);  
-    
+        const urlParams = new URLSearchParams(querystring);
+
         // Reset filtered items
-        filtereditems = []; 
-    
+        filtereditems = [];
+
         // Extract the first key-value pair
         for (let [k, v] of urlParams.entries()) {
             key = k;
             value = v.replace(/([a-z])([A-Z])/g, "$1 $2")
-                     .replace(/\b\w/g, match => match.toUpperCase());
-            break;  // Only process the first key-value pair
+                .replace(/\b\w/g, match => match.toUpperCase());
+            break; // Only process the first key-value pair
         }
-    
-        
-    
+
         // If no valid key-value pair, return all items
         if (!key || !value) {
             filtereditems = [...items]; // Clone items to avoid reference issues
             return;
         }
-    
+
         // Convert key to lowercase for case-insensitive comparison
         const lowerKey = key.toLowerCase();
         const lowerValue = value.toLowerCase();
-    
+
         for (let item of arr) {
             if (
-                (lowerKey === 'region' && item.info.Region?.toLowerCase() === lowerValue) ||
-                (lowerKey === 'date' && item.info.Date?.toLowerCase().includes(lowerValue)) ||
-                (lowerKey === 'meal' && item.info.Meal?.toLowerCase() === lowerValue) ||
-                (lowerKey === 'ingredient' && item.info.Ingredient?.toLowerCase() === lowerValue) ||
-                (lowerKey === 'preparation' && item.info.preparation?.toLowerCase() === lowerValue) ||
-                (lowerKey === 'itemname' && item.itemName?.toLowerCase().includes(lowerValue))
+                (lowerKey === 'region' && item.info.Region ? .toLowerCase() === lowerValue) ||
+                (lowerKey === 'date' && item.info.Date ? .toLowerCase().includes(lowerValue)) ||
+                (lowerKey === 'meal' && item.info.Meal ? .toLowerCase() === lowerValue) ||
+                (lowerKey === 'ingredient' && item.info.Ingredient ? .toLowerCase() === lowerValue) ||
+                (lowerKey === 'preparation' && item.info.preparation ? .toLowerCase() === lowerValue) ||
+                (lowerKey === 'itemname' && item.itemName ? .toLowerCase().includes(lowerValue))
             ) {
                 filtereditems.push(item);
             }
         }
     }
-    
 
-    // Display item data in HTML
+
+    // Display item data in HTML - Zahra
     function displayItem(index) {
         if (index < 0 || index >= filtereditems.length) return;
         let item = filtereditems[index];
@@ -100,11 +100,11 @@ document.addEventListener("DOMContentLoaded", async function() {
         document.getElementById("lessBtn").style.display = "none"; // Hide "Tell Me Less"
 
         isShowingFullDescription = false; // Reset description state
-        };
+    };
 
 
 
-    // Event listeners for navigation
+    // Event listeners for navigation to next and previous items - Zahra
     // next item button
     document.querySelector(".next-btn").addEventListener("click", function(event) {
         event.preventDefault();
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", async function() {
         if (currentIndex > 0) {
             currentIndex--;
             displayItem(currentIndex);
-            regNarrative();  // Update narratives on the user's navigation
+            regNarrative(); // Update narratives on the user's navigation
             dateNarrative();
             mealNarrative();
             ingredNarrative();
@@ -132,7 +132,8 @@ document.addEventListener("DOMContentLoaded", async function() {
         }
     });
 
-    // Toggle description
+
+    // Toggle description - Zahra
     let isShowingFullDescription = false;
     //show more information from JSON file
     document.getElementById("moreBtn").addEventListener("click", async function() {
@@ -189,51 +190,53 @@ document.addEventListener("DOMContentLoaded", async function() {
     //fetch data on the item page
     fetchItems();
 });
+// end description options
 
-function regNarrative(){
+//show list of items according to the narrative filter - Ahmadreza
+function regNarrative() {
     aTag = document.querySelector("#reg-name");
     let text = aTag.textContent.trim();
-    if (!text) return; 
+    if (!text) return;
     let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
         (_, first, second) => first.toLowerCase() + second
-        );
+    );
     aTag.setAttribute("href", `item.html?region=${par}`);
 };
 
-function dateNarrative(){
+function dateNarrative() {
     aTag = document.querySelector("#date-name");
     let text = aTag.textContent.trim();
-    if (!text) return; 
+    if (!text) return;
     let par = text.replace(/\b([A-Z][a-z]+).*\(.*/g,
         (_, first) => first.toLowerCase()
-        );
+    );
     aTag.setAttribute("href", `item.html?date=${par}`);
 };
 
-function mealNarrative(){
+function mealNarrative() {
     aTag = document.querySelector("#meal-name");
     let text = aTag.textContent.trim();
     if (!text) return;
     let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
         (_, first, second) => first.toLowerCase() + second
-        );
+    );
     aTag.setAttribute("href", `item.html?meal=${par}`);
 };
 
-function ingredNarrative(){
+function ingredNarrative() {
     aTag = document.querySelector("#ingredient-name")
     let text = aTag.textContent.trim();
     let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
         (_, first, second) => first.toLowerCase() + second
-        );
+    );
     aTag.setAttribute("href", `item.html?ingredient=${par}`);
 };
 
-function prepNarrative(){
+function prepNarrative() {
     aTag = document.querySelector("#prep-name")
     let text = aTag.textContent.trim();
     let par = text.replace(/\b([A-Z][a-z]+)\s+([A-Z][a-z]+)\b/g,
         (_, first, second) => first.toLowerCase() + second
-        );
+    );
     aTag.setAttribute("href", `item.html?preparation=${par}`);
 };

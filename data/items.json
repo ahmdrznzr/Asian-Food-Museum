@@ -1,12 +1,6 @@
 {
-    "meta": {
-        "startWith": 0,
-        "startNarrative": "Region",
-        "startValue": "West Asia",
-        "narratives": ["Region", "Meal", "Ingredients", "Preparation", "Time"]
-    },
     "items": [{
-            "@sort": "6",
+
             "itemName": "Hot Pot (火锅)",
             "image": "../images/items/item-6.webp",
             "info": {
@@ -21,7 +15,7 @@
             "fullDesc": "full-description/06-HotPot.html"
         },
         {
-            "@sort": "19",
+
             "itemName": "Kibbeh (كبة)",
             "image": "../images/items/item-19.webp",
             "info": {
@@ -32,11 +26,11 @@
                 "preparation": "Fried"
             },
             "shortDesc": "Kibbeh is a traditional Middle Eastern dish made primarily from bulgur wheat, minced onions, and finely ground meat—usually lamb or beef—seasoned with a variety of aromatic spices. It is considered the national dish of several countries, including Lebanon and Syria, and is enjoyed in different forms, such as baked, fried, or served raw. Kibbeh's outer shell is typically made of bulgur and meat, while the filling often includes spiced meat, pine nuts, and onions. This dish is widely loved for its rich flavors, crispy texture, and its cultural significance in Middle Eastern feasts and family gatherings.",
-            "longerDesc": "longer-description/19-Kibbeh.html", 
+            "longerDesc": "longer-description/19-Kibbeh.html",
             "fullDesc": "full-description/19-Kibbeh.html"
         },
         {
-            "@sort": "20",
+
             "itemName": "Filo Pastry (كنافة)",
             "image": "../images/items/item-20.webp",
             "info": {
@@ -51,7 +45,6 @@
             "fullDesc": "full-description/20-Knafeh.html"
         },
         {
-            "@sort": "4",
             "itemName": "Noodle Soup (آش رشته)",
             "image": "../images/items/item-4.webp",
             "info": {
@@ -66,7 +59,6 @@
             "fullDesc": "full-description/04-NoodleSoup.html"
         },
         {
-            "@sort": "1",
             "itemName": "Herb Stew (قرمه سبزی)",
             "image": "../images/items/item-1.webp",
             "info": {
@@ -81,7 +73,6 @@
             "fullDesc": "full-description/01-herbStew.html"
         },
         {
-            "@sort": "7",
             "itemName": "Sour Soup with Beef Slices (酸汤肥牛)",
             "image": "../images/items/item-7.webp",
             "info": {
@@ -96,7 +87,6 @@
             "fullDesc": "full-description/07-SourSoup.html"
         },
         {
-            "@sort": "17",
             "itemName": "Hummus (حمص)",
             "image": "../images/items/item-17.webp",
             "info": {
@@ -111,7 +101,6 @@
             "fullDesc": "full-description/17-Hummus.html"
         },
         {
-            "@sort": "8",
             "itemName": "Peking Duck (北京烤鸭)",
             "image": "../images/items/item-8.webp",
             "info": {
@@ -126,7 +115,6 @@
             "fullDesc": "full-description/08-PekingDuck.html"
         },
         {
-            "@sort": "3",
             "itemName": "Barberry and Saffron Rice Cake with Chicken (تهچین مرغ)",
             "image": "../images/items/item-3.webp",
             "info": {
@@ -141,7 +129,6 @@
             "fullDesc": "full-description/03-RiceCakeWithChicken.html"
         },
         {
-            "@sort": "2",
             "itemName": "Saffron Ice cream (بستنی سنتی)",
             "image": "../images/items/item-2.webp",
             "info": {
@@ -156,7 +143,6 @@
             "fullDesc": "full-description/02-SaffronIcecream.html"
         },
         {
-            "@sort": "14",
             "itemName": "Deep-fried Lentil Fritters (دہی بھلے چاٹ)",
             "image": "../images/items/item-14.webp",
             "info": {
@@ -171,7 +157,6 @@
             "fullDesc": "full-description/14-Deep-friedLentil.html"
         },
         {
-            "@sort": "16",
             "itemName": "Chicken Pilaf (چکن بریانی)",
             "image": "../images/items/item-16.webp",
             "info": {
@@ -186,7 +171,6 @@
             "fullDesc": "full-description/16-Pilaf.html"
         },
         {
-            "@sort": "13",
             "itemName": "Mutton in Clay Pot (مٹن کُنا)",
             "image": "../images/items/item-13.webp",
             "info": {
@@ -201,7 +185,6 @@
             "fullDesc": "full-description/13-Mutton.html"
         },
         {
-            "@sort": "15",
             "itemName": "Semolina Halwa (سوجی کا حلوہ)",
             "image": "../images/items/item-15.webp",
             "info": {
@@ -216,7 +199,6 @@
             "fullDesc": "full-description/15-Halwa.html"
         },
         {
-            "@sort": "12",
             "itemName": "Tempura (天婦羅)",
             "image": "../images/items/item-12.webp",
             "info": {
@@ -231,7 +213,6 @@
             "fullDesc": "full-description/12-Tempura.html"
         },
         {
-            "@sort": "10",
             "itemName": "Sukiyaki (すき焼き)",
             "image": "../images/items/item-10.webp",
             "info": {
@@ -246,7 +227,6 @@
             "fullDesc": "full-description/10-Sukiyaki.html"
         },
         {
-            "@sort": "9",
             "itemName": "Pork Bone Ramen (豚骨ラーメン)",
             "image": "../images/items/item-9.webp",
             "info": {
@@ -261,7 +241,6 @@
             "fullDesc": "full-description/09-PorkBone.html"
         },
         {
-            "@sort": "11",
             "itemName": "Rotation Sushi (回転寿司)",
             "image": "../images/items/item-11.webp",
             "info": {
@@ -276,7 +255,6 @@
             "fullDesc": "full-description/11-RotationSushi.html"
         },
         {
-            "@sort": "18",
             "itemName": "Meat wrap (شاورما)",
             "image": "../images/items/item-18.webp",
             "info": {
@@ -291,7 +269,6 @@
             "fullDesc": "full-description/18-shawarma.html"
         },
         {
-            "@sort": "5",
             "itemName": "Coca-Cola Chicken Wings (可乐鸡翅)",
             "image": "../images/items/item-5.webp",
             "info": {
