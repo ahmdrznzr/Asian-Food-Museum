@@ -9,13 +9,10 @@ document.addEventListener("DOMContentLoaded", async function() {
 
     // Fetch JSON data - Ahamdreza
     async function fetchItems() {
-        try {
-            const response = axios.get("https://github.com/ahmdrznzr/Asian-Food-Museum/blob/main/data/items.json");
-            if (!response.ok) {
-                throw new Error(`HTTP error! Status: ${response.status}`);
-            }
-            const jsonData = await response.json();
-            items = jsonData.items;
+
+            fetch("../data/items.json")
+            .then(response => response.json())
+            .then(items =>{
 
             // Apply filtering
             filter(items);
@@ -30,10 +27,7 @@ document.addEventListener("DOMContentLoaded", async function() {
                 prepNarrative();
             } else {
                 console.log("No matching items found.");
-            }
-        } catch (error) {
-            console.error("Error loading items:", error);
-        }
+            }})
     }
     // end fetch
 
